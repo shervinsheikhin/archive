@@ -319,23 +319,13 @@ position: absolute;
 </ul>
 	 <script>
 	    $(document).ready(function() {
-			
-			
-			if ($(window).width() < 768) {
-			$("#cv").click(function(){
-     window.open('/curiculum.pdf', '_blank'); // open the pdf in a new window/tab
-   				$("#instapopup").hide("2000","swing");
-
-			});
-}
-else {
+	
 			$("#cv").click(function(){
 				$("#cvpopup").show("3000","swing");
 				$("#instapopup").hide("2000","swing");
 
 			});
 			
-}
 			$(".close").click(function(){
 				$("#cvpopup").hide(("2000","swing"));
 				$("#instapopup").hide("2000","swing");
