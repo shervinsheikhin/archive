@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SHERVIN SHEIKH REZAEI</title>
+        <meta name="keywords" content="architect, shervin, ghent, art, subbacultcha, subba, luca">
+        <meta name="author" content="Deveny Faruque - deve1000">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <style>
+   body{background-color:black;
+   color:silver;
+   }
+   img{
+	width:auto;
+	height:100vh;
+	top:0;
+	bottom:0;
+	overflow:auto;
+	}
+	
+	.prev, .next {
+  display: none;
+}
+	@media screen and (max-width: 768px) {
+.prev, .next {
+	display:block;
+  cursor: pointer;
+position: absolute;
+  top: 50%;
+    width: auto;
+  padding:16px;
+  margin-top: -22px;
+  color: black;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+      }
+	
+</style>
+
+  </head>
+    <body>
+	<div style="overflow-x:auto">
+	<a class="prev" >&#8592;	</a>
+<a class="next" >&#8594;	</a>
+	<img src="/paper.jpg"></div>
+		 <script>
+	    $(document).ready(function() {
+			
+		$(window).scroll(function() {
+  $( ".prev, .next").fadeOut( "slow" );
+});
+</sc});
+	 </script>
+    </body>
+</html>
