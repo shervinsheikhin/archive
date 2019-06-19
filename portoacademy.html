@@ -4,63 +4,109 @@
         <meta charset="utf-8">
         <title>SHERVIN SHEIKH REZAEI</title>
         <meta name="keywords" content="architect, shervin, ghent, art, subbacultcha, subba, luca">
-        <meta name="author" content="Deveny Faruque - deve1000">
+        <meta name="author" content="Shervin Sheikh Rezaei">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-   <style>
-   body{background-color:black;
-   color:silver;
+<script src="shervin/slider.js"></script>
+<style>  body{
+   	  font-family: Plantin;
    }
-   img{
-	width:auto;
-	height:100vh;
-	top:0;
-	bottom:0;
-	overflow:auto;
-	}
-	
-	.prev, .next {
-  display: none;
+   
+ 
+	  * {box-sizing: border-box}
+.mySlides {display: none;
+position: relative;
 }
-	@media screen and (max-width: 768px) {
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+top:-1.5em;
+  margin: auto;
+}
 .prev, .next {
-	display:block;
   cursor: pointer;
-position: absolute;
+position: fixed;
   top: 50%;
     width: auto;
   padding:16px;
   margin-top: -22px;
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+.prev{left:0;}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-      }
-	
-</style>
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: black;
+}
 
+</style>
   </head>
     <body>
-	<div style="overflow-x:auto">
-	<a class="prev" >&#8592;	</a>
-<a class="next" >&#8594;	</a>
-	<img src="/paper.jpg"></div>
-		 <script>
-	    $(document).ready(function() {
-			
-		$(window).scroll(function() {
-  $( ".prev, .next").fadeOut( "slow" );
-});
-</sc});
+		 
+	<div class="slideshow-container">
+<div class="mySlides">
+<img src="img/pubporto_Page_1.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="img/pubporto_Page_2.jpg" width="100%">
+</div>
+
+<div class="mySlides">
+<img src="img/pubporto_Page_3.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="img/pubporto_Page_4.jpg" width="100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#8592;	</a>
+<a class="next" onclick="plusSlides(1)">&#8594;	</a>
+</div>
+	 <script>
+	    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 	 </script>
+	 
     </body>
 </html>
