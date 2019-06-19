@@ -77,9 +77,22 @@ zoom:0.65;  }
   right:0;
   margin:2em;
 	   z-index:2;
+	     list-style-type: none;
+cursor:pointer;
    }
    li{
-   	font-family:Plantin;}
+   	font-family:Plantin;
+   	position:relative;}
+	
+	.nested{display:none;
+	position:relative;
+	background-color:white;
+	text-align:left;}
+	
+	.active {
+  display: block;
+}
+
    a{
    	color:black;
    	  text-decoration: none;
@@ -235,15 +248,17 @@ max-width:700px;  }
  
 </svg></div>
 <div id="pubpopup" class="popup"><span class="close">&times;</span><div id="overlay"></div>
-  <div><a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
+  <div class="popcontent" style="display:inline-block;"><a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
 <a href="/portoacademy.html" target="_blank"><h2>NEWSPAPER PORTO-ACADEMY 2018</h2><p> led by Meyer-Gröhbrugge & Chermayeff</p></a> 
 <a href="https://www.archinfo.sk/diela/interier/labyrinth-stage-instalacia-v-ramci-letneho-festivalu-bauhaus-kampus-weimar.html" target="_blank" >
-<h2>LABYRINTH STAGE AT BAUHAUS 2017</h2><p> Collaboration Shervin Sheikh Rezaei and Barbora Tothova</p></a>
+<h2>LABYRINTH STAGE AT BAUHAUS 2017 (Universität Weimar)</h2><p> Collaboration Shervin Sheikh Rezaei and Barbora Tothova</p></a>
 </div></div>
-	<div id="instapopup" class="popup"><span class="close">&times;</span><div id="insta1">
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/64fa2ac215e55386930c54ce5ac2e490.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-		</div></div>	 <div id="cvpopup" class="popup"><span class="close">&times;</span>
-	<div class="slideshow-container">
+	<div id="instapopup" class="popup"><span class="close">&times;</span><div id="insta1" class="popcontent">
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+<iframe src="https://cdn.lightwidget.com/widgets/64fa2ac215e55386930c54ce5ac2e490.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+		</div></div>	 
+<div id="cvpopup" class="popup"><span class="close">&times;</span>
+	<div class="slideshow-container popcontent">
 <div class="mySlides">
 <div class="pdf" style="position:relative;left:50%;margin-left:-227px;top:0px;width:454px;height:680px;border:1px solid silver;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
@@ -363,41 +378,42 @@ max-width:700px;  }
 <br>
 </div>
 <ul style="list-style-type:none;">
-  <li><a href="javascript:void(0)" id="pub">recent publications</a></li>
   <li><a href="javascript:void(0)" id="cv">curriculum vitae</a></li>
   <li><a href="javascript:void(0)" id="insta">social images</a></li>
+  <li><a href="javascript:void(0)" id="pub">publications</a></li>
+    
 </ul>
 	 <script>
 	    $(document).ready(function() {
 	$("#pub").click(function(){
 				$("#pubpopup").show("3000","swing");
-				$("#instapopup").hide("2000","swing");
-				$("#cvpopup").hide("2000","swing");
-
+				$("#instapopup, #cvpopup").hide("2000","swing");
 			});
 			
-			$("#cv").click(function(){
+	$("#cv").click(function(){
 				$("#cvpopup").show("3000","swing");
 				$("#instapopup,#pubpopup").hide("2000","swing");
-
 			});
-			
-			$(".close").click(function(){
-				$("#cvpopup,#pubpopup,#instapopup").hide("2000","swing");
-
-			});
-			$("#insta").click(function(){
+	
+	$("#insta").click(function(){
 				$("#instapopup").show("2000","swing");
 				$("#cvpopup,#pubpopup").hide("2000","swing");
-
 			});
-			var modal = document.getElementById('cvpopups');
+			
+	$(".close").click(function(){
+				$("#cvpopup,#pubpopup,#instapopup").hide("2000","swing");
+			});
+			
+$(document).mouseup(function (e)
+                    {
+  var container = $(".popcontent"); // YOUR CONTAINER SELECTOR
 
-window.addEventListener('click',function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-})
+  if (!container.is(e.target) // if the target of the click isn't the container...
+      && container.has(e.target).length === 0) // ... nor a descendant of the container
+  {
+    container.parent().hide();
+  }
+});
 
   });
 	 </script>
