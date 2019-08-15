@@ -7,8 +7,13 @@
         <meta name="author" content="Deveny Faruque - deve1000">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		    <link rel="stylesheet" href="/cvstyle.css">
+		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+  <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+
 
    <style>
    @font-face {
@@ -22,84 +27,264 @@
    	  background-attachment: fixed;
   background-position: center; 
    	  font-family: Plantin;
-   }
+  margin: 0;
+  font-family: Helvetica;}
    @media screen and (max-width: 800px) {
   body {
    	background-image:url("/bgshervsminigsm.jpg");
 	  background-size:cover;
   }
       }
-   
-   #cvpopup{
-   	position:relative;
-   	top:0em;
+    html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+#content{margin-right:22em;
+padding-top:2em;
+padding-left: 3em;
+height:100vh;
+z-index:1;
+}
+.btn-prev{
+	top: 0px;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 0px;
+    z-index: 9999;
+	cursor: w-resize;
+	}
+.btn-next{
+	top: 0px;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    right: 0px;
+    z-index: 9999;
+	cursor: e-resize;
+	}
+
+#nav{  
+	transition:0.4;
+	bottom:0;
+	background-color:white;
+	width:21em;
+	position: fixed;
+  font-family: Plantin;
+overflow:auto;
+height:100vh;
+padding:2em 2em 2em 0;
+  right: 0;
+  z-index: 10;
+    box-shadow: -50px -20px 40px white, 50px 20px 40px white;
+}
+#nav > ul{bottom:1em; right:1em;position:absolute;}
+	
+#nav a {display:block;
+letter-spacing:1px;
+line-height:1.3;}
+
+
+#nav a:hover {
+color: orange;}
+
+ul {padding:0;
+margin:0;
+  text-align: right;
+  list-style-type: none;
+  cursor: pointer;
+  position:relative;
+}
+li {
+  font-family: Plantin;
+  position: relative;
+}
+.drop-content {
+	padding:1em 1em 1em 0em;
+	  transition:0.5;
+  background-color: transparent;
+  text-align: left;
   display: none;
-   }
-	@media screen and (max-width: 768px) {
-  #cvpopup {
-zoom:0.65;  }
-      }
+  }
+.drop-content:hover a{
+	color:silver;}
+	
+.dropplus-content {
+  background-color: transparent;
+  text-align: left;
+  padding-left:2em;
+  display: none;
+}
+.dropplus-content:hover a{
+	color:silver;}
+.dropplus-content:hover .drop-content a{
+	color:black;}
+
+
+#bio{
+	position:fixed;
+	top:1em;
+	margin-left:1em;
+	margin-bottom:3em;
+font-family:Plantin;
+width:21em;
+padding:3em;
+font-size:1rem;  
+  text-align-last:center;
+  letter-spacing:0px;
+  transition:0.5;
+}
+ 
+mark{font-family:Helvetica;
+background-color:transparent;
+	color:orange;
+	text-transform:uppercase;
+	}
+mark2{opacity:0;
+	}
+.gone{background-color:transparent;
+	color:black;
+	opacity:1;}
+.mini{background-color:transparent;
+	color:orange;font-style:italic;
+	font-family:Plantin;
+		text-transform:none;
+}
+.cycleslideshow img{max-height:1000px;}
+.gallery{display:flex;
+height:90vh;
+}
+#b-inbetween img, #b-bach img{
+	max-height:1000px;
+	border:1px solid navy;
+	margin-bottom:1em;}
+.double{flex-wrap:wrap;}
+#p-balder img{width:auto;
+margin:0.5em;
+height:90vh;
+align-self: center;}
+
+#p-reverse img{width:auto;
+margin:1em;
+height:90vh;
+align-self: center;}
+#p-caritas img, #p-models img, #p-drawings img, #p-sybren img, #p-column img, #p-mirror img, #p-textile img{width:auto;
+margin:1em;
+height:90vh;
+align-self: center;}
+
+#e-grandtour img{width:auto;
+margin:1em;
+height:90vh;
+align-self: center;}
+
+#e-reverse img{width:auto;
+margin:1em;
+height:90vh;
+align-self: center;}
+
+#d-fun img{width:40vw;
+margin:1em 3em;
+height:auto;
+max-height:90vh;
+align-self: center;}
+
+#d-arch img{width:auto;
+margin:1em;
+height:90vh;
+align-self: center;}
+
+#d-sketch img{width:auto;
+margin:1em 3em;
+height:90vh;
+align-self: center;}
+
+
+.gallery img:last-of-type{
+	padding-right:22em;}
+		
+.popup{display:none;}
+#cvpopup{
+	z-index:20;
+zoom:0.8;	background-color:white;
+	display:none;}
+.icons {
+  z-index: -5;
+  width: 15em;
+  height: auto;
+  position: absolute;
+}
+
+.icons img:hover {
+border:5px solid orange;}
+.icons:hover {
+  z-index: 4;
+}
+#bookpopup {
+  text-align: center;
+  position: fixed;
+  top: 10vh;
+  display: none;
+  margin: auto;
+}
+#artpopup {
+  display: none;
+  position: relative;
+}
+.art {
+  display: none;
+  padding: 3em;
+}
+
+.book {
+  display: none;
+  text-align: center;
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.book img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.prev {
+  left: 0;
+}
+.popcontent {
+  z-index: 5;
+}
+
+/* Closable button inside the expanded image */
+.close {
+float:right;  color:black;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index:30;
+}
+
+
    
     #instapopup{
    	position:relative;
    	top:0;
   display: none;
+  z-index:30;
     }
 	
 	#pubpopup{
-		padding:2em 1em;
+		padding:5em 1em;
 	text-align:center;
    	position:relative;
    	top:0;
   display: none;
+  font-family:Plantin;
     }
+	#pubpopup a:hover{color:silver;}
 	
-   .close{
-   	position: absolute;
-   	top:-0.5em;
-   	font-size:3rem;
-   right:1em;
-   z-index:20;
-   }
-	   @media screen and (max-width: 768px) {
-  .close {
-   right:0em;  }
-      }
-   .close:hover{
-   	color:silver;
-   	cursor:pointer;
-   } 
-   ul{
-   	text-align:right;
-   	position: fixed;
-  font-family: Plantin;
-  bottom:0;
-  right:0;
-  margin:2em;
-	   z-index:2;
-	     list-style-type: none;
-cursor:pointer;
-   }
-   li{
-   	font-family:Plantin;
-   	position:relative;}
-	
-	.nested{display:none;
-	position:relative;
-	background-color:white;
-	text-align:left;}
-	
-	.active {
-  display: block;
-}
 
-   a{
-   	color:black;
-   	  text-decoration: none;
-}
-   a:hover
-   {color:silver;}
-   
    h1{
    	z-index:2;
    	text-align:center;
@@ -109,11 +294,6 @@ margin: 2em 1em;
    font-family: Arial, sans-serif;
 font-weight: 300;
    }
-   #pdf{
- zoom:1.2;   }
-    @media screen and (max-width: 768px) {
-#pdf{
-	zoom:0.2;}}
    svg{
 	   font-family: Arial, sans-serif;
 	     pointer-events: none;
@@ -122,7 +302,7 @@ font-weight: 300;
   width:100vw;
   font-size:1.2rem;
   margin:auto;
-  z-index:-1;
+  z-index:15;
 }
    @media screen and (max-width: 768px) {
 svg{
@@ -130,84 +310,10 @@ height:auto;
 width:95vw;}}
 
 h2{font-size:1rem;
-font-family:Arial, sans-serif;
-	font-weight:normal;
+font-family:Helvetica, sans-serif;
+	font-weight:bold;
 margin-top:2em;}
-p{font-family:Plantin;
-font-size:0.7;}
-  
-span.cls_003{white-space: nowrap;font-family:Arial,serif;font-size:1em;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_003{white-space: nowrap;font-family:Arial,serif;font-size:1em;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 
-span.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_004{  white-space: nowrap;font-family:Plantin,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_004{  white-space: nowrap;font-family:Plantin,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_005{  white-space: nowrap;font-family:Arial,serif;font-size:0.5rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_005{  white-space: nowrap;font-family:Arial,serif;font-size:0.5rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-
-span.cls_003{  white-space: nowrap;font-family:Arial,serif;font-size:0.7rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_003{  white-space: nowrap;font-family:Arial,serif;font-size:0.7rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_004{  white-space: nowrap;font-family:Plantin,serif;font-size:0.7rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_004{  white-space: nowrap;font-family:Plantin,serif;font-size:0.7rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_002{  white-space: nowrap;font-family:Arial,serif;font-size:0.8rem;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-
-* {box-sizing: border-box}
-.mySlides {display: none;
-position: relative;
-}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-top:-1.5em;
-  margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-position: absolute;
-  top: 50%;
-    width: auto;
-  padding:16px;
-  margin-top: -22px;
-  color: black;
-  font-size: 2rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.dot {
-  position: relative;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: black;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.2s;
-  animation-name: fade;
-  animation-duration: 0.2s;
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.pdf{
-	zoom:1.2;}
 	   
 #insta1{
 	pointer-events:none;
@@ -227,12 +333,15 @@ max-width:700px;  }
 	background-color:white;
 	opacity:0.6;
 	z-index:-1;}
-	
+a{text-decoration:none;
+color:black;}
+
+.bio-b{cursor:pointer;
+user-select:none;}
 </style>
 
   </head>
     <body>
-	<a href="index.html"><h1>SHERVIN SHEIKH REZAEI</h1></a>
 	<div><svg viewBox="0 0 300 300">
 <text fill="darkblue">   
 <animateTransform attributeName="transform"
@@ -242,11 +351,780 @@ max-width:700px;  }
                           to="360 150 150"
                           dur="10s"
                           repeatCount="indefinite"/>
-<textPath textLength="452" lengthAdjust="spacing" xlink:href="#move">PORTFOLIO COMING SOON </textPath>
+<textPath textLength="452" lengthAdjust="spacing" xlink:href="#move">PORTFOLIO UNDER CONSTRUCTION</textPath>
   </text>
   <path id="move" d=" M 150 150 m -75, 0 a 75,75 0 0,1 150,0 a 75,75 0 0,1 -150,0 " fill="none"/>  
  
 </svg></div>
+ 
+<div id="content">
+<div id="cvpopup" class="popup"><span class="close">&times;</span>
+<DIV id="page_2">
+<DIV id="id2_1">
+<DIV id="id2_1_1">
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD class="tr0 td0"><P class="p6 ft1"></P></TD>
+	<TD class="tr0 td1"><P class="p7 ft1">PERSONALIA</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td0"><P class="p8 ft5">Name</P></TD>
+	<TD class="tr1 td1"><P class="p7 ft5">Sheikh Rezaei</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">First Name</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">Shervin</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Telephone</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">+324 98 748 988</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5"><NOBR>E-mail</NOBR></P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">shervin.shr@gmail.com</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Date of birth</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">04/09/1994</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Country</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">Belgium</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Instagram</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5"><a href="https://www.instagram.com/shervinsheikhin/" target="_blank">shervinsheikhin</a></P></TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV id="id2_1_2">
+<TABLE cellpadding=0 cellspacing=0 class="t1">
+<TR>
+	<TD class="tr3 td2"></TD>
+	<TD class="tr3 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td4"><P class="p9 ft1">EDUCATION</P></TD>
+	<TD class="tr3 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td2"></TD>
+	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2017-2018</NOBR></P></TD>
+	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">Graduated (cum laude) with a Master in Architecture,</P></TD>
+	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">KU Leuven Campus Gent, Belgium</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">studio Grand Tour led by Hugo Vanneste and Carl Bourgeois</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5">2017</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Medien Architektur, <NOBR>Bauhaus-universität,Weimar,</NOBR> Germany</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015-2017</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Master Architecture: Explorative Architectural Design:</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr2 td7"><P class="p9 ft5">Field Station led by Michiel Helbig and Corneel Cannaerts</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Reverse Perspective led by Wim Goes and Johannes Berry</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">KU Leuven Campus Gent, Belgium</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2014-2015</NOBR></P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">Photography, <NOBR>Sint-Lucas</NOBR> Gent</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr6 td6"><P class="p10 ft1"></P></TD>
+</TR>
+<TR>
+	<TD class="tr7 td2"></TD>
+	<TD rowspan=2 class="tr5 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD colspan=2 rowspan=2 class="tr5 td7"><P class="p9 ft5">Bachelor Architecture, KU Leuven Campus Gent</P></TD>
+</TR>
+<TR>
+	<TD class="tr8 td2"></TD>
+	<TD class="tr8 td6"><P class="p6 ft7">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5">Silkscreen, Kunstacademie Eeklo</P></TD>
+	<TD class="tr2 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2007-2012</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Mathematical Sciences, O.L.V. <NOBR>ten-Doorn</NOBR> Eeklo</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2006-2012</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Theater/ Drama, Kunstacademie Eeklo</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td2"></TD>
+	<TD class="tr9 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td4"><P class="p9 ft1">WORK EXPERIENCE</P></TD>
+	<TD class="tr9 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td2"></TD>
+	<TD class="tr4 td3"><P class="p6 ft5">2013</P></TD>
+	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">AIKO architecten en ingenieurs, Maldegem, Belgium</P></TD>
+	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015-2019</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Took pictures (analogue) for Clair Obscur (party concept), Stofwolk</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">(art collective), <a href="https://www.kraak.net/" target="_blank">KRAAK (music collective)</a> and SUBBACULTCHA</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5">2016</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Graphic work for Just Interior, JDW</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft5">2017</P></TD>
+	<TD colspan=2 class="tr2 td7"><P class="p9 ft5">Workshop Real Estate Architecture, Brussels,</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">led by <a href="https://www.maniera.be/creators/19/piovenefabi" target="_blank">PIOVENEFABI Architects</a></P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Guide on the Festival of Architecture in Ghent, house: De kleine Prins</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">by <a href="http://www.dhoogemeganck.be/" target="_blank">Dhooge & Meganck Architects</a></P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5">2018</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Went to Iran for my Masterthesis about my book:</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr2 td7"><P class="p9 ft5">ENSEMBLE/the architecture of ‘the in/between’</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Workshop Porto Academy, Portugal, led by June 14</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">by <a href="http://june-14.com" target="_blank">Johanna Meyer-Grohbrügge & Sam Chermayeff Architects</a></P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Internship at Dhooge & Meganck Architects</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5">2019</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Publication of book: ENSEMBLE/an architecture of ‘the in/between’</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5">publicated by <a href="http://merbooks.be/projects" target:"_blank">MER</a></P></TD>
+	<TD class="tr2 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">in collaboration with graphic designer Viktor Van den Braembussche</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Currently working for J<a href="http://www.architectendvvt.com" target="_blank">Jan De Vylder en Inge Vinck</a></P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td2"></TD>
+	<TD class="tr9 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td4"><P class="p9 ft1">HOBBIES AND INTERESTS</P></TD>
+	<TD class="tr9 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td2"></TD>
+	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2006-2012</NOBR></P></TD>
+	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">Theater/Drama, Kunstacademie Eeklo</P></TD>
+	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2008-2010</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Percussion & Opera, Muziekschool Eeklo</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2011-2012</NOBR></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Drawing Art, Kunstacademie Eeklo</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">Silkscreen, Kunstacademie Eeklo</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td2"></TD>
+	<TD class="tr4 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr4 td4"><P class="p9 ft1">SKILLS</P></TD>
+	<TD class="tr4 td5"><P class="p6 ft1">LANGUAGES</P></TD>
+	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td2"></TD>
+	<TD class="tr9 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td4"><P class="p9 ft5">Autocad</P></TD>
+	<TD class="tr9 td5"><P class="p6 ft5">Dutch</P></TD>
+	<TD class="tr9 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">Sketchup</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft5">English</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td2"></TD>
+	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5">Photoshop</P></TD>
+	<TD class="tr2 td5"><P class="p6 ft5">Farsi</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">Indesign</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft5">a little bit of French and German</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td2"></TD>
+	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5">Illustrator</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+</TR>
+</TABLE>
+<P class="p11 ft5">Microsoft Office</P>
+<P class="p12 ft5">Premiere Pro</P>
+<P class="p12 ft5">Dragon Frame</P>
+</DIV>
+</DIV>
+<DIV id="id2_2">
+<P class="p3 ft2">SHERVIN</P>
+<P class="p4 ft3">SHEIKH</P>
+<P class="p5 ft4">REZAEI</P>
+</DIV>
+</DIV>
+</div>
+<div class="popup" id="b-bach">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/books/bach/bach_Page_01.jpg" width="50%">
+<img src="shervin/books/bach/bach_Page_02.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_03.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_04.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_05.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_06.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_07.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_08.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_09.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_10.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_11.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_12.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_13.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_14.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_15.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_16.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_17.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_18.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_19.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_20.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_21.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_22.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_23.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_24.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_25.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_26.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_27.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_28.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_29.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_30.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_31.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_32.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_33.jpg" width="100%">
+<img src="shervin/books/bach/bach_Page_34.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="b-aware">
+<div class="cycleslideshow">
+	
+<img src="shervin/books/awareness/as_Page_1.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_2.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_3.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_4.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_5.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_6.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_7.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_8.jpg" width="100%">
+<img src="shervin/books/awareness/as_Page_9.jpg" width="100%">
+</div>
+</div>
+<div class="popup" id="b-bauhaus">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/books/bauhaus/bauhaus_Page_1.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_2.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_3.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_4.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_5.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_6.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_7.jpg" width="100%">
+<img src="shervin/books/bauhaus/bauhaus_Page_8.jpg" width="100%">
+<img src="shervin/books/bauhaus/labdocu1.jpg">
+<img src="shervin/books/bauhaus/labdocu2.jpg">
+<img src="shervin/books/bauhaus/labdocu3.jpg">
+<img src="shervin/books/bauhaus/labdocu4.jpg">
+<img src="shervin/books/bauhaus/labdocu5.jpg">
+<img src="shervin/books/bauhaus/labdocu6.jpg">
+<img src="shervin/books/bauhaus/labdocu7.jpg">
+<img src="shervin/books/bauhaus/labdocu8.jpg">
+<img src="shervin/books/bauhaus/labdocu9.jpg">
+<img src="shervin/books/bauhaus/labdocu10.jpg">
+<img src="shervin/books/bauhaus/labdocu11.jpg">
+<img src="shervin/books/bauhaus/labdocu12.jpg">
+<img src="shervin/books/bauhaus/labdocu13.jpg">
+</div>
+</div>
+<div class="popup" id="b-iran">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/books/dagboekiran/dagboekiran_Page_01.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_02.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_03.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_04.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_05.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_06.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_07.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_08.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_09.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_10.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_11.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_12.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_13.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_14.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_15.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_16.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_17.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_18.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_19.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_20.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_21.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_22.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_23.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_24.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_25.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_26.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_27.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_28.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_29.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_30.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_31.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_32.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_33.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_34.jpg" width="100%">
+<img src="shervin/books/dagboekiran/dagboekiran_Page_35.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="b-inbetween">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/books/dagboekiran/iran2_Page_01.jpg" width="50%">
+<img src="shervin/books/dagboekiran/iran2_Page_02.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_03.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_04.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_05.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_06.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_07.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_08.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_09.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_10.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_11.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_12.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_13.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_14.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_15.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_16.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_17.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_18.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_19.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_20.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_21.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_22.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_23.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_24.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_25.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_26.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_27.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_28.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_29.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_30.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_31.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_32.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_33.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_34.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_35.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_36.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_37.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_38.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_39.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_40.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_41.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_42.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_43.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_44.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_45.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_46.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_47.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_48.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_49.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_50.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_51.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_52.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_53.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_54.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_55.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_56.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_57.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_58.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_59.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_60.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_61.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_62.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_63.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_64.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_65.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_66.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_67.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_68.jpg" width="100%">
+<img src="shervin/books/dagboekiran/iran2_Page_69.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="b-reverse">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/books/reverse/revperspective_Page_01.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_02.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_03.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_04.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_05.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_06.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_07.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_08.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_09.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_10.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_11.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_12.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_13.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_14.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_15.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_16.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_17.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_18.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_19.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_20.jpg" width="100%">
+<img src="shervin/books/reverse/revperspective_Page_21.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="p-balder">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/balder/1.jpg" width="100%">
+<img src="shervin/physical/balder/2.jpg" width="100%">
+<img src="shervin/physical/balder/3.jpg" width="100%">
+<img src="shervin/physical/balder/4.jpg" width="100%">
+<img src="shervin/physical/balder/5.jpg" width="100%">
+<img src="shervin/physical/balder/6.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="p-reverse">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/rplos/01.jpg">
+<img src="shervin/physical/rplos/02.jpg">
+<img src="shervin/physical/rplos/03.jpg">
+<img src="shervin/physical/rplos/04.jpg">
+<img src="shervin/physical/rplos/05.jpg">
+<img src="shervin/physical/rplos/06.jpg">
+<img src="shervin/physical/rplos/07.jpg">
+<img src="shervin/physical/rplos/08.jpg">
+<img src="shervin/physical/rplos/09.jpg">
+<img src="shervin/physical/rplos/10.jpg">
+<img src="shervin/physical/rplos/11.jpg">
+<img src="shervin/physical/rplos/12.jpg">
+
+</div>
+</div>
+
+<div class="popup" id="p-trap">
+<div class="cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/trap/01.jpg" width="100%">
+<img src="shervin/physical/trap/02.jpg" width="100%">
+</div>
+</div>
+
+<div class="popup" id="p-caritas">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/caritas/1.jpg">
+<img src="shervin/physical/caritas/2.jpg">
+<img src="shervin/physical/caritas/3.jpg">
+<img src="shervin/physical/caritas/4.jpg">
+
+</div>
+</div>
+<div class="popup" id="p-play">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+</div>
+</div>
+
+
+<div class="popup" id="p-column">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/inbetween/KOLOM1.jpg">
+<img src="shervin/physical/ensemble/inbetween/KOLOM2.jpg">
+<img src="shervin/physical/ensemble/inbetween/KOLOM3.jpg">
+</div>
+</div>
+<div class="popup" id="p-mirror">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/mirror/01.jpg">
+<img src="shervin/physical/ensemble/mirror/02.jpg">
+<img src="shervin/physical/ensemble/mirror/03.jpg">
+
+</div>
+</div>
+
+<div class="popup" id="p-sybren">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/sybren/maquetteSV1.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV2.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV3.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV4.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV5.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV6.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV7.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV8.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV9.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV10.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV11.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV12.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV13.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV14.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV15.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV16.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV17.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV18.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV19.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV20.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV21.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV22.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV23.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV24.jpg">
+<img src="shervin/physical/ensemble/sybren/maquetteSV25.jpg">
+
+</div>
+</div>
+<div class="popup" id="p-textile">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/textile/doek1.jpg">
+<img src="shervin/physical/ensemble/textile/doek2.jpg">
+<img src="shervin/physical/ensemble/textile/doek3.jpg">
+
+</div>
+</div>
+<div class="popup" id="p-drawings">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/tdrawings/01.jpg">
+<img src="shervin/physical/ensemble/tdrawings/02.jpg">
+<img src="shervin/physical/ensemble/tdrawings/03.jpg">
+
+</div>
+</div>
+<div class="popup" id="p-models">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/physical/ensemble/tmodels/01.jpg">
+<img src="shervin/physical/ensemble/tmodels/02.jpg">
+<img src="shervin/physical/ensemble/tmodels/03.jpg">
+<img src="shervin/physical/ensemble/tmodels/04.jpg">
+<img src="shervin/physical/ensemble/tmodels/05.jpg">
+<img src="shervin/physical/ensemble/tmodels/06.jpg">
+<img src="shervin/physical/ensemble/tmodels/07.jpg">
+<img src="shervin/physical/ensemble/tmodels/08.jpg">
+<img src="shervin/physical/ensemble/tmodels/09.jpg">
+<img src="shervin/physical/ensemble/tmodels/10.jpg">
+<img src="shervin/physical/ensemble/tmodels/11.jpg">
+
+</div>
+</div>
+<div class="popup" id="e-grandtour">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">	
+<img src="shervin/expo/grandtour/1.jpg" >
+<img src="shervin/expo/grandtour/2.jpg" >
+<img src="shervin/expo/grandtour/3.jpg" >
+<img src="shervin/expo/grandtour/4.jpg" >
+<img src="shervin/expo/grandtour/5.jpg" >
+<img src="shervin/expo/grandtour/6.jpg" >
+<img src="shervin/expo/grandtour/7.jpg" >
+<img src="shervin/expo/grandtour/8.jpg" >
+<img src="shervin/expo/grandtour/9.jpg" >
+<img src="shervin/expo/grandtour/10.jpg" >
+<img src="shervin/expo/grandtour/11.jpg" >
+<img src="shervin/expo/grandtour/12.jpg" >
+<img src="shervin/expo/grandtour/13.jpg" >
+<img src="shervin/expo/grandtour/14.jpg" >
+<img src="shervin/expo/grandtour/15.jpg" >
+<img src="shervin/expo/grandtour/16.jpg" >
+<img src="shervin/expo/grandtour/17.jpg" >
+<img src="shervin/expo/grandtour/18.jpg" >
+<img src="shervin/expo/grandtour/19.jpg" >
+<img src="shervin/expo/grandtour/maqqq.jpg" >
+<img src="shervin/expo/grandtour/mooi.jpg" >
+</div>
+</div>
+
+<div class="popup" id="e-reverse">
+<div class="gallery cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/expo/reverse/boek.jpg">
+<img src="shervin/expo/reverse/boek2.jpg">
+<img src="shervin/expo/reverse/boek3.jpg">
+<img src="shervin/expo/reverse/dinkjes.jpg">
+<img src="shervin/expo/reverse/posteryugen.jpg">
+</div>
+</div>
+
+<div class="popup" id="d-arch">
+<div class="gallery cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/drawing/arch/a1.jpg">
+<img src="shervin/drawing/arch/a2.jpg">
+<img src="shervin/drawing/arch/a3.jpg">
+<img src="shervin/drawing/arch/a4.jpg">
+</div>
+</div>
+
+<div class="popup" id="d-fun">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/drawing/fun/fun1.jpg">
+<img src="shervin/drawing/fun/fun2.jpg">
+<img src="shervin/drawing/fun/fun3.jpg">
+<img src="shervin/drawing/fun/fun4.jpg">
+<img src="shervin/drawing/fun/fun5.png">
+</div>
+</div>
+
+<div class="popup" id="d-sketch">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
+	
+<img src="shervin/drawing/sketch/a1.jpg">
+<img src="shervin/drawing/sketch/a2.jpg">
+<img src="shervin/drawing/sketch/a3.jpg">
+<img src="shervin/drawing/sketch/a4.jpg">
+<img src="shervin/drawing/sketch/a5.jpg">
+<img src="shervin/drawing/sketch/a6.jpg">
+<img src="shervin/drawing/sketch/a7.jpg">
+<img src="shervin/drawing/sketch/a8.jpg">
+<img src="shervin/drawing/sketch/a9.jpg">
+<img src="shervin/drawing/sketch/a10.jpg">
+<img src="shervin/drawing/sketch/a11.jpg">
+
+</div>
+</div>
 <div id="pubpopup" class="popup"><span class="close">&times;</span><div id="overlay"></div>
   <div class="popcontent" style="display:inline-block;"><a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
 <a href="/portoacademy.html" target="_blank"><h2>NEWSPAPER PORTO-ACADEMY 2018</h2><p> led by Meyer-Gröhbrugge & Chermayeff</p></a> 
@@ -256,194 +1134,178 @@ max-width:700px;  }
 	<div id="instapopup" class="popup"><span class="close">&times;</span><div id="insta1" class="popcontent">
 <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 <iframe src="https://cdn.lightwidget.com/widgets/64fa2ac215e55386930c54ce5ac2e490.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-		</div></div>	 
-<div id="cvpopup" class="popup"><span class="close">&times;</span>
-	<div class="slideshow-container popcontent">
-<div class="mySlides">
-<div class="pdf" style="position:relative;left:50%;margin-left:-227px;top:0px;width:454px;height:680px;border:1px solid silver;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="background3.jpg" width=454 height=680></div>
-<div style="position:absolute;left:307.22px;top:11.09px" class="cls_003"><span class="cls_003">CURRICULUMVITAE</span></div>
-<div style="position:absolute;left:437.83px;top:131.15px" class="cls_002"><span class="cls_002">1</span></div>
+		</div></div>
+		
+<div class="popup" id="shoppopup">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
 </div>
 </div>
 
-<div class="mySlides">
-<div class="pdf" style="position:relative;left:50%;margin-left:-227px;top:0px;width:454px;height:680px;border:1px solid silver;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="background2.jpg" width=454 height=680></div>
-<div style="position:absolute;left:7.15px;top:231.76px" class="cls_002"><span class="cls_002">2</span></div>
-<div style="position:absolute;left:299.40px;top:231.81px" class="cls_002"><span class="cls_002">PERSONALIA</span></div>
-<div style="position:absolute;left:227.40px;top:253.41px" class="cls_004"><span class="cls_004">Name</span></div>
-<div style="position:absolute;left:299.40px;top:253.41px" class="cls_004"><span class="cls_004">Sheikh Rezaei</span></div>
-<div style="position:absolute;left:227.40px;top:265.41px" class="cls_004"><span class="cls_004">First Name</span></div>
-<div style="position:absolute;left:299.40px;top:265.41px" class="cls_004"><span class="cls_004">Shervin</span></div>
-<div style="position:absolute;left:227.40px;top:277.41px" class="cls_004"><span class="cls_004">Telephone</span></div>
-<div style="position:absolute;left:299.40px;top:277.41px" class="cls_004"><span class="cls_004">+324 98 748 988</span></div>
-<div style="position:absolute;left:227.40px;top:289.41px" class="cls_004"><span class="cls_004">E-mail</span></div>
-<div style="position:absolute;left:299.40px;top:289.41px" class="cls_004"><span class="cls_004">shervin.shr@gmail.com</span></div>
-<div style="position:absolute;left:227.40px;top:301.41px" class="cls_004"><span class="cls_004">Date of birth</span></div>
-<div style="position:absolute;left:299.40px;top:301.41px" class="cls_004"><span class="cls_004">04/09/1994</span></div>
-<div style="position:absolute;left:227.40px;top:313.41px" class="cls_004"><span class="cls_004">Country</span></div>
-<div style="position:absolute;left:299.40px;top:313.41px" class="cls_004"><span class="cls_004">Belgium</span></div>
-<div style="position:absolute;left:227.40px;top:325.41px" class="cls_004"><span class="cls_004">Instagram</span></div>
-<div style="position:absolute;left:299.40px;top:325.41px" class="cls_004"><span class="cls_004"><a href="https://www.instagram.com/shervinsheikhin/" target="_blank">shervinsheikhin</a></span></div>
-<div style="position:absolute;left:7.22px;top:644.41px" class="cls_005"><span class="cls_005">SHERVIN</span></div>
-<div style="position:absolute;left:127.54px;top:650.65px" class="cls_005"><span class="cls_005">SHEIKH</span></div>
-<div style="position:absolute;left:226.05px;top:656.90px" class="cls_005"><span class="cls_005">REZAEI</span></div>
+<div class="popup" id="officepopup">
+<div class="cycleslideshow gallery" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="false">
 </div>
 </div>
+	
+</DIV>
 
-<div class="mySlides">
-<div class="pdf" style="position:relative;left:50%;margin-left:-227px;top:0px;width:454px;height:680px;border: 1px solid silver;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="background1.jpg" width=454 height=680></div>
-<div style="position:absolute;left:107.61px;top:11.95px" class="cls_003"><span class="cls_003">EDUCATION</span></div>
-<div style="position:absolute;left:35.61px;top:34.75px" class="cls_004"><span class="cls_004">2017-2018</span></div>
-<div style="position:absolute;left:107.61px;top:34.75px" class="cls_004"><span class="cls_004">Graduated (cum laude) with a Master in Architecture,</span></div>
-<div style="position:absolute;left:107.61px;top:46.15px" class="cls_004"><span class="cls_004">KU Leuven Campus Gent, Belgium</span></div>
-<div style="position:absolute;left:107.61px;top:57.55px" class="cls_004"><span class="cls_004">studio Grand Tour led by Hugo Vanneste and Carl Bourgeois</span></div>
-<div style="position:absolute;left:35.61px;top:68.95px" class="cls_004"><span class="cls_004">2017</span></div>
-<div style="position:absolute;left:107.61px;top:68.95px" class="cls_004"><span class="cls_004">Medien Architektur, Bauhaus-universität, Weimar, Germany</span></div>
-<div style="position:absolute;left:35.61px;top:80.35px" class="cls_004"><span class="cls_004">2015-2017</span></div>
-<div style="position:absolute;left:107.61px;top:80.35px" class="cls_004"><span class="cls_004">Master Architecture: Explorative Architectural Design:</span></div>
-<div style="position:absolute;left:107.61px;top:91.75px" class="cls_004"><span class="cls_004">Field Station led by Michiel Helbig and Corneel Cannaerts</span></div>
-<div style="position:absolute;left:107.61px;top:103.15px" class="cls_004"><span class="cls_004">Reverse Perspective led by Wim Goes and Johannes Berry</span></div>
-<div style="position:absolute;left:107.61px;top:114.55px" class="cls_004"><span class="cls_004">KU Leuven Campus Gent, Belgium</span></div>
-<div style="position:absolute;left:35.61px;top:125.95px" class="cls_004"><span class="cls_004">2014-2015</span></div>
-<div style="position:absolute;left:107.61px;top:125.95px" class="cls_004"><span class="cls_004">Photography, Sint-Lucas Gent</span></div>
-<div style="position:absolute;left:438.06px;top:131.46px" class="cls_002"><span class="cls_002">3</span></div>
-<div style="position:absolute;left:35.61px;top:137.35px" class="cls_004"><span class="cls_004">2012-2016</span></div>
-<div style="position:absolute;left:107.61px;top:137.35px" class="cls_004"><span class="cls_004">Bachelor Architecture, KU Leuven Campus Gent</span></div>
-<div style="position:absolute;left:35.61px;top:148.75px" class="cls_004"><span class="cls_004">2012-2016</span></div>
-<div style="position:absolute;left:107.61px;top:148.75px" class="cls_004"><span class="cls_004">Silkscreen, Kunstacademie Eeklo</span></div>
-<div style="position:absolute;left:35.61px;top:160.15px" class="cls_004"><span class="cls_004">2007-2012</span></div>
-<div style="position:absolute;left:107.61px;top:160.15px" class="cls_004"><span class="cls_004">Mathematical Sciences, O.L.V. ten-Doorn Eeklo</span></div>
-<div style="position:absolute;left:35.61px;top:171.55px" class="cls_004"><span class="cls_004">2006-2012</span></div>
-<div style="position:absolute;left:107.61px;top:171.55px" class="cls_004"><span class="cls_004">Theater/ Drama, Kunstacademie Eeklo</span></div>
-<div style="position:absolute;left:107.61px;top:194.35px" class="cls_003"><span class="cls_003">WORK EXPERIENCE</span></div>
-<div style="position:absolute;left:35.61px;top:217.15px" class="cls_004"><span class="cls_004">2013</span></div>
-<div style="position:absolute;left:107.61px;top:217.15px" class="cls_004"><span class="cls_004">AIKO architecten en ingenieurs, Maldegem, Belgium</span></div>
-<div style="position:absolute;left:35.61px;top:228.55px" class="cls_004"><span class="cls_004">2015-2019</span></div>
-<div style="position:absolute;left:107.61px;top:228.55px" class="cls_004"><span class="cls_004">Took pictures (analogue) for Clair Obscur (party concept), Stofwolk</span></div>
-<div style="position:absolute;left:107.61px;top:239.95px" class="cls_004"><span class="cls_004">(art collective), <a href="https://www.kraak.net/" target="_blank">KRAAK (music collective) and SUBBACULTCHA</a></span></div>
-<div style="position:absolute;left:35.61px;top:251.35px" class="cls_004"><span class="cls_004">2016</span></div>
-<div style="position:absolute;left:107.61px;top:251.35px" class="cls_004"><span class="cls_004">Graphic work for Just Interior, JDW</span></div>
-<div style="position:absolute;left:35.61px;top:262.75px" class="cls_004"><span class="cls_004">2017</span></div>
-<div style="position:absolute;left:107.61px;top:262.75px" class="cls_004"><span class="cls_004">Workshop Real Estate Architecture, Brussels,</span></div>
-<div style="position:absolute;left:107.61px;top:274.15px" class="cls_004"><span class="cls_004">led by <a href="https://www.maniera.be/creators/19/piovenefabi" target="_blank">PIOVENEFABI Architects</a></span></div>
-<div style="position:absolute;left:107.61px;top:285.55px" class="cls_004"><span class="cls_004">Guide on the Festival of Architecture in Ghent, house:</span></div>
-<div style="position:absolute;left:107.61px;top:296.95px" class="cls_004"><span class="cls_004">De kleine Prins by <a href="http://www.dhoogemeganck.be/" target="_blank">Dhooge & Meganck Architects</a></span></div>
-<div style="position:absolute;left:35.61px;top:308.35px" class="cls_004"><span class="cls_004">2018</span></div>
-<div style="position:absolute;left:107.61px;top:308.35px" class="cls_004"><span class="cls_004" style="white-space: nowrap;">Went to Iran for my Masterthesis about my book:</span></div>
-<div style="position:absolute;left:107.61px;top:319.75px" class="cls_004"><span class="cls_004">ENSEMBLE/the architecture of ‘the in/between’</span></div>
-<div style="position:absolute;left:107.61px;top:331.15px" class="cls_004"><span class="cls_004">Workshop Porto Academy, Portugal, led by June 14</span></div>
-<div style="position:absolute;left:107.61px;top:342.55px" class="cls_004"><span class="cls_004">by <a href="http://june-14.com" target="_blank">Johanna Meyer-Grohbrügge & Sam Chermayeff Architects</a></span></div>
-<div style="position:absolute;left:107.61px;top:353.95px" class="cls_004"><span class="cls_004">Internship at <a href="http://www.dhoogemeganck.be/" target="_blank">Dhooge & Meganck Architects</a></span></div>
-<div style="position:absolute;left:35.61px;top:365.35px" class="cls_004"><span class="cls_004">2019</span></div>
-<div style="position:absolute;left:107.61px;top:365.35px" class="cls_004"><span class="cls_004">Publication of book: ENSEMBLE/an architecture of ‘the in/between’</span></div>
-<div style="position:absolute;left:107.61px;top:376.75px" class="cls_004"><span class="cls_004">publicated by <a href="http://merbooks.be/projects" target:"_blank">MER</a></span></div>
-<div style="position:absolute;left:107.61px;top:388.15px" class="cls_004"><span class="cls_004">in collaboration with graphic designer Viktor Van den Braembussche</span></div>
-<div style="position:absolute;left:107.61px;top:399.55px" class="cls_004"><span class="cls_004">Currently working for <a href="http://www.architectendvvt.com" target="_blank">Jan De Vylder en Inge Vinck</a></span></div>
-<div style="position:absolute;left:107.61px;top:422.35px" class="cls_003"><span class="cls_003">HOBBIES AND INTERESTS</span></div>
-<div style="position:absolute;left:35.61px;top:445.15px" class="cls_004"><span class="cls_004">2006-2012</span></div>
-<div style="position:absolute;left:107.61px;top:445.15px" class="cls_004"><span class="cls_004">Theater/Drama, Kunstacademie Eeklo</span></div>
-<div style="position:absolute;left:35.61px;top:456.55px" class="cls_004"><span class="cls_004">2008-2010</span></div>
-<div style="position:absolute;left:107.61px;top:456.55px" class="cls_004"><span class="cls_004">Percussion & Opera, Muziekschool Eeklo</span></div>
-<div style="position:absolute;left:35.61px;top:467.95px" class="cls_004"><span class="cls_004">2011-2012</span></div>
-<div style="position:absolute;left:107.61px;top:467.95px" class="cls_004"><span class="cls_004">Drawing Art, Kunstacademie Eeklo</span></div>
-<div style="position:absolute;left:35.61px;top:479.35px" class="cls_004"><span class="cls_004">2012-2016</span></div>
-<div style="position:absolute;left:107.61px;top:479.35px" class="cls_004"><span class="cls_004">Silkscreen, Kunstacademie Eeklo</span></div>
-<div style="position:absolute;left:107.61px;top:502.15px" class="cls_003"><span class="cls_003">SKILLS</span></div>
-<div style="position:absolute;left:251.60px;top:502.15px" class="cls_003"><span class="cls_003">LANGUAGES</span></div>
-<div style="position:absolute;left:107.60px;top:524.95px" class="cls_004"><span class="cls_004">Autocad</span></div>
-<div style="position:absolute;left:251.60px;top:524.95px" class="cls_004"><span class="cls_004">Dutch</span></div>
-<div style="position:absolute;left:107.60px;top:536.35px" class="cls_004"><span class="cls_004">Sketchup</span></div>
-<div style="position:absolute;left:251.60px;top:536.35px" class="cls_004"><span class="cls_004">English</span></div>
-<div style="position:absolute;left:107.60px;top:547.75px" class="cls_004"><span class="cls_004">Photoshop</span></div>
-<div style="position:absolute;left:251.60px;top:547.75px" class="cls_004"><span class="cls_004">Farsi</span></div>
-<div style="position:absolute;left:107.60px;top:559.15px" class="cls_004"><span class="cls_004">Indesign</span></div>
-<div style="position:absolute;left:251.60px;top:559.15px" class="cls_004"><span class="cls_004">a little bit of French and German</span></div>
-<div style="position:absolute;left:107.60px;top:570.55px" class="cls_004"><span class="cls_004">Illustrator</span></div>
-<div style="position:absolute;left:107.60px;top:581.95px" class="cls_004"><span class="cls_004">Microsoft Office</span></div>
-<div style="position:absolute;left:107.60px;top:593.35px" class="cls_004"><span class="cls_004">Premiere Pro</span></div>
-<div style="position:absolute;left:107.60px;top:604.75px" class="cls_004"><span class="cls_004">Dragon Frame</span></div>
-</div>
-</div>
+<div id="bio" class="bio-b"><mark2>Conceptual architect </mark2><mark>Shervin Sheikh Rezaei</mark><mark2>, currently based in Ghent, channels her personal chaos into structural order through her profession. 
 
-<a class="prev" onclick="plusSlides(-1)">&#8592;	</a>
-<a class="next" onclick="plusSlides(1)">&#8594;	</a>
+Designing things of her own will and solidly sealing objects has always acted as a necessary meditation for her. 
 
-</div>
-<br>
-</div>
+Sheikh Rezaei works as an architect for Jan De Vylder and Inge Vinck, and her thesis ‘ENSEMBLE: An architecture of the inbetween’ will be released as a book by publisher MER this autumn. 
+
+From this year, she will also be teaching Mixed Media at LUCA School of Arts Interior. 
+
+No matter what the future holds, she wants to keep on dreaming, creating and exploring new experiences.</mark2></div>
+<div id="instapopup" class="popup">
+<span class="close">&times;</span>
+<div id="insta1" class="popcontent">
+<!-- LightWidget WIDGET -->
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+<iframe src="https://cdn.lightwidget.com/widgets/64fa2ac215e55386930c54ce5ac2e490.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+		</div></div>
+
+<div id="nav">
+
 <ul style="list-style-type:none;">
-  <li><a href="javascript:void(0)" id="cv">curriculum vitae</a></li>
-  <li><a href="javascript:void(0)" id="insta">social images</a></li>
-  <li><a href="javascript:void(0)" id="pub">publications</a></li>
-    
+  <li><a href="#biopopup" class="bio-b">biography</a></li>
+  
+  <li><a href="#" id="cv">curriculum vitae</a></li>
+      
+  <li><a href="#bookpopup" id="books" class="drop">books</a>
+	 <ul class="drop-content">
+	 		<li><a href="#" onclick="openBook('bach')">20122016</a></li>
+	 		<li><a href="#" onclick="openBook('aware')">AWARENESS STATION</a></li>
+	 		<li><a href="#" onclick="openBook('balder')">BALDER</a></li>
+	 		<li><a href="#" onclick="openBook('bauhaus')">BAUHAUS: Labyrinthstage</a></li>
+	 		<li><a href="#" onclick="openBook('reverse')">reverse perspective</a></li>
+	 		<li><a href="javascript:void(0)" class="dropplus">ENSEMBLE:</a>
+	 					 <ul class="dropplus-content">
+	 					 	<lli><a href="#" onclick="openBook('iran')">fieldwork Iran</a></li>
+          					<li><a href="#" onclick="openBook('inbetween')">'An architecture of the inbetween'</a></li>
+						</ul>
+	 		</li>
+ </ul>
+  </li>
+	 	
+  <li><a href="javascript:void(0)" class="drop">physical</a>
+	  <ul class="drop-content">
+          <li><a href="#" onclick="openForm('balder')">BALDER</a></li>
+          <li><a href="#" onclick="openForm('reverse')">reverse perspective: LOS</a></li>
+		  <li><a href="#" onclick="openForm('trap')">TRAP</a></li>
+		  <li><a href="javascript:void(0)" class="dropplus">ENSEMBLE:</a>
+		  				 <ul class="dropplus-content">
+	 					 	<li><a href="#" onclick="openForm('column')">INBETWEEN COLUMN</a></li>
+          					<li><a href="#" onclick="openForm('mirror')">MIRROR HETEROPIA</a></li>
+          					<li><a href="#" onclick="openForm('textile')">TEXTILE PLANS</a></li>
+          					<li><a href="#" onclick="openForm('models')">GLASS MODELS</a></li>
+          					<li><a href="#" onclick="openForm('drawings')">TRANSPARENT DRAWINGS</a></li>
+						</ul>
+		  </li>
+		  <li><a href="#" onclick="openForm('caritas')">MAQUETTE CARITAS</a></li>
+		  <li><a href="#">PLAY</a></li>
+	 </ul>
+   </li>
+  <li><a href="javascript:void(0)" class="drop">drawings</a>
+  <ul class="drop-content">
+	 		<li><a href="#" onclick="openDraw('arch')">Architectural</a></li>
+	 		<li><a href="#" onclick="openDraw('fun')">Fun</a></li>
+	 		<li><a href="#" onclick="openDraw('sketch')">Sketches</a></li>	 		
+ </ul></li>
+  <li><a href="javascript:void(0)" class="drop">expositions</a>
+  <ul class="drop-content">
+	 		<li><a href="#" onclick="openExpo('grandtour')">Grand Tour</a></li>
+	 		<li><a href="#" onclick="openExpo('reverse')">Reverse Perspective</a></li>	 		
+ </ul></li>
+   <li><a href="#instapopup" id="insta">social images</a></li>
+  <li><a href="#" id="pub">publications</a></li>
+  <li><a href="#" id="#shop">shop</a></li>
+  <li><a href="#" id="#office">office</a></li>
+
 </ul>
-	 <script>
-	    $(document).ready(function() {
-	$("#pub").click(function(){
-				$("#pubpopup").show("3000","swing");
-				$("#instapopup, #cvpopup").hide("2000","swing");
-			});
-			
+</div>
+
+	 <script>	
+	 	function openExpo(a){
+	 	$("#e-"+a).show("3000","swing");
+	 							$(".popup").not("#e-"+a).hide("2000","swing");	
+			}
+		function openDraw(b){
+	 	$("#d-"+b).show("3000","swing");
+								$(".popup").not("#d-"+b).hide("2000","swing");
+									$("mark").removeClass("mini");
+	$("mark2").removeClass("gone");
+			}
+		function openBook(c){
+	 	$("#b-"+c).show("3000","swing");
+								$(".popup").not("#b-"+c).hide("2000","swing");
+									$("mark").removeClass("mini");
+	$("mark2").removeClass("gone");
+			}		
+	    function openForm(d){
+	 	$("#p-"+d).show("3000","swing");
+								$(".popup").not("#p-"+d).hide("2000","swing");
+									$("mark").removeClass("mini");
+	$("mark2").removeClass("gone");
+	 				}	
+		$(document).ready(function() {
+						
 	$("#cv").click(function(){
 				$("#cvpopup").show("3000","swing");
-				$("#instapopup,#pubpopup").hide("2000","swing");
+				$(".popup").not("#cvpopup").hide("2000","swing");
 			});
-	
+  
 	$("#insta").click(function(){
 				$("#instapopup").show("2000","swing");
-				$("#cvpopup,#pubpopup").hide("2000","swing");
+				$(".popup").not("#instapopup").hide("2000","swing");
 			});
-			
+
 	$(".close").click(function(){
 				$("#cvpopup,#pubpopup,#instapopup").hide("2000","swing");
 			});
 			
+	$("#pub").click(function(){
+				$("#pubpopup").show("3000","swing");
+				$(".popup").not("#pubpopup").hide("2000","swing");
+			});
+			
+	$("#shop").click(function(){
+				$("#shoppopup").show("3000","swing");
+				$(".popup").not("#shoppopup").hide("2000","swing");
+			});
+			
+	$("#office").click(function(){
+				$("#officepopup").show("3000","swing");
+				$(".popup").not("#officepopup").hide("2000","swing");
+			});
+			
 $(document).mouseup(function (e)
                     {
-  var container = $(".popcontent"); // YOUR CONTAINER SELECTOR
-
+  var container = $(".popup, #nav"); // YOUR CONTAINER SELECTOR
+  var close =$(".popup");
   if (!container.is(e.target) // if the target of the click isn't the container...
       && container.has(e.target).length === 0) // ... nor a descendant of the container
   {
-    container.parent().hide();
+    close.hide();
   }
 });
 
-  });
+$('.bio-b').click(function(){
+	$("mark").toggleClass("mini");
+	$("mark2").toggleClass("gone");
+	$('#nav').scrollTop({top:0, behavior:'smooth',});
+	$(".popup").fadeOut();
+});
+$('.drop,.dropplus').click(function(){
+	$(this).next(".drop-content, .dropplus-content").fadeToggle("fast","swing");
+});
+$('.icons').each(function(){
+	$(this).css({
+		top: Math.max(0, Math.min(60, Math.ceil(Math.random() * 100))) + '%',
+		left: Math.max(0, Math.min(60, Math.ceil(Math.random() * 100))) + '%',
+	});
+});
+});
 	 </script>
-	 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
     </body>
 </html>
