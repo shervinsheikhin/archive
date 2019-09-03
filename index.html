@@ -1473,17 +1473,14 @@ $(document).ready(function() {
   });
     $('.icons').draggable();
 
-    
+        
+    document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
     var myVar = setInterval(noThrow, 6000);
-     window.addEventListener('blur', stopFunction);
-function stopFunction() {
+  } else {
   clearInterval(myVar);
-}
-    window.addEventListener('focus', startFunction);
-function startFunction() {
-    var myVar = setInterval(noThrow, 6000);
- }
-    
+  }
+        
 });
 
 	 </script>
