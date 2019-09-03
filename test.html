@@ -9,10 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		    <link rel="stylesheet" href="/cvstyle.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-<script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+<script src="scripts/jquery.cycle2.min.js"></script>
+<script src="scripts/jquery.cycle2.center.min.js"></script>
                  	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
    <style>
    @font-face {
   font-family: Plantin;
@@ -153,15 +152,15 @@ li {
 	position:fixed;
 	top:1em;
 	margin-left:1em;
-	margin-bottom:3em;
     font-family:Plantin;
     width:21em;
-    padding:2em;
+    padding:3em;
     font-size:1rem;  
     text-align: justify;
     text-align-last:center;
     letter-spacing:0px;
 }
+       .height{height: 3em; overflow: hidden;}
  
 mark{font-family:Helvetica Neue;
     background-color:transparent;
@@ -169,7 +168,7 @@ mark{font-family:Helvetica Neue;
     font-weight: 400;
 	text-transform:uppercase;
 	}
-mark2{opacity:0;
+mark2{opacity:0;pointer-events: none; user-select: none;
 	}
 .gone{background-color:transparent;
             transition:3s;
@@ -336,9 +335,7 @@ user-select:none;}
     position: absolute;
            color: peru;
            text-transform: uppercase;
-           font-size:
-               0.9rem;
-           line-height: 2em;
+           font-size:2rem;
     float: left;
        font-family: Plantin;}
        
@@ -358,8 +355,8 @@ user-select:none;}
        #wall{
            height: 90vh;
            right: 16em;
-           padding-top: 5em;
-           padding-left: 2em;
+           padding-top: 2em;
+           padding-left: 1em;
            width: 80vw;
            position: fixed;
        }
@@ -368,8 +365,8 @@ user-select:none;}
 
   </head>
     <body>
-        <div id="tailnext">&#9680<br>next</div>
-        <div id="tailprev">prev<br>&#9681</div>
+        <div id="tailnext">&#9680<br>&#8649</div>
+        <div id="tailprev">&#9681<br>&#8647</div>
 	<div id="temporary"><svg viewBox="0 0 300 300">
 <text fill="darkblue">   
 <animateTransform attributeName="transform"
@@ -387,8 +384,8 @@ user-select:none;}
          <div id="wall">
     <div class="icons"><img src="shervin/icon/meubelgif25.gif" height="100%"></div>
     <div class="icons"><img src="shervin/icon/trap1.png" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/ensemble.png" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/ensemble2.png" height="100%"></div>
+    <div class="icons"><img src="shervin/icon/ensemble.png" height="80%"></div>
+    <div class="icons"><img src="shervin/icon/ensemble2.png" height="80%"></div>
     <div class="icons"><img src="shervin/icon/AWARENESSSTATION%20.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/context39.png" height="100%"></div>
     <div class="icons"><img src="shervin/icon/comp9.jpg" height="100%"></div>
@@ -1314,7 +1311,7 @@ user-select:none;}
 </ul>
 </div>
 </div>
-<div id="bio"><mark2>Conceptual architect </mark2><mark class="bio-b">Shervin Sheikh Rezaei</mark><mark2>, currently based in Ghent, channels her personal chaos into structural order through her profession. 
+<div id="bio" class="height"><mark2>Conceptual architect </mark2><mark class="bio-b">Shervin Sheikh Rezaei</mark><mark2>, currently based in Ghent, channels her personal chaos into structural order through her profession. 
 
 Designing things of her own will and solidly sealing objects has always acted as a necessary meditation for her. 
 
@@ -1463,6 +1460,7 @@ $(document).ready(function() {
   });
 
   $(".bio-b").click(function() {
+    $("#bio").toggleClass("height");
     $("mark").toggleClass("mini");
     $("mark2").toggleClass("gone");
     $("#nav").scrollTop({ top: 0, behavior: "smooth" });
