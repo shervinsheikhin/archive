@@ -1,20 +1,18 @@
-
-#page_1 {position:relative; overflow: hidden;margin: 27px 0px 6px 0px;padding: 0px;border: none;width: 1209px;}
-#page_1 #id1_1 {border:none;margin: 0px 0px 0px 0px;padding: 0px;border:none;width: 1209px;overflow: hidden;}
-#page_1 #id1_2 {border:none;margin: 528px 0px 0px 0px;padding: 0px;border:none;width: 1209px;overflow: hidden;}
-
-
-
-
-
-#page_2 {position:relative; overflow: hidden;margin: 25px 0px 6px 0px;padding: 0px;border: none;width: 1209px;}
+   @font-face {
+  font-family: Plantin;
+  src: url('/fonts/PlantinStd.otf');
+}
+#page_2 {position:relative; overflow: hidden;margin: 1em;padding: 1em;border: none;width: 1209px;background-color: white;
+  filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
+          drop-shadow(0px 0px 10px rgba(0,0,0,.3));}
 #page_2 #id2_1 {border:none;margin: 0px 0px 0px 11px;padding: 0px;border:none;width: 1198px;overflow: hidden;}
 #page_2 #id2_1 #id2_1_1 {float:left;border:none;margin: 292px 0px 0px 0px;padding: 0px;border:none;width: 526px;overflow: hidden;}
 #page_2 #id2_1 #id2_1_2 {float:left;border:none;margin: 0px 0px 0px 117px;padding: 0px;border:none;width: 555px;overflow: hidden;}
 #page_2 #id2_2 {border:none;margin: 31px 0px 0px 0px;padding: 0px;border:none;width: 1209px;overflow: hidden;}
 
 
-
+#page_2 a{text-decoration: underline;}
+#page_2 a:hover{text-decoration: underline;color: orange;}
 
 
 .ft0{font: 16px 'Arial';line-height: 18px;}
@@ -60,5 +58,5 @@
 .tr8{height: 7px;}
 .tr9{height: 30px;}
 
-.t0{width: 526px;font: 13px 'Times New Roman';}
-.t1{width: 544px;font: 13px 'Times New Roman';}
+.t0{width: 526px;font: 13px 'Plantin';}
+.t1{width: 544px;font: 13px 'Plantin';}
