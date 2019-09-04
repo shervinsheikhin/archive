@@ -1221,7 +1221,7 @@ user-select:none;}
 <div id="pubpopup" class="popup"> 
   <div style="display:inline-block;">
 <a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
-<a href="https://subbacultcha.be/2018/02/21/kavir-2/" target="_blank"><h2>KAVIR</h2><p>click click click club for SUBBACUTCHA </p></a>
+<a href="https://subbacultcha.be/2018/02/21/kavir-2/" target="_blank"><h2>KAVIR</h2><p>click click click club for SUBBACULTCHA </p></a>
 <a href="/portoacademy.html" target="_blank"><h2>NEWSPAPER PORTO-ACADEMY 2018</h2><p> led by Meyer-Gröhbrugge & Chermayeff</p></a> 
 <a href="https://www.archinfo.sk/diela/interier/labyrinth-stage-instalacia-v-ramci-letneho-festivalu-bauhaus-kampus-weimar.html" target="_blank" >
 <h2>LABYRINTH STAGE AT BAUHAUS 2017 (Universität Weimar)</h2><p> Collaboration Shervin Sheikh Rezaei and Barbora Tothova</p></a>
@@ -1473,19 +1473,17 @@ $(document).ready(function() {
   });
     $('.icons').draggable();
 
-    
+        
+    document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
     var myVar = setInterval(noThrow, 6000);
-     window.addEventListener('blur', stopFunction);
-function stopFunction() {
+  } else {
   clearInterval(myVar);
-}
-    window.addEventListener('focus', startFunction);
-function startFunction() {
-    var myVar = setInterval(noThrow, 6000);
- }
-    
+  }
+        
+    });
+        
 });
-
 	 </script>
     </body>
 </html>
