@@ -1473,15 +1473,16 @@ $(document).ready(function() {
   });
     $('.icons').draggable();
 
-        
-    document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === 'visible') {
+    
     var myVar = setInterval(noThrow, 6000);
-  } else {
-  clearInterval(myVar);
-  }
+
         
-    });
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+setInterval(noThrow, 6000)
+  } else {
+clearInterval(myVar);  }
+});
         
 });
 	 </script>

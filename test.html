@@ -1471,17 +1471,16 @@ $(document).ready(function() {
       .next(".drop-content, .dropplus-content")
       .fadeToggle("fast", "swing");
   });
-    $('.icons').draggable();
+    
+    var myVar = setInterval(noThrow, 6000);
 
         
-    document.addEventListener("visibilitychange", function() {
+document.addEventListener("visibilitychange", function() {
   if (document.visibilityState === 'visible') {
-    var myVar = setInterval(noThrow, 6000);
+setInterval(noThrow, 6000)
   } else {
-  clearInterval(myVar);
-  }
-        
-    });
+clearInterval(myVar);  }
+});
         
 });
 	 </script>
