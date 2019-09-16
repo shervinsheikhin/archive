@@ -25,12 +25,7 @@
    	  font-family: Plantin;
   margin: 0;
   font-family: Helvetica Neue;}
-   @media screen and (max-width: 800px) {
-  body {
-   	background-image:url("/bgshervsminigsm.jpg");
-	  background-size:cover;
-  }
-      }
+  
     html {
   scroll-behavior: smooth;
 }
@@ -360,7 +355,12 @@ user-select:none;}
            width: 80vw;
            position: fixed;
        }
-       
+        @media screen and (max-width: 800px) {
+  #wall {
+   	display: none;
+  }
+  
+      }
 </style>
 
   </head>
@@ -383,20 +383,15 @@ user-select:none;}
 </svg></div>
          <div id="wall">
     <div class="icons"><img src="shervin/icon/meubelgif25.gif" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/trap1.png" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/ensemble.png" height="80%"></div>
-    <div class="icons"><img src="shervin/icon/ensemble2.png" height="80%"></div>
     <div class="icons"><img src="shervin/icon/AWARENESSSTATION%20.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/context39.png" height="100%"></div>
     <div class="icons"><img src="shervin/icon/comp9.jpg" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/caritas.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/poster1.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/bauhausscan.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/play.gif" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/samen.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/speltiny1.jpg" height="100%"></div>
-    <div class="icons"><img src="shervin/icon/EPSON025.JPG" height="100%"></div>
     <div class="icons"><img src="shervin/icon/handjes.jpg" height="100%"></div>
+    <div class="icons"><img src="shervin/drawing/fun/fun1.jpg" height="100%"></div>
 
 
     </div>
@@ -406,42 +401,7 @@ user-select:none;}
     <div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc" data-cycle-slides="> div">
 <DIV id="page_2">
 <DIV id="id2_1">
-<DIV id="id2_1_1">
-<TABLE cellpadding=0 cellspacing=0 class="t0">
-<TR>
-	<TD class="tr0 td0"><P class="p6 ft1"></P></TD>
-	<TD class="tr0 td1"><P class="p7 ft1">PERSONALIA</P></TD>
-</TR>
-<TR>
-	<TD class="tr1 td0"><P class="p8 ft5">Name</P></TD>
-	<TD class="tr1 td1"><P class="p7 ft5">Sheikh Rezaei</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5">First Name</P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5">Shervin</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5">Telephone</P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5">+324 98 748 988</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5"><NOBR>E-mail</NOBR></P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5">shervin.shr@gmail.com</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5">Date of birth</P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5">04/09/1994</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5">Country</P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5">Belgium</P></TD>
-</TR>
-<TR>
-	<TD class="tr2 td0"><P class="p8 ft5">Instagram</P></TD>
-	<TD class="tr2 td1"><P class="p7 ft5"><a href="https://www.instagram.com/shervinsheikhin/" target="_blank">shervinsheikhin</a></P></TD>
-</TR>
-</TABLE>
-</DIV>
+
 <DIV id="id2_1_2">
 <TABLE cellpadding=0 cellspacing=0 class="t1">
 <TR>
@@ -1246,7 +1206,43 @@ user-select:none;}
 <img src="shervin/office/office4.jpg">
 
 </div>
-	
+	<div class="popup" id="contactpopup">
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD class="tr0 td0"><P class="p6 ft1"></P></TD>
+	<TD class="tr0 td1"><P class="p7 ft1">PERSONALIA</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td0"><P class="p8 ft5">Name</P></TD>
+	<TD class="tr1 td1"><P class="p7 ft5">Sheikh Rezaei</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">First Name</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">Shervin</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Telephone</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">+324 98 748 988</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5"><NOBR>E-mail</NOBR></P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">shervin.shr@gmail.com</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Date of birth</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">04/09/1994</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Country</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5">Belgium</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td0"><P class="p8 ft5">Instagram</P></TD>
+	<TD class="tr2 td1"><P class="p7 ft5"><a href="https://www.instagram.com/shervinsheikhin/" target="_blank">shervinsheikhin</a></P></TD>
+</TR>
+</TABLE>
+
+</div>
 </div>
 
 <div id="nav">
@@ -1256,22 +1252,6 @@ user-select:none;}
   <li><a href="#biopopup" class="bio-b">biography</a></li>
   
   <li><a href="#" id="cv">curriculum vitae</a></li>
-      
-  <li><a href="#bookpopup" id="books" class="drop">books</a>
-	 <ul class="drop-content">
-	 		<li><a href="#" onclick="openBook('bach')">20122016</a></li>
-	 		<li><a href="#" onclick="openBook('aware')">AWARENESS STATION</a></li>
-	 		<li><a href="#" onclick="openBook('balder')">BALDER</a></li>
-	 		<li><a href="#" onclick="openBook('bauhaus')">BAUHAUS Labyrinthstage</a></li>
-	 		<li><a href="#" onclick="openBook('reverse')">reverse perspective</a></li>
-	 		<li><a href="javascript:void(0)" class="dropplus">ENSEMBLE:</a>
-	 					 <ul class="dropplus-content">
-	 					 	<li><a href="#" onclick="openBook('iran')">fieldwork Iran</a></li>
-          					<li><a href="#" onclick="openBook('inbetween')">'An architecture <br>of the inbetween'</a></li>
-						</ul>
-	 		</li>
- </ul>
-  </li>
 	 	
   <li><a href="javascript:void(0)" class="drop">physical</a>
 	  <ul class="drop-content">
@@ -1303,10 +1283,26 @@ user-select:none;}
 	 		<li><a href="#" onclick="openExpo('reverse')">Reverse Perspective</a></li>	 		
 	 		<li><a href="#" onclick="openExpo('bauhaus')">Labyrinthstage</a></li>	 		
  </ul></li>
+      <li><a href="#bookpopup" id="books" class="drop">books</a>
+	 <ul class="drop-content">
+	 		<li><a href="#" onclick="openBook('bach')">20122016</a></li>
+	 		<li><a href="#" onclick="openBook('aware')">AWARENESS STATION</a></li>
+	 		<li><a href="#" onclick="openBook('balder')">BALDER</a></li>
+	 		<li><a href="#" onclick="openBook('bauhaus')">BAUHAUS Labyrinthstage</a></li>
+	 		<li><a href="#" onclick="openBook('reverse')">reverse perspective</a></li>
+	 		<li><a href="javascript:void(0)" class="dropplus">ENSEMBLE:</a>
+	 					 <ul class="dropplus-content">
+	 					 	<li><a href="#" onclick="openBook('iran')">fieldwork Iran</a></li>
+          					<li><a href="#" onclick="openBook('inbetween')">'An architecture <br>of the inbetween'</a></li>
+						</ul>
+	 		</li>
+ </ul>
+  </li>
    <li><a href="#instapopup" id="insta">social images</a></li>
   <li><a href="#" id="pub">publications</a></li>
   <li><a href="#" id="shop">shop</a></li>
   <li><a href="#" id="office">office</a></li>
+    <li><a href="#" id="contact">contact</a></li>
 
 </ul>
 </div>
@@ -1414,6 +1410,14 @@ $(document).ready(function() {
 
   $("#office").click(function() {
     $(".close, #officepopup").show("3000", "swing");
+    $(".popup")
+      .not("#officepopup")
+      .hide("2000", "swing");
+  $("#wall").fadeOut();
+            bioMore();
+  });
+    $("#contact").click(function() {
+    $(".close, #contactpopup").show("3000", "swing");
     $(".popup")
       .not("#officepopup")
       .hide("2000", "swing");
