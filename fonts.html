@@ -82,23 +82,21 @@
 	cursor: none;
 	}
 
-#nav{  
+#nav{  transform: rotate(90deg);
     position: fixed;
     right: 0;
     flex: 0 0 15.5em;
-	transition:all 1s;
 	bottom:0;
-	width:15.5em;
+width:100vh;
     font-family: Plantin;
     overflow:auto;
     height:100vh;
     padding:1.5em 1.5em 1.5em 0;
-    right: 0;
     z-index: 10;
 }
-#nav > ul{bottom:1.5em; right:1.5em;position:absolute;}
+#nav > ul{top:0; right:1.5em;position:absolute;}
 	
-#nav a {display:block;
+#nav a {display:inline;
 letter-spacing:1px;
 line-height:1.3;
        }
@@ -113,9 +111,9 @@ margin:0;
   list-style-type: none;
   cursor: pointer;
   position:relative;
-        transition:3s;
 }
 li {
+    display: inline;
     text-transform: capitalize;
 font-family: 'Averia Serif Libre', cursive;
   position: relative;
@@ -230,7 +228,7 @@ align-self: center;}
 
 .gallery img:last-of-type{
 padding-right:0em;}
-#officepopup{
+#officepopup{position: absolute;
        }
 #cvpopup{
 	z-index:20;
@@ -248,7 +246,7 @@ padding-right:0em;}
   height: 13em;
     width: auto;
     position: relative;}
-.icons: hover {
+.icons img:hover {
 border:5px solid peru;}
 .icons img {
 object-fit: contain;}
@@ -268,7 +266,6 @@ z-index:300;
     color: peru;
        }
 #instapopup{
-position:relative;
 top:0;
 display: none;
 z-index:30;
@@ -277,7 +274,6 @@ z-index:30;
 #pubpopup{
 		padding:5em 1em;
 	text-align:center;
-   	position:relative;
    	top:0;
   display: none;
   font-family:Plantin;
@@ -1375,6 +1371,10 @@ $(document).ready(function() {
     $(".popup").fadeOut();
     $(this).fadeOut();
     $("#wall").fadeIn();
+$("#nav").css("transform","rotate(90deg)");
+                            $("ul").css({bottom:"auto",top:"0"});
+                            $("#nav a").css("display","inline"); 
+       $(".drop-content, .dropplus-content").hide();
   });
 
   $("#pub").click(function() {
@@ -1458,6 +1458,16 @@ $(document).ready(function() {
     $("#nav").scrollTop({ top: 0, behavior: "smooth" });
     $(".close, .popup").fadeOut();
   });
+    
+$("li").click(function(){$("#nav").css("transform","none"); 
+                            $("#nav > ul").css({bottom:"1.5em",top:"auto"})
+                            $("#nav a").css("display","block");} );
+
+  $("#nal").hover(function(){$("#nav").css("transform","none"); 
+                            $("ul").css({bottom:"1.5em",top:"auto"})
+                            $("#nav a").css("display","block");}, function(){$("#nav").css("transform","rotate(90deg)");
+                            $("ul").css({bottom:"auto",top:"0"});
+                            $("#nav a").css("display","inline");});
   $(".drop,.dropplus").click(function() {
     $(this)
       .next(".drop-content, .dropplus-content")
