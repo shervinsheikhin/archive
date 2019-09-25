@@ -57,9 +57,8 @@
   margin: 0;
     width: 90%;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);}
+  transform: translate(-50%, 0%);}
        
 .btn-prev{
 	top: 0px;
@@ -99,7 +98,8 @@
 	
 #nav a {display:block;
 letter-spacing:1px;
-line-height:1.3;}
+line-height:1.3;
+       }
 
 #nav a:hover {
 color: peru;}
@@ -113,7 +113,7 @@ margin:0;
   position:relative;
         transition:3s;
 }
-li {
+li {text-transform: uppercase;
   font-family: Plantin;
   position: relative;
 }
@@ -142,11 +142,13 @@ li {
 
 
 #bio{
+left: 0;
+    right: 0; margin-left: auto;
+    margin-right: auto;
     z-index: 200;
     transition: all 1s;
 	position:fixed;
-	top:1em;
-	margin-left:1em;
+	top:-0.5em;
     font-family:Plantin;
     width:21em;
     padding:3em;
@@ -181,10 +183,11 @@ height:90vh;
     position: absolute;
   transform: translate(0, -50%);
 }
-#b-inbetween img, #b-bach img, #b-aware img, #b-reverse img, #b-iran img, #b-bauhaus img, #b-balder img, #p-reverse img{
+#b-inbetween img, #b-bach img, #b-aware img, #b-reverse img, #b-iran img, #b-bauhaus img, #p-reverse img{
 	max-height:1000px;
     max-width: 100%;
     height: 90vh;
+    margin: 1em;
     object-fit: contain;
     width: auto;
   filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
@@ -196,37 +199,33 @@ height:90vh;
     height:90vh;
     align-self: center;}
        
-#p-trap img, #officepopup img {width: 100%;
+#p-trap img {width: 40%;
+        margin:1em;
+           height: auto;
+    align-self: center;}
+       #officepopup img {width: 100%;
            height: auto;
             align-self: center;}
-       
 #e-grandtour img, #e-reverse img, #e-bauhaus img{width:auto;
 margin:1em;
 height:90vh;
 align-self: center;}
 
-#d-fun img{width:40vw;
-margin:1em 3em;
-height:auto;
-max-height:90vh;
-align-self: center;}
-
-#d-arch img{width:auto;
-margin:1em;
-height:90vh;
-align-self: center;}
-
-#d-sketch img{width:auto;
-margin:1em 3em;
+#d-fun img, #d-arch img, #d-sketch img{
+width:auto;
+margin-bottom: 1em;   
+margin-top:2em;
+display: block;
+margin-left: auto;
+margin-right: auto;
 height:90vh;
 align-self: center;}
 
 .gallery img:last-of-type{
-	padding-right:0em;}
+padding-right:0em;}
 		
 #cvpopup{
 	z-index:20;
-    zoom:0.7;	
     background-color:white;
 	display:none;}
 .icons {
@@ -328,7 +327,7 @@ user-select:none;}
            display: none;
            text-align: center;
     position: absolute;
-           color: peru;
+           color: black;
            text-transform: uppercase;
            font-size:2rem;
     float: left;
@@ -350,6 +349,7 @@ user-select:none;}
        #wall{
            height: 90vh;
            right: 16em;
+           top:3em;
            padding-top: 2em;
            padding-left: 1em;
            width: 80vw;
@@ -361,12 +361,22 @@ user-select:none;}
   }
   
       }
+       .active{background-color: blue;}
 </style>
 
   </head>
     <body>
-        <div id="tailnext">&#9680<br>&#8649</div>
-        <div id="tailprev">&#9681<br>&#8647</div>
+<div id="bio" class="height"><mark2>Conceptual architect </mark2><mark class="bio-b">Shervin Sheikh Rezaei</mark><mark2>, currently based in Ghent, channels her personal chaos into structural order through her profession. 
+
+Designing things of her own will and solidly sealing objects has always acted as a necessary meditation for her. 
+
+Sheikh Rezaei works as an architect for Jan De Vylder and Inge Vinck, and her thesis ‘ENSEMBLE: An architecture of the inbetween’ will be released as a book by publisher MER this autumn. 
+
+From this year, she will also be teaching Mixed Media at LUCA School of Arts Interior. 
+
+No matter what the future holds, she wants to keep on dreaming, creating and exploring new experiences.</mark2></div>
+        <div id="tailnext">&#8594</div>
+        <div id="tailprev">&#8592</div>
 	<div id="temporary"><svg viewBox="0 0 300 300">
 <text fill="darkblue">   
 <animateTransform attributeName="transform"
@@ -392,13 +402,16 @@ user-select:none;}
     <div class="icons"><img src="shervin/icon/speltiny1.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/handjes.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/drawing/fun/fun1.jpg" height="100%"></div>
+    <div class="icons"><img src="shervin/drawing/sketch/a10.jpg" height="100%"></div>
+    <div class="icons"><img src="shervin/drawing/sketch/a4.jpg" height="100%"></div>
+    <div class="icons"><img src="shervin/icon/furniturep30.png" height="100%"></div>
+
 
 
     </div>
  <div id="allflex">
 <div id="content">
 <div id="cvpopup" class="popup"> 
-    <div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc" data-cycle-slides="> div">
 <DIV id="page_2">
 <DIV id="id2_1">
 
@@ -413,7 +426,7 @@ user-select:none;}
 </TR>
 <TR>
 	<TD class="tr4 td2"></TD>
-	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2017-2018</NOBR></P></TD>
+	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2017 - 2018</NOBR></P></TD>
 	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">Graduated (cum laude) with a Master in Architecture,</P></TD>
 	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
@@ -437,7 +450,7 @@ user-select:none;}
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015-2017</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015 - 2017</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Master Architecture: Explorative Architectural Design:</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
@@ -461,14 +474,14 @@ user-select:none;}
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2014-2015</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2014 - 2015</NOBR></P></TD>
 	<TD class="tr5 td4"><P class="p9 ft5">Photography, <NOBR>Sint-Lucas</NOBR> Gent</P></TD>
 	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
 	<TD rowspan=2 class="tr6 td6"><P class="p10 ft1"></P></TD>
 </TR>
 <TR>
 	<TD class="tr7 td2"></TD>
-	<TD rowspan=2 class="tr5 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD rowspan=2 class="tr5 td3"><P class="p6 ft5"><NOBR>2012 - 2016</NOBR></P></TD>
 	<TD colspan=2 rowspan=2 class="tr5 td7"><P class="p9 ft5">Bachelor Architecture, KU Leuven Campus Gent</P></TD>
 </TR>
 <TR>
@@ -477,20 +490,20 @@ user-select:none;}
 </TR>
 <TR>
 	<TD class="tr2 td2"></TD>
-	<TD class="tr2 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD class="tr2 td3"><P class="p6 ft5"><NOBR>2012 - 2016</NOBR></P></TD>
 	<TD class="tr2 td4"><P class="p9 ft5">Silkscreen, Kunstacademie Eeklo</P></TD>
 	<TD class="tr2 td5"><P class="p6 ft6">&nbsp;</P></TD>
 	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2007-2012</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2007 - 2012</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Mathematical Sciences, O.L.V. <NOBR>ten-Doorn</NOBR> Eeklo</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2006-2012</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2006 - 2012</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Theater/ Drama, Kunstacademie Eeklo</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
@@ -504,19 +517,19 @@ user-select:none;}
 <TR>
 	<TD class="tr4 td2"></TD>
 	<TD class="tr4 td3"><P class="p6 ft5">2013</P></TD>
-	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">AIKO architecten en ingenieurs, Maldegem, Belgium</P></TD>
+	<TD colspan=2 class="tr4 td7"><P class="p9 ft5"><A href="https://www.aiko.be/" target="_blank">AIKO architecten en ingenieurs</A>, Maldegem, Belgium</P></TD>
 	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015-2019</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2015 - 2019</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Took pictures (analogue) for Clair Obscur (party concept), Stofwolk</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">(art collective), <a href="https://www.kraak.net/" target="_blank">KRAAK (music collective)</a> and SUBBACULTCHA</P></TD>
+    <TD colspan=2 class="tr5 td7"><P class="p9 ft5">(art collective), <a href="https://www.kraak.net/" target="_blank">KRAAK (music collective)</a> and <a href="https://www.subbacultcha.be/" target="_blank">SUBBACULTCHA</a></P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
@@ -578,32 +591,32 @@ user-select:none;}
 <TR>
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Internship at Dhooge & Meganck Architects</P></TD>
+    <TD colspan=2 class="tr5 td7"><P class="p9 ft5">Internship at <a href="http://www.dhoogemeganck.be/" target="_blank">Dhooge & Meganck Architects</a></P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft5">2019</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Publication of book: ENSEMBLE/an architecture of ‘the in/between’</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Currently working for <a href="http://www.architectendvvt.com" target="_blank">Jan De Vylder en Inge Vinck</a></P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr2 td2"></TD>
 	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr2 td4"><P class="p9 ft5">publicated by <a href="http://merbooks.be/projects" target:"_blank">MER</a></P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5">Currently teaching Mixed Media interior Design at LUCA School of Arts </P></TD>
 	<TD class="tr2 td5"><P class="p6 ft6">&nbsp;</P></TD>
 	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">in collaboration with graphic designer Viktor Van den Braembussche</P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5">2020</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Book in production with <a href="http://merbooks.be/projects" target:"_blank">MER</a></P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Currently working for J<a href="http://www.architectendvvt.com" target="_blank">Jan De Vylder en Inge Vinck</a></P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5"></P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
@@ -615,25 +628,25 @@ user-select:none;}
 </TR>
 <TR>
 	<TD class="tr4 td2"></TD>
-	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2006-2012</NOBR></P></TD>
+	<TD class="tr4 td3"><P class="p6 ft5"><NOBR>2006 - 2012</NOBR></P></TD>
 	<TD colspan=2 class="tr4 td7"><P class="p9 ft5">Theater/Drama, Kunstacademie Eeklo</P></TD>
 	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2008-2010</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2008 - 2010</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Percussion & Opera, Muziekschool Eeklo</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2011-2012</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2011 - 2012</NOBR></P></TD>
 	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Drawing Art, Kunstacademie Eeklo</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2012-2016</NOBR></P></TD>
+	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2012 - 2016</NOBR></P></TD>
 	<TD class="tr5 td4"><P class="p9 ft5">Silkscreen, Kunstacademie Eeklo</P></TD>
 	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
@@ -686,17 +699,11 @@ user-select:none;}
 <P class="p12 ft5">Dragon Frame</P>
 </DIV>
 </DIV>
-<DIV id="id2_2">
-<P class="p3 ft2">SHERVIN</P>
-<P class="p4 ft3">SHEIKH</P>
-<P class="p5 ft4">REZAEI</P>
 </DIV>
-</DIV>
-</div>
 </div>
     
 <div class="popup" id="b-bach"> 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="2">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="2">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>
 <img src="shervin/books/bach/bac_Page_01.jpg" style="margin-left: 25%">
@@ -737,7 +744,7 @@ user-select:none;}
 
 <div class="popup" id="b-aware"> 
 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>	
 <img src="shervin/books/awareness/as_Page_1.jpg">
@@ -754,7 +761,7 @@ user-select:none;}
     
 <div class="popup" id="b-bauhaus"> 
 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>	
 <img src="shervin/books/bauhaus/bauhaus_Page_1.jpg">
@@ -783,7 +790,7 @@ user-select:none;}
     
 <div class="popup" id="b-iran">
  
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>	
 <img src="shervin/books/dagboekiran/dagboekiran_Page_01.jpg">
@@ -826,7 +833,7 @@ user-select:none;}
 
 <div class="popup" id="b-inbetween"> 
 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>	
 <img src="shervin/books/dagboekiran/iran2_Page_01.jpg" style="margin-left: 25%">
@@ -903,7 +910,7 @@ user-select:none;}
 
 <div class="popup" id="b-reverse"> 
 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>	
 <img src="shervin/books/reverse/revperspective_Page_01.jpg">
@@ -943,7 +950,7 @@ user-select:none;}
 </div>
 
 <div class="popup" id="p-reverse"> 
-<div class="center cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-prev btn-prev"></div>
     <div class="cycle-next btn-next"></div>		
 <img src="shervin/physical/rplos/01.jpg">
@@ -979,7 +986,7 @@ user-select:none;}
 </div>
         
 <div class="popup" id="p-play"> 
-<div class="center cycle-slideshow" data-cycle-timeout="0" data-cycle-auto-height="calc">
+<div class="center cycleslideshow" data-cycle-timeout="0" data-cycle-auto-height="calc">
     <div class="cycle-next btn-next"></div>
 <img src="shervin/play.gif" height="auto" width="50%" style="margin-left: 25%">
         <img src="shervin/icon/spel1.jpg" width="50%" style="margin-left: 25%">
@@ -1099,7 +1106,6 @@ user-select:none;}
 <img src="shervin/expo/grandtour/18.jpg" >
 <img src="shervin/expo/grandtour/19.jpg" >
 <img src="shervin/expo/grandtour/maqqq.jpg" >
-<img src="shervin/expo/grandtour/mooi.jpg" >
 </div>
 </div>
 
@@ -1132,25 +1138,21 @@ user-select:none;}
 </div>
     
 <div class="popup" id="d-arch"> 
-<div class="gallery">
-	
-<img src="shervin/drawing/arch/a1.jpg">
-<img src="shervin/drawing/arch/a2.jpg">
-<img src="shervin/drawing/arch/a3.jpg">
-<img src="shervin/drawing/arch/a3a.jpg">
-<img src="shervin/drawing/arch/a4.jpg">
-<img src="shervin/drawing/arch/a5.jpg">
-<img src="shervin/drawing/arch/a6.jpg">
-<img src="shervin/drawing/arch/a7.jpg">
-<img src="shervin/drawing/arch/a8.jpg">
-<img src="shervin/drawing/arch/a9.jpg">
-<img src="shervin/drawing/arch/a10.jpg">
 <img src="shervin/drawing/arch/a11.jpg">
-</div>
+    <img src="shervin/drawing/arch/a10.jpg">
+<img src="shervin/drawing/arch/a8.jpg">
+    <img src="shervin/drawing/arch/a5.jpg">
+<img src="shervin/drawing/arch/a3.jpg">
+<img src="shervin/drawing/arch/a7.jpg">
+    <img src="shervin/drawing/arch/a2.jpg">
+    <img src="shervin/drawing/arch/a1.jpg">
+    	<img src="shervin/drawing/arch/a4.jpg">
+<img src="shervin/drawing/arch/a6.jpg">
+    <img src="shervin/drawing/arch/a9.jpg">
+
 </div>
 
 <div class="popup" id="d-fun"> 
-<div class="gallery">
 	
 <img src="shervin/drawing/fun/fun1.jpg">
 <img src="shervin/drawing/fun/fun2.jpg">
@@ -1158,10 +1160,8 @@ user-select:none;}
 <img src="shervin/drawing/fun/fun4.jpg">
 <img src="shervin/drawing/fun/fun5.png">
 </div>
-</div>
 
 <div class="popup" id="d-sketch"> 
-<div class="gallery">
 	
 <img src="shervin/drawing/sketch/a1.jpg">
 <img src="shervin/drawing/sketch/a2.jpg">
@@ -1176,12 +1176,10 @@ user-select:none;}
 <img src="shervin/drawing/sketch/a11.jpg">
 
 </div>
-</div>
         
 <div id="pubpopup" class="popup"> 
   <div style="display:inline-block;">
 <a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
-<a href="https://subbacultcha.be/2018/02/21/kavir-2/" target="_blank"><h2>KAVIR</h2><p>click click click club for SUBBACULTCHA </p></a>
 <a href="/portoacademy.html" target="_blank"><h2>NEWSPAPER PORTO-ACADEMY 2018</h2><p> led by Meyer-Gröhbrugge & Chermayeff</p></a> 
 <a href="https://www.archinfo.sk/diela/interier/labyrinth-stage-instalacia-v-ramci-letneho-festivalu-bauhaus-kampus-weimar.html" target="_blank" >
 <h2>LABYRINTH STAGE AT BAUHAUS 2017 (Universität Weimar)</h2><p> Collaboration Shervin Sheikh Rezaei and Barbora Tothova</p></a>
@@ -1248,10 +1246,8 @@ user-select:none;}
 <div id="nav">
 <span class="close">&#9747;</span>
 <ul style="list-style-type:none;">
-    
-  <li><a href="#biopopup" class="bio-b">biography</a></li>
-  
-  <li><a href="#" id="cv">curriculum vitae</a></li>
+      
+  <li><a href="#" id="cv">cv</a></li>
 	 	
   <li><a href="javascript:void(0)" class="drop">physical</a>
 	  <ul class="drop-content">
@@ -1273,7 +1269,7 @@ user-select:none;}
    </li>
   <li><a href="javascript:void(0)" class="drop">drawings</a>
   <ul class="drop-content">
-	 		<li><a href="#" onclick="openDraw('arch')">Architectural</a></li>
+	 		<li><a href="#" onclick="openDraw('arch')">Digital</a></li>
 	 		<li><a href="#" onclick="openDraw('fun')">Fun</a></li>
 	 		<li><a href="#" onclick="openDraw('sketch')">Sketches</a></li>	 		
  </ul></li>
@@ -1307,15 +1303,6 @@ user-select:none;}
 </ul>
 </div>
 </div>
-<div id="bio" class="height"><mark2>Conceptual architect </mark2><mark class="bio-b">Shervin Sheikh Rezaei</mark><mark2>, currently based in Ghent, channels her personal chaos into structural order through her profession. 
-
-Designing things of her own will and solidly sealing objects has always acted as a necessary meditation for her. 
-
-Sheikh Rezaei works as an architect for Jan De Vylder and Inge Vinck, and her thesis ‘ENSEMBLE: An architecture of the inbetween’ will be released as a book by publisher MER this autumn. 
-
-From this year, she will also be teaching Mixed Media at LUCA School of Arts Interior. 
-
-No matter what the future holds, she wants to keep on dreaming, creating and exploring new experiences.</mark2></div>
 	 <script>	
          function bioMore(){
   $("mark").removeClass("mini");
