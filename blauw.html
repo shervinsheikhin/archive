@@ -85,7 +85,7 @@
     flex: 0 0 15.5em;
 	transition:all 1s;
 	bottom:0;
-	background-color:white;
+	background-color:blue;
 	width:15.5em;
     font-family: Plantin;
     overflow:auto;
@@ -93,7 +93,7 @@
     padding:1.5em 1.5em 1.5em 0;
     right: 0;
     z-index: 10;
-    box-shadow: -50px -20px 40px 40px white, 50px 20px 40px 40px white;
+    box-shadow: -50px -20px 40px 40px blue, 50px 20px 40px 40px blue;
 }
 #nav > ul{bottom:1.5em; right:1.5em;position:absolute;}
 	
@@ -117,6 +117,7 @@ margin:0;
 li {text-transform: uppercase;
   font-family: Plantin;
   position: relative;
+    color: white;
 }
 .drop-content {
   padding:1em 1em 1em 0em;
@@ -1466,16 +1467,11 @@ $(document).ready(function() {
   });
     $('.icons').draggable();
 
+   
     
-    var myVar = setInterval(noThrow, 6000);
+    setTimeout(noThrow, 60);
 
         
-document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === 'visible') {
-setInterval(noThrow, 6000)
-  } else {
-clearInterval(myVar);  }
-});
         
 });
 	 </script>

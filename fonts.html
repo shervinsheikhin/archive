@@ -53,7 +53,8 @@
 .popup{display:none;
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    z-index: 300;
        }
 .center {
   margin: 0;
@@ -82,11 +83,11 @@
 	}
 
 #nav{  
+    position: fixed;
     right: 0;
     flex: 0 0 15.5em;
 	transition:all 1s;
 	bottom:0;
-	background-color:white;
 	width:15.5em;
     font-family: Plantin;
     overflow:auto;
@@ -94,7 +95,6 @@
     padding:1.5em 1.5em 1.5em 0;
     right: 0;
     z-index: 10;
-    box-shadow: -50px -20px 40px white, 50px 20px 40px white;
 }
 #nav > ul{bottom:1.5em; right:1.5em;position:absolute;}
 	
@@ -228,7 +228,8 @@ align-self: center;}
 
 .gallery img:last-of-type{
 padding-right:0em;}
-		
+#officepopup{
+       }
 #cvpopup{
 	z-index:20;
     background-color:white;
@@ -1463,15 +1464,9 @@ $(document).ready(function() {
     $('.icons').draggable();
 
     
-    var myVar = setInterval(noThrow, 6000);
-
-        
-document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === 'visible') {
-setInterval(noThrow, 6000)
-  } else {
-clearInterval(myVar);  }
-});
+  
+    
+    setTimeout(noThrow, 60);
         
 });
 	 </script>
