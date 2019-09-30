@@ -1370,7 +1370,7 @@ $(document).ready(function() {
   $(".close").click(function() {
     $(".popup").fadeOut();
     $(this).fadeOut();
-    $("#wall").fadeIn();
+    $("#wall").show();
 $("#nav").css("transform","rotate(90deg)");
                             $("ul").css({bottom:"auto",top:"0"});
                             $("#nav a").css("display","inline"); 
@@ -1447,7 +1447,7 @@ $("#nav").css("transform","rotate(90deg)");
     ) {
       // ... nor a descendant of the container
       close.hide();
-      $("#wall").fadeIn();
+      $("#wall").show();
     }
   });
 
