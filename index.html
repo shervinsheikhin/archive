@@ -230,7 +230,7 @@ padding-right:0em;}
     margin: 1em;
   height: 13em;
     width: auto;
-    position: absolute;
+    position: relative;
   filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
           drop-shadow(0px 0px 10px rgba(0,0,0,.3));
 }
@@ -344,7 +344,9 @@ user-select:none;}
   transform: translate(-50%, -50%);
 }
        .shop-item{text-align: center;}
-       #wall{
+            #wall{
+           display: flex;
+             flex-wrap: wrap;
            height: 90vh;
            right: 16em;
            top:3em;
@@ -1468,10 +1470,6 @@ $(document).ready(function() {
       .fadeToggle("fast", "swing");
   });
     $('.icons').draggable();
-
-    
-    setTimeout(noThrow, 60);
-
         
         
 });
