@@ -22,9 +22,8 @@
    	background-repeat: no-repeat;
    	  background-attachment: fixed;
   background-position: center; 
-   	  font-family: Plantin;
   margin: 0;
-  font-family: Helvetica Neue;}
+  font-family: Helvetica Neue, sans-serif;}
   
     html {
   scroll-behavior: smooth;
@@ -33,12 +32,6 @@
 * {
   box-sizing: border-box;
 }
-       
-
-#allflex {
-  display: flex;
-  align-items: stretch;
-    
        }
 #content{
     width: 30em;
@@ -113,7 +106,7 @@ margin:0;
         transition:3s;
 }
 li {text-transform: uppercase;
-  font-family: Plantin;
+  font-family: Helvetica Neue;
   position: relative;
 }
 .drop-content {
@@ -158,7 +151,7 @@ left: 0;
 }
        .height{height: 3em; overflow: hidden;}
  
-mark{font-family:Helvetica Neue;
+mark{font-family:Helvetica Neue, sans-serif;
     background-color:transparent;
 	color:peru;
     font-weight: 400;
@@ -238,8 +231,8 @@ padding-right:0em;}
   height: 13em;
     width: auto;
     position: relative;}
-.icons: hover {
-border:5px solid peru;}
+.icons:hover {
+zoom: 2;}
 .icons img {
 object-fit: contain;}
 
@@ -270,7 +263,7 @@ z-index:30;
    	position:relative;
    	top:0;
   display: none;
-  font-family:Plantin;
+  font-family:Helvetica Neue, sans-serif;
     }
 #pubpopup a:hover{color:peru;}
        
@@ -284,6 +277,7 @@ z-index:30;
     font-weight: 300;
    }
    svg{
+       display: none;
   font-family: Helvetica Neue, sans-serif;
   pointer-events: none;
   position:fixed;
@@ -329,7 +323,7 @@ user-select:none;}
            text-transform: uppercase;
            font-size:2rem;
     float: left;
-       font-family: Plantin;}
+       font-family: Helvetica Neue, sans-serif;}
        
        .mosaic{
            display: grid;
@@ -346,15 +340,20 @@ user-select:none;}
        .shop-item{text-align: center;}
             #wall{
            display: flex;
-             flex-wrap: wrap;
            height: 90vh;
            right: 16em;
            top:3em;
            padding-top: 2em;
            padding-left: 1em;
+            padding-bottom: 2em;
            width: 80vw;
            position: fixed;
+                transition: all 3s;
        }
+       .walltiny{flex-wrap: nowrap;flex-direction: column;}
+       .wallnormal{
+             flex-wrap: wrap;
+                flex-direction: row;}
         @media screen and (max-width: 800px) {
   #wall {
    	display: none;
@@ -391,7 +390,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
   <path id="move" d=" M 150 150 m -75, 0 a 75,75 0 0,1 150,0 a 75,75 0 0,1 -150,0 " fill="none"/>  
  
 </svg></div>
-         <div id="wall">
+         <div id="wall" class="wallnormal">
     <div class="icons"><img src="shervin/icon/meubelgif25.gif" height="100%"></div>
     <div class="icons"><img src="shervin/icon/AWARENESSSTATION%20.jpg" height="100%"></div>
     <div class="icons"><img src="shervin/icon/context39.png" height="100%"></div>
@@ -579,7 +578,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 <TR>
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Workshop Porto Academy, Portugal, led by June 14</P></TD>
+	<TD colspan=2 class="tr5 td7"><P class="p9 ft5">Workshop <a href="https://www.portoacademy.info/" target="_blank">Porto Academy</a>, Portugal, led by June 14</P></TD>
 	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
 <TR>
@@ -603,7 +602,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 <TR>
 	<TD class="tr2 td2"></TD>
 	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr2 td4"><P class="p9 ft5">Currently teaching Mixed Media interior Design at LUCA School of Arts </P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5">Currently teaching Mixed Media <a href="https://www.luca-arts.be/interieurvormgeving" target="_blank">Interior Design at LUCA School of Arts </a> </P></TD>
 	<TD class="tr2 td5"><P class="p6 ft6">&nbsp;</P></TD>
 	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
 </TR>
@@ -648,55 +647,52 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 	<TD class="tr5 td2"></TD>
 	<TD class="tr5 td3"><P class="p6 ft5"><NOBR>2012 - 2016</NOBR></P></TD>
 	<TD class="tr5 td4"><P class="p9 ft5">Silkscreen, Kunstacademie Eeklo</P></TD>
-	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr4 td2"></TD>
-	<TD class="tr4 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr4 td4"><P class="p9 ft1">SKILLS</P></TD>
-	<TD class="tr4 td5"><P class="p6 ft1">LANGUAGES</P></TD>
-	<TD class="tr4 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr4 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr4 td4"><P class="p9 ft1 nw">SKILLS</P></TD>
+	<TD class="tr4 td5"><P class="p6 ft1 nw">LANGUAGES</P></TD>
+	<TD class="tr4 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr9 td2"></TD>
-	<TD class="tr9 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr9 td4"><P class="p9 ft5">Autocad</P></TD>
-	<TD class="tr9 td5"><P class="p6 ft5">Dutch</P></TD>
-	<TD class="tr9 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr9 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr9 td4"><P class="p9 ft5 nw">Autocad</P></TD>
+	<TD class="tr9 td5"><P class="p6 ft5 nw">Dutch</P></TD>
+	<TD class="tr9 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr5 td4"><P class="p9 ft5">Sketchup</P></TD>
-	<TD class="tr5 td5"><P class="p6 ft5">English</P></TD>
-	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5 nw">Sketchup</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft5 nw">English</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr2 td2"></TD>
-	<TD class="tr2 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr2 td4"><P class="p9 ft5">Photoshop</P></TD>
-	<TD class="tr2 td5"><P class="p6 ft5">Farsi</P></TD>
-	<TD class="tr2 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr2 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr2 td4"><P class="p9 ft5 nw">Photoshop</P></TD>
+	<TD class="tr2 td5"><P class="p6 ft5 nw">Farsi</P></TD>
+	<TD class="tr2 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr5 td4"><P class="p9 ft5">Indesign</P></TD>
-	<TD class="tr5 td5"><P class="p6 ft5">a little bit of French and German</P></TD>
-	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5 nw">Indesign</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft5 nw">a little bit of French and German</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 <TR>
 	<TD class="tr5 td2"></TD>
-	<TD class="tr5 td3"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr5 td4"><P class="p9 ft5">Illustrator</P></TD>
-	<TD class="tr5 td5"><P class="p6 ft6">&nbsp;</P></TD>
-	<TD class="tr5 td6"><P class="p6 ft6">&nbsp;</P></TD>
+	<TD class="tr5 td3"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr5 td4"><P class="p9 ft5 nw">Illustrator<br>Microsoft Office<br>Premiere Pro<br>Dragon Frame</P></TD>
+	<TD class="tr5 td5"><P class="p6 ft6 nw">&nbsp;</P></TD>
+	<TD class="tr5 td6"><P class="p6 ft6 nw">&nbsp;</P></TD>
 </TR>
 </TABLE>
-<P class="p11 ft5">Microsoft Office</P>
-<P class="p12 ft5">Premiere Pro</P>
-<P class="p12 ft5">Dragon Frame</P>
 </DIV>
 </DIV>
 </DIV>
@@ -1092,8 +1088,6 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 <img src="shervin/expo/grandtour/3.jpg" >
 <img src="shervin/expo/grandtour/4.jpg" >
 <img src="shervin/expo/grandtour/5.jpg" >
-<img src="shervin/expo/grandtour/6.jpg" >
-<img src="shervin/expo/grandtour/7.jpg" >
 <img src="shervin/expo/grandtour/8.jpg" >
 <img src="shervin/expo/grandtour/9.jpg" >
 <img src="shervin/expo/grandtour/10.jpg" >
@@ -1138,6 +1132,8 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 </div>
     
 <div class="popup" id="d-arch"> 
+    <div class="center cycle-slideshow" data-cycle-timeout="0" data-cycle-auto-height="calc">
+        <div class="cycle-next btn-next"></div>
 <img src="shervin/drawing/arch/a11.jpg">
     <img src="shervin/drawing/arch/a10.jpg">
 <img src="shervin/drawing/arch/a8.jpg">
@@ -1149,20 +1145,28 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
     	<img src="shervin/drawing/arch/a4.jpg">
 <img src="shervin/drawing/arch/a6.jpg">
     <img src="shervin/drawing/arch/a9.jpg">
-
+</div>
 </div>
 
 <div class="popup" id="d-fun"> 
 	
+    <div class="center cycle-slideshow" data-cycle-timeout="0" data-cycle-auto-height="calc">
+        <div class="cycle-next btn-next"></div>
+  <img src="shervin/drawing/fun/tapijtfun1.jpg">
+<img src="shervin/drawing/fun/tapijtfun2.jpg">
+<img src="shervin/drawing/fun/tapijtfun3.jpg">
+<img src="shervin/drawing/fun/tapijtfun4.jpg">      
 <img src="shervin/drawing/fun/fun1.jpg">
 <img src="shervin/drawing/fun/fun2.jpg">
 <img src="shervin/drawing/fun/fun3.jpg">
 <img src="shervin/drawing/fun/fun4.jpg">
 <img src="shervin/drawing/fun/fun5.png">
-</div>
+    </div></div>
 
 <div class="popup" id="d-sketch"> 
 	
+    <div class="center cycle-slideshow" data-cycle-timeout="0" data-cycle-auto-height="calc">
+        <div class="cycle-next btn-next"></div>
 <img src="shervin/drawing/sketch/a1.jpg">
 <img src="shervin/drawing/sketch/a2.jpg">
 <img src="shervin/drawing/sketch/a3.jpg">
@@ -1173,12 +1177,14 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 <img src="shervin/drawing/sketch/a8.jpg">
 <img src="shervin/drawing/sketch/a9.jpg">
 <img src="shervin/drawing/sketch/a10.jpg">
-<img src="shervin/drawing/sketch/a11.jpg">
+        <img src="shervin/drawing/sketch/a11.jpg"></div>
 
 </div>
         
 <div id="pubpopup" class="popup"> 
   <div style="display:inline-block;">
+      <a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>Architectuurboek Vlaanderen N°13,
+</h2><p>Mosterdfabriek - Dhooge & Meganck Architecten</p></a>
 <a href="https://subbacultcha.be/2019/05/28/shervin-sheikh-rezaei/" target="_blank"><h2>SUBBACULTCHA</h2><p> 20-something issue/ June 2019</p></a>
 <a href="/portoacademy.html" target="_blank"><h2>NEWSPAPER PORTO-ACADEMY 2018</h2><p> led by Meyer-Gröhbrugge & Chermayeff</p></a> 
 <a href="https://www.archinfo.sk/diela/interier/labyrinth-stage-instalacia-v-ramci-letneho-festivalu-bauhaus-kampus-weimar.html" target="_blank" >
@@ -1263,7 +1269,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
           					<li><a href="#" onclick="openForm('drawings')">Transparent Drawings</a></li>
 						</ul>
 		  </li>
-		  <li><a href="#" onclick="openForm('caritas')">MAQUETTE CARITAS</a></li>
+		  <li><a href="#" onclick="openForm('caritas')">MAQUETTE CARITAS FOR DVVT<br>Fragments for Jan & Inge</a></li>
 		  <li><a href="#" onclick="openForm('play')">PLAY</a></li>
 	 </ul>
    </li>
@@ -1283,14 +1289,13 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 	 <ul class="drop-content">
 	 		<li><a href="#" onclick="openBook('bach')" class="dropplus">20122016</a>
                 <ul class="dropplus-content">
-	 					 	<li><a href="#p8">Art/Architecture<br> Scool</a></li>
+	 					 	<li><a href="#p8">Art/Architecture<br> School</a></li>
           					<li><a href="#p20">Zeeslagarchitectuur</a></li>
           					<li><a href="#p38">The grid as <br>regular Pattern</a></li>
           					<li><a href="#p52">Geometry out <br>of movement</a></li>         <li><a href="#p62">Design for an <br>exhibition space</a></li>
 
 						</ul></li>
 	 		<li><a href="#" onclick="openBook('aware')">AWARENESS STATION</a></li>
-	 		<li><a href="#" onclick="openBook('balder')">BALDER</a></li>
 	 		<li><a href="#" onclick="openBook('bauhaus')">BAUHAUS Labyrinthstage</a></li>
 	 		<li><a href="#" onclick="openBook('reverse')">reverse perspective</a></li>
 	 		<li><a href="javascript:void(0)" class="dropplus">ENSEMBLE:</a>
@@ -1413,7 +1418,7 @@ $(document).ready(function() {
     $("#contact").click(function() {
     $(".close, #contactpopup").show("3000", "swing");
     $(".popup")
-      .not("#officepopup")
+      .not("#contactpopup")
       .hide("2000", "swing");
   $("#wall").slideUp();
             bioMore();
@@ -1461,6 +1466,8 @@ $(document).ready(function() {
     $("#bio").toggleClass("height");
     $("mark").toggleClass("mini");
     $("mark2").toggleClass("gone");
+    $("#wall").toggleClass("wallnormal");
+    $("#wall").toggleClass("walltiny");
     $("#nav").scrollTop({ top: 0, behavior: "smooth" });
     $(".close, .popup").slideUp();
   });

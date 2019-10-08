@@ -13,14 +13,14 @@
 #page_2 a:hover{text-decoration: underline;color: orange;}
 
 
-.ft0{font: 16px 'Arial';line-height: 18px;}
-.ft1{font: 13px 'Arial';line-height: 16px;}
-.ft2{font: 11px 'Arial';line-height: 13px;}
-.ft3{font: 11px 'Arial';line-height: 9px;}
-.ft4{font: 11px 'Arial';line-height: 14px;}
-.ft5{font: 13px 'Times New Roman';line-height: 15px;}
-.ft6{font: 1px 'Times New Roman';line-height: 1px;}
-.ft7{font: 1px 'Times New Roman';line-height: 7px;}
+.ft0{font: 16px 'Helvetica Neue';line-height: 18px;}
+.ft1{font: 13px 'Helvetica Neue';line-height: 16px;}
+.ft2{font: 11px 'Helvetica Neue';line-height: 13px;}
+.ft3{font: 11px 'Helvetica Neue';line-height: 9px;}
+.ft4{font: 11px 'Helvetica Neue';line-height: 14px;}
+.ft5{font: 13px 'Helvetica Neue';line-height: 15px;}
+.ft6{font: 1px 'Helvetica Neue';line-height: 1px;}
+.ft7{font: 1px 'Helvetica Neue';line-height: 7px;}
 
 .p0{text-align: left;padding-left: 1016px;margin-top: 0px;margin-bottom: 0px;}
 .p1{text-align: right;padding-right: 11px;margin-top: 142px;margin-bottom: 0px;}
@@ -40,7 +40,7 @@
 .td1{padding: 0px;margin: 0px;width: 147px;vertical-align: bottom;}
 .td2{padding: 0px;margin: 0px;width: 0px;vertical-align: bottom;}
 .td3{padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
-.td4{padding: 0px;margin: 0px;width: 210px;vertical-align: bottom;}
+.td4{padding: 0px;margin: 0px;width: 200px;vertical-align: bottom;}
 .td5{padding: 0px;margin: 0px;width: 222px;vertical-align: bottom;}
 .td6{padding: 0px;margin: 0px;width: 34px;vertical-align: bottom;}
 .td7{padding: 0px;margin: 0px;width: 432px;vertical-align: bottom;}
@@ -56,5 +56,6 @@
 .tr8{height: 7px;}
 .tr9{height: 30px;}
 
-.t0{width: 526px;font: 13px 'Plantin';}
-.t1{width: 544px;font: 13px 'Plantin';}
+.t0{width: 526px;font: 13px 'Helvetica Neue';}
+.t1{width: 544px;font: 13px 'Helvetica Neue';}
+.nw{white-space: nowrap;}
