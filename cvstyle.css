@@ -14,7 +14,7 @@
 
 
 .ft0{font: 16px 'Helvetica Neue';line-height: 18px;}
-.ft1{font: 13px 'Helvetica Neue';line-height: 16px;}
+.ft1{font: 13px 'Helvetica Neue';line-height: 16px; width: 250px;}
 .ft2{font: 11px 'Helvetica Neue';line-height: 13px;}
 .ft3{font: 11px 'Helvetica Neue';line-height: 9px;}
 .ft4{font: 11px 'Helvetica Neue';line-height: 14px;}
@@ -57,5 +57,6 @@
 .tr9{height: 30px;}
 
 .t0{width: 526px;font: 13px 'Helvetica Neue';}
-.t1{width: 544px;font: 13px 'Helvetica Neue';}
+.t1{font: 13px 'Helvetica Neue';}
 .nw{white-space: nowrap;}
+.sm{color:red; transform: translateX(-100px)}
