@@ -18,6 +18,8 @@
   src: url('/fonts/PlantinStd.otf');
 }
    body{
+       user-select: none;
+       pointer-events: none;
     background-size: auto 75%;
    	background-repeat: no-repeat;
    	  background-attachment: fixed;
@@ -195,7 +197,7 @@ height:90vh;
         margin:1em;
            height: auto;
     align-self: center;}
-       #officepopup img {width: 100%;
+       #atelierpopup img {width: 100%;
            height: auto;
             align-self: center;}
 #e-grandtour img, #e-reverse img, #e-bauhaus img{width:auto;
@@ -279,7 +281,7 @@ z-index:30;
     font-weight: 300;
    }
    svg{
-       display: none;
+       display: block;
   font-family: Helvetica Neue, sans-serif;
   pointer-events: none;
   position:fixed;
@@ -1208,7 +1210,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
 </div>
 </div>
 
-<div class="popup" id="officepopup">
+<div class="popup" id="atelierpopup">
 <img src="shervin/office/office1.jpg">
     <img src="shervin/office/office2.jpg">
 <img src="shervin/office/office3.jpg">
@@ -1314,7 +1316,7 @@ No matter what the future holds, she wants to keep on dreaming, creating and exp
    <li><a href="#instapopup" id="insta">social images</a></li>
   <li><a href="#" id="pub">publications</a></li>
   <li><a href="#" id="shop">shop</a></li>
-  <li><a href="#" id="office">office</a></li>
+  <li><a href="#" id="atelier">atelier</a></li>
     <li><a href="#" id="contact">contact</a></li>
 
 </ul>
@@ -1412,10 +1414,10 @@ $(document).ready(function() {
       bioMore();
   });
 
-  $("#office").click(function() {
-    $(".close, #officepopup").show("3000", "swing");
+  $("#atelier").click(function() {
+    $(".close, #atelierpopup").show("3000", "swing");
     $(".popup")
-      .not("#officepopup")
+      .not("#atelierpopup")
       .hide("2000", "swing");
   $("#wall").slideUp();
             bioMore();
