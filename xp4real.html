@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SHERVIN SHEIKH REZAEI</title>
+        <meta name="keywords" content="architect, shervin, ghent, art, subbacultcha, subba, luca">
+        <meta name="author" content="Deveny Faruque - deve1000">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <link rel="stylesheet" href="/cvstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/jquery.cycle2.min.js"></script>
+<script src="scripts/jquery.cycle2.center.min.js"></script>
+                 	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+   <style>
+       * {
+  box-sizing: border-box;
+}
+         
+body {margin:0;
+    font-family: 'Crimson Text', serif;
+       cursor: crosshair;
+       overflow: hidden;}
+       a{cursor: cell;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    margin-left: 2em;
+  float: left;
+  width: 30%;
+    overflow: scroll;
+  padding: 10px;
+  height: 90vh; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.content:after {
+    position: fixed;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+       
+
+.topnav {
+    padding: 1em 3em;
+  overflow: hidden;
+}
+
+.topnav a {
+  padding:1em 1em;
+  float: right;
+  color:black;  
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#naam {
+    float: left;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float:right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropped{margin-top:-2em;
+}
+
+.dropdown-content {
+    columns: 5em 2;
+  margin-left: 5em;
+    padding: 2.5em;
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 0;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+
+}
+       #letter p{
+           color: darkblue;
+           line-height: 1;
+       }
+       
+       #drawing img{
+           padding: 1em;
+       }
+
+       #bio{
+           display: none;
+width:70%;
+text-align:left;
+           padding: 1em 2em 3em 2em;
+           line-height: 1.3;
+       }
+       .twee{width: 60%}
+       .drie{display: none;}
+       
+       
+.sidenav {
+    position: absolute;
+    width: 80vw;
+  overflow: hidden;
+  transform:rotate(90deg) translateY(-58vw);
+}
+
+.sidenav a {
+  padding:2em 1em;
+  float: right;
+  color:navy;  
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .sidenav a, .dropdown .dropbtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidenav {transform:none;}
+  .sidenav.responsive {position: relative;}
+  .sidenav.responsive .icon {
+    position: absolute;
+    color:red;
+    right: 0;
+    top: 0;
+  }
+  .sidenav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sidenav.responsive .dropdown {float: none;}
+  .sidenav.responsive .dropdown-content {position: relative;}
+  .sidenav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    color:black;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    color:red;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+    
+<div class="sidenav" id="mySidenav">
+  <a href="#" onclick="openThree('cv')">curriculum</a>
+  <a href="#">contact</a>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#" onClick="window.location.reload();" id="naam">SHERVIN SHEIKH REZAEI</a>
+     <a href="#contact">shop</a>
+  <a href="#news">social images</a>
+  <a href="#">publications
+    </a>
+      <div class="dropdown">
+    <a class="dropbtn">expositions
+    </a>
+    <div class="dropdown-content">
+      <a href="#">Grand Tour</a>
+      <a href="#">Reversed Perspective</a>
+      <a href="#">Labyrinthstage</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a class="dropbtn">books
+    </a>
+    <div class="dropdown-content">
+      <a href="#" onclick="openTwo('bac')">20122016</a>
+      <a href="#" onclick="openTwo('bauhausb')">BAUHAUS:Labyrinthstage</a>
+      <a href="#" onclick="openTwo('reverseb')">Reversed Perspective</a>
+              <a href="#" onclick="openTwo('awareness')">Awareness Station S14</a>
+              <a href="#" onclick="openTwo('dagboekiran')">Ensemble:</a>
+    </div>
+  </div>
+
+   
+  <div class="dropdown">
+    <a class="dropbtn">physical 
+    </a>
+    <div class="dropdown-content">
+      <a href="#">Balder</a>
+      <a href="#">Trap</a>
+      <a href="#">Maquette Caritas for dvvt</a>
+      <a href="#">Los</a>
+      <a href="#">Ensemble:</a>
+      <a href="#">Play</a>
+    </div>
+  </div>
+    <a href="#">drawing</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    
+<div class="content">
+  <div class="column" id="een"> 
+      <div id="bio">Shervin Sheikh Rezaei is a Belgian architect with Iranian roots who is based in Ghent. Through her profession she converts personal chaos into structural order. In this way she tries to find intrinsic serenity and always utilizes her intuition as a starting point. She transforms her state of mind into a place that is transcended by materiality and thus forms an open narrative. She draws from daily compositions, texts, visual arts, and above all from dialogues with the other. At the moment she works as an architect with Jan De Vylder and Inge Vinck and she teaches Mixed Media and Design at LUCA School of Arts in Ghent and Brussels.</div>
+      <div id="drawing1">
+          <img src="shervin/drawing/spel3.jpg" width="40%">
+      <img src="shervin/drawing/spel4.jpg" width="40%"> 
+          <img src="shervin/drawing/fun1.jpg" width="100%">
+           <img src="shervin/drawing/a4.jpg" width="100%">
+     <img src="shervin/icon/context39.png" width="70%">
+                     <img src="shervin/drawing/daily.jpg" width="100%">
+      <img src="shervin/drawing/fun2.jpg" width="100%">
+           <img src="shervin/icon/bauhausscan.jpg" width="70%">
+     <img src="shervin/drawing/poster.jpg" width="100%" >
+     <img src="shervin/icon/play.gif" width="100%">
+     <img src="shervin/drawing/a10.jpg" width="100%">
+    <img src="shervin/drawing/aa5.jpg" width="100%">    
+<img src="shervin/drawing/fun3.jpg" width="100%">
+<img src="shervin/drawing/fun4.jpg" width="100%">
+      <img src="shervin/drawing/spel2.jpg" width="49%"> 
+                 <img src="shervin/drawing/spel1.jpg" width="49%">
+<img src="shervin/drawing/fun5.png" width="100%">
+<img src="shervin/drawing/a1.jpg" width="100%">
+<img src="shervin/drawing/a4.jpg" width="100%">
+<img src="shervin/drawing/a6.jpg" width="100%">
+<img src="shervin/drawing/a8.jpg" width="100%">
+        <img src="shervin/drawing/a11.jpg" width="100%"></div>
+</div>
+  <div class="column" id="twee">
+      <div id="letter">
+    <p>ENSEMBLE: an architecture of the inbetween.<br><br>
+//<br><br>
+A letter from my dear friend, Weronika Zalewska.<br><br>
+Dear Shervin,<br>
+I feel that when architecture turns towards the investigation
+of personal experiences
+- their influence on perception of the self and the outside world - the
+form can become as if a mold turning one’s state of mind into a place, transcending
+materiality while becoming an open narrative. It’s something other than an
+architecture of ideology or principle; shifting towards the dialogue of possibilities
+rather than hoping for ready solutions. Embracing fluidity, as if the only
+thing sure- in praise of no definite answers. Movement and reinvention- a mode
+seemingly closest to nature.<br><br>
+Creating from emotions and impressions explores the modes of poetry within
+architecture.
+Placing the architect within the work not only as a maker but an artist reflecting
+upon personal stories, placing them into a shared context where they become
+public.<br><br>
+It’s an open-ended approach, one of no answers but an open conversation of
+the form with each participant, in opposition to whether the commercial or the
+functional. A world within a world. A heterotopie. Holding the belief that it is
+our inner being that holds the genuine experience of the world.
+Shaping and exposing the reality built from a subjective
+perspective is in fact the purest cultivation of culture, opposing to the monoculture
+of ready ideas.
+And what emerges when the mind that wishes to create a space, is one hang
+up in-between cultures? What if the form is to give a space for two seemingly
+distant worlds to merge in a dialogue? And what if one passes the dialogue on to
+the building itself?<br><br>
+In your project you seem to merge the co- and counter-existing poles of your
+identity- the Iranian and the Western, wishing to materialize both cultures
+within an open form as they live within your inner and outer landscape; traveling
+with you between the countries, the scattered members of family, the
+thoughts, the rituals. With such generosity of experience, you seem to create a
+fluidity of life narratives outside of political appropriation and the forced choice
+of singular identity proposed by the hegemony of nation-driven choices. The
+recent trip you took to Iran, both a challenging confrontation and a sentimental
+dialogue, somehow proved the confusion taken from the expectations of being
+culturally consistent. The story of being both shattered and familiar is known
+to many, with the basic description of “feeling Eastern when in West, feeling
+Western when in East”. Seems that such reflection made you pose a question
+whether your identity meets gaps and lacks due to not being either Western or
+Eastern fully, or perhaps transcends these by creating a third one of your own,
+far from the simplified perception
+East or West, as you know both from the
+genuine world of family, home street, secret; trying to resolve cliches, or merge
+different morals.<br><br>
+I imagine that during the trip you took to Iran last winter, these reflections were
+spinning around cities and landscapes, landing on whether stones or palaces, in
+search for nothing more than a feeling of familiarity, movement, or a mirror to
+what you carried inside.<br><br>
+All so that your being could become its own maker of opinions, starting with the
+human, not politics or mass belief. A different approach to the cultural heritage,
+one similar to looking at a stone-investigating from each angle, seeking what one
+connects to… And there it emerges.
+When one opens the eyes beyond the known patterns, the elements of the two
+cultures start to play with each other, as if a brother and sister losing the grip of
+which arm is whose. All starts to become less clear, or less necessary to find out,
+as if a game of possibilities.<br><br>
+This is true even to the politicized yet endlessly multi-angled element of our
+lives such as censorship, which spinned around seemed to spin around your
+head during this year and throughout the trip especially. The Iranian policy of
+moral state control vs the Western sell-out to the capitalist ideas which enter
+each fragment of life- even this division seems as a simplification and deserves
+an ongoing reflection. And when it all comes to place, it becomes clear that
+there’s not one answer. And that a word cannot always grasp that complexity. Or,
+through its means, makes the dialogue more complicated and estranged.
+When sharing with me the stories of the two cultures, Iran seems to keep within
+people the cultivation of some secret- the treasuring of life within the walls
+of the house and family,motivated by the culture and too through country’s</p>
+  </div></div>
+  <div class="column" id="drie">     
+      
+<img src="shervin/drawing/a3.jpg" width="100%">
+    <img src="shervin/drawing/aa9.jpg"  width="100%">
+    <img src="shervin/drawing/aa1.jpg" width="100%">
+           <img src="shervin/icon/furniturep30.png" width="100%">
+<img src="shervin/icon/handjes.jpg" width="100%">
+    <img src="shervin/drawing/aa10.jpg" width="100%">
+<img src="shervin/drawing/aa8.jpg" width="100%" width="100%">
+  <img src="shervin/drawing/tapijt1.jpg" width="49%">
+<img src="shervin/drawing/tapijt2.jpg" width="49%">
+<img src="shervin/drawing/tapijt3.jpg" width="49%">
+<img src="shervin/drawing/tapijt4.jpg" width="49%">  
+<img src="shervin/drawing/aa7.jpg" width="100%">
+    <img src="shervin/drawing/aa2.jpg" width="100%">
+    	<img src="shervin/drawing/aa4.jpg" width="100%">
+      <img src="shervin/drawing/a5.jpg" width="100%">
+<img src="shervin/drawing/a7.jpg" width="100%">
+<img src="shervin/drawing/a9.jpg" width="50%"> // <img src="shervin/drawing/a10.jpg" width="50%">
+<img src="shervin/drawing/a2.jpg" width="100%">
+           <img src="shervin/icon/comp9.jpg" width="100%"> //VOLLEDIGE AFBEELDING
+           <img src="shervin/icon/meubelgif25.gif" width="100%">
+
+  </div>
+    </div>
+<script>
+function openThree(a){
+    $("#drie").load('/shervin/'+a+'.html');
+    $("#twee").show();
+}
+    
+function openTwo(b){
+    $("#twee").load('/shervin/'+b+'.html').css('width','60%');
+    $("#drie").hide();
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function myFunction() {
+  var x = document.getElementById("mySidenav");
+  if (x.className === "sidenav") {
+    x.className += " responsive";
+  } else {
+    x.className = "sidenav";
+  }
+}
+    
+$(document).ready(function() {
+$(".dropdown").click(function(){
+$(this).removeClass("dropped");
+$(this).nextAll().removeClass("dropped");
+$(this).children(".dropdown-content").toggle();
+$(this).siblings().children(".dropdown-content").hide();
+$(this).prevAll().toggleClass("dropped");
+});
+    
+    
+$("#naam").click(function() {
+    $("#bio").toggle();
+});
+
+});
+
+</script>
+
+</body>
+</html>
