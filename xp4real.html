@@ -239,10 +239,10 @@ text-align:left;
     </a>
     <div class="dropdown-content">
       <a href="#" onclick="openTwo('bac')">20122016</a>
-      <a href="#" onclick="openTwo('bauhausb')">BAUHAUS:Labyrinthstage</a>
-      <a href="#" onclick="openTwo('reverseb')">Reversed Perspective</a>
-              <a href="#" onclick="openTwo('awareness')">Awareness Station S14</a>
-              <a href="#" onclick="openTwo('dagboekiran')">Ensemble:</a>
+      <a href="#" onclick="openTwo('bauhausbook')">BAUHAUS:Labyrinthstage</a>
+      <a href="#" onclick="openTwo('revbook')">Reversed Perspective</a>
+              <a href="#" onclick="openTwo('aware')">Awareness Station S14</a>
+              <a href="#" onclick="openTwo('dagboek')">Ensemble:</a>
     </div>
   </div>
 
@@ -395,7 +395,7 @@ function openThree(a){
 }
     
 function openTwo(b){
-    $("#twee").load('/shervin/'+b+'.html').css('width','60%');
+    $("#twee").load('books.html #'+b).css('width','60%');
     $("#drie").hide();
 }
 function myFunction() {
