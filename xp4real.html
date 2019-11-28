@@ -34,8 +34,14 @@ body {margin:0;
   height: 90vh; /* Should be removed. Only for demonstration */
 }
 
+.realcontent{
+    width: 100vw;
+    position: fixed;
+    padding-top: 3em;
+    z-index: -1;
+       }
 /* Clear floats after the columns */
-.content:after {
+.realcontent:after {
     position: fixed;
   content: "";
   display: table;
@@ -49,10 +55,26 @@ body {margin:0;
   }
 }
        
+.mainnav {
+    padding: 1em 3em;
+  overflow: visible;
+}
+
+.mainnav a {
+  padding:1em 1em;
+  float: left;
+  color:black;  
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 .topnav {
-    padding: 1em 3em;
-  overflow: hidden;
+    display: none;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
 }
 
 .topnav a {
@@ -75,8 +97,11 @@ body {margin:0;
 
 .dropdown {
   float:right;
-  overflow: hidden;
+  overflow: visible;
 }
+       .dropped {
+           background-color: yelow;
+       }
 
 .dropdown .dropbtn {
   font-size: 17px;    
@@ -86,20 +111,20 @@ body {margin:0;
   font-family: inherit;
   margin: 0;
 }
-.dropped{margin-top:-2em;
-}
-
-.dropdown-content {
-    columns: 5em 2;
-  margin-left: 5em;
-    padding: 2.5em;
+.side {
+    padding-top: 4em;
+    position: fixed;
   display: none;
-  position: fixed;
   z-index: 1;
-}
+    right: 0;
+    top: 0;
+  writing-mode: vertical-rl;
+    text-orientation: upright;
+       }
 
-.dropdown-content a {
-    padding: 0;
+.side a {
+  text-transform: uppercase;
+  padding:0em 1em;
   color: black;
   text-decoration: none;
   display: block;
@@ -114,7 +139,7 @@ body {margin:0;
 
 }
        #letter p{
-           color: darkblue;
+           color: white;
            line-height: 1;
        }
        
@@ -219,42 +244,41 @@ text-align:left;
   <a href="#" onclick="openThree('cv')">curriculum</a>
   <a href="#">contact</a>
 </div>
-<div class="topnav" id="myTopnav">
+    
+    
+<div class="mainnav" id="myMainnav">
   <a href="#" onClick="window.location.reload();" id="naam">SHERVIN SHEIKH REZAEI</a>
-     <a href="#contact">shop</a>
+    <div class="dropdown">
+    <a class="dropbtn" id="arc">ARCHIVE</a>
+<div class="topnav dropdown-content" id="myTopnav">
+  <a href="#contact">shop</a>
   <a href="#news">social images</a>
-  <a href="#">publications
-    </a>
-      <div class="dropdown">
-    <a class="dropbtn">expositions
-    </a>
-    <div class="dropdown-content">
+  <a href="#">publications</a>
+  <div class="dropdown">
+    <a class="dropbtn">expositions</a>
+    <div class="side dropdown-content">
       <a href="#">Grand Tour</a>
       <a href="#">Reversed Perspective</a>
       <a href="#">Labyrinthstage</a>
     </div>
   </div>
   <div class="dropdown">
-    <a class="dropbtn">books
-    </a>
-    <div class="dropdown-content">
+    <a class="dropbtn">books</a>
+    <div class="side dropdown-content">
       <a href="#" onclick="openTwo('bac')">20122016</a>
       <a href="#" onclick="openTwo('bauhausbook')">BAUHAUS:Labyrinthstage</a>
       <a href="#" onclick="openTwo('revbook')">Reversed Perspective</a>
-              <a href="#" onclick="openTwo('aware')">Awareness Station S14</a>
-              <a href="#" onclick="openTwo('dagboek')">Ensemble:</a>
+      <a href="#" onclick="openTwo('aware')">Awareness Station S14</a>
+      <a href="#" onclick="openTwo('dagboek')">Ensemble:</a>
     </div>
   </div>
-
-   
   <div class="dropdown">
-    <a class="dropbtn">physical 
-    </a>
-    <div class="dropdown-content">
-      <a href="#">Balder</a>
-      <a href="#">Trap</a>
-      <a href="#">Maquette Caritas for dvvt</a>
-      <a href="#">Los</a>
+     <a class="dropbtn">physical</a>
+    <div class="side dropdown-content">
+      <a href="#" onclick="openTwo('balder')">Balder</a>
+      <a href="#" onclick="openTwo('trap')">Trap</a>
+      <a href="#" onclick="openTwo('dvvt')">Maquette Caritas for dvvt</a>
+      <a href="#" onclick="openTwo('los')">Los</a>
       <a href="#">Ensemble:</a>
       <a href="#">Play</a>
     </div>
@@ -262,8 +286,10 @@ text-align:left;
     <a href="#">drawing</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+</div>
+    </div>
     
-<div class="content">
+<div class="realcontent">
   <div class="column" id="een"> 
       <div id="bio">Shervin Sheikh Rezaei is a Belgian architect with Iranian roots who is based in Ghent. Through her profession she converts personal chaos into structural order. In this way she tries to find intrinsic serenity and always utilizes her intuition as a starting point. She transforms her state of mind into a place that is transcended by materiality and thus forms an open narrative. She draws from daily compositions, texts, visual arts, and above all from dialogues with the other. At the moment she works as an architect with Jan De Vylder and Inge Vinck and she teaches Mixed Media and Design at LUCA School of Arts in Ghent and Brussels.</div>
       <div id="drawing1">
@@ -414,14 +440,29 @@ function myFunction() {
     x.className = "sidenav";
   }
 }
+       function initComparisons() {
+  var x, i;
+  x = $(".side");
+  for (i = 0; i < x.length; i++) {
+    settingIt(x[i]);
+  }  
+    function settingIt(sider){
+        var sider;
+        var w = sider.offsetWidth;
+        sider.style.paddingLeft = (w/2) + "px";
+    }
+    }
+
+
     
 $(document).ready(function() {
-$(".dropdown").click(function(){
-$(this).removeClass("dropped");
-$(this).nextAll().removeClass("dropped");
-$(this).children(".dropdown-content").toggle();
-$(this).siblings().children(".dropdown-content").hide();
-$(this).prevAll().toggleClass("dropped");
+
+    
+$(".dropbtn").click(function(){
+$("#arc").hide();
+$(this).siblings(".dropdown-content").toggle();
+$(this).parent().siblings().children(".dropdown-content").hide();
+$(this).children("a").addClass("dropped");
 });
     
     
