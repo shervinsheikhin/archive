@@ -21,12 +21,13 @@
 body {margin:0;
     font-family: 'Crimson Text', serif;
        cursor: crosshair;
-       overflow: hidden;}
+       overflow: hidden;
+       font-size: 90%;}
        a{cursor: cell;}
 
 /* Create three equal columns that floats next to each other */
 .column {
-    margin-left: 2em;
+    margin-left: 1em;
   float: left;
   width: 30%;
     overflow: scroll;
@@ -56,12 +57,12 @@ body {margin:0;
 }
        
 .mainnav {
-    padding: 1em 3em;
+    padding: 2em 2em;
   overflow: visible;
 }
 
 .mainnav a {
-  padding:1em 1em;
+  padding:0;
   float: left;
   color:black;  
   display: block;
@@ -78,7 +79,7 @@ body {margin:0;
 }
 
 .topnav a {
-  padding:1em 1em;
+  padding:0em 1em;
   float: right;
   color:black;  
   display: block;
@@ -96,50 +97,56 @@ body {margin:0;
 }
 
 .dropdown {
-  float:right;
   overflow: visible;
 }
+.right {
+  float:right;
+}
        .dropped {
-           background-color: yelow;
+           background-color: yellow;
        }
 
 .dropdown .dropbtn {
   font-size: 17px;    
   border: none;
   outline: none;
-  background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 .side {
+    padding-right: 1em;
     padding-top: 4em;
     position: fixed;
-  display: none;
-  z-index: 1;
+    display: none;
     right: 0;
     top: 0;
-  writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     text-orientation: upright;
        }
-
-.side a {
+    .nest {
+    padding:0;
+position: relative;
+        display: none;
+    writing-mode: vertical-rl;
+        text-orientation:sideways;
+       }
+       .upright{        letter-spacing: -1px;
+}
+    .side a {
   text-transform: uppercase;
-  padding:0em 1em;
+  padding:0.5em 0;
+        float: left;
   color: black;
   text-decoration: none;
   display: block;
-  text-align: right;
 }
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-}
-
+          
 .dropdown-content a:hover {
-  text-decoration: underline;
+  background-color: yellow;
 
 }
        #letter p{
-           color: white;
+           color:navy;
            line-height: 1;
        }
        
@@ -160,9 +167,8 @@ text-align:left;
        
 .sidenav {
     position: absolute;
-    width: 80vw;
-  overflow: hidden;
-  transform:rotate(90deg) translateY(-58vw);
+right: 1em; bottom: 3em;  overflow: hidden;
+        writing-mode: vertical-rl;
 }
 
 .sidenav a {
@@ -242,19 +248,20 @@ text-align:left;
     
 <div class="sidenav" id="mySidenav">
   <a href="#" onclick="openThree('cv')">curriculum</a>
-  <a href="#">contact</a>
+  <a href="#" onclick="openThree('info')">contact</a>
 </div>
     
     
 <div class="mainnav" id="myMainnav">
   <a href="#" onClick="window.location.reload();" id="naam">SHERVIN SHEIKH REZAEI</a>
-    <div class="dropdown">
+    <div class="dropdown right">
     <a class="dropbtn" id="arc">ARCHIVE</a>
 <div class="topnav dropdown-content" id="myTopnav">
-  <a href="#contact">shop</a>
-  <a href="#news">social images</a>
-  <a href="#">publications</a>
-  <div class="dropdown">
+      <a href="#">office</a>
+  <a href="#">shop</a>
+  <a href="#">social images</a>
+  <a href="#" onclick="openThree('pub')">publications</a>
+  <div class="dropdown right">
     <a class="dropbtn">expositions</a>
     <div class="side dropdown-content">
       <a href="#">Grand Tour</a>
@@ -262,25 +269,40 @@ text-align:left;
       <a href="#">Labyrinthstage</a>
     </div>
   </div>
-  <div class="dropdown">
+  <div class="dropdown right">
     <a class="dropbtn">books</a>
     <div class="side dropdown-content">
+              <a href="#" onclick="openTwo('revbook')">Reversed Perspective</a>
+<div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
+             <div class="nest dropdown-content">
+      <a href="#" onclick="openTwo('trip')">my trip to iran</a>
+      <a href="#" onclick="openTwo('inbetween')">'an architecture of the inbetween'</a>
+    </div>
+        </div>
       <a href="#" onclick="openTwo('bac')">20122016</a>
-      <a href="#" onclick="openTwo('bauhausbook')">BAUHAUS:Labyrinthstage</a>
-      <a href="#" onclick="openTwo('revbook')">Reversed Perspective</a>
-      <a href="#" onclick="openTwo('aware')">Awareness Station S14</a>
-      <a href="#" onclick="openTwo('dagboek')">Ensemble:</a>
+      <a href="#" onclick="openTwo('aware')">Station S14</a>
+      <a href="#" onclick="openTwo('bauhausbook')">BAUHAUS:Labyrinthstage</a>        
     </div>
   </div>
-  <div class="dropdown">
+  <div class="dropdown right">
      <a class="dropbtn">physical</a>
     <div class="side dropdown-content">
-      <a href="#" onclick="openTwo('balder')">Balder</a>
-      <a href="#" onclick="openTwo('trap')">Trap</a>
-      <a href="#" onclick="openTwo('dvvt')">Maquette Caritas for dvvt</a>
-      <a href="#" onclick="openTwo('los')">Los</a>
-      <a href="#">Ensemble:</a>
+              <a href="#" onclick="openTwo('reverse')">Reverse Perspective</a>
+      <a href="#" onclick="openTwo('bldr')">BLDR.</a>
+      <a href="#" onclick="openTwo('caritas')">Maquette dvvt</a>
+      <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
+             <div class="nest dropdown-content">
+      <a href="#" onclick="openTwo('column')">column</a>
+      <a href="#" onclick="openTwo('mirror')">mirror heterotopia</a>
+    <a href="#" onclick="openTwo('textile')">textile plans</a>
+    <a href="#" onclick="openTwo('models')">models</a>
+      <a href="#" onclick="openTwo('drawn')">transparent drawings</a>
+
+    </div>
+        </div>
       <a href="#">Play</a>
+<a href="#" onclick="openTwo('trap')">Trap</a>
+
     </div>
   </div>
     <a href="#">drawing</a>
@@ -423,6 +445,7 @@ function openThree(a){
 function openTwo(b){
     $("#twee").load('books.html #'+b).css('width','60%');
     $("#drie").hide();
+    $("#een").load('bookinfo.html #'+b);
 }
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -460,14 +483,20 @@ $(document).ready(function() {
     
 $(".dropbtn").click(function(){
 $("#arc").hide();
+    $(".sidenav").hide();
 $(this).siblings(".dropdown-content").toggle();
 $(this).parent().siblings().children(".dropdown-content").hide();
 $(this).children("a").addClass("dropped");
 });
     
     
-$("#naam").click(function() {
+$("#naam").hover(function() {
     $("#bio").toggle();
+});
+    
+$("a").click(function() {
+   $(this).addClass('dropped');
+        $("a").not(this).removeClass('dropped');
 });
 
 });
