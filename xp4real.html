@@ -25,17 +25,28 @@ body {margin:0;
        font-size: 90%;}
        a{cursor: cell;}
 
+       h3{  
+font-weight: 100;
+       font-size: 1.2rem;}
+       
+       h5{
+font-weight: 100;
+       font-size: 0.6rem; }
+       a{text-decoration: none;
+       color: black;}
 /* Create three equal columns that floats next to each other */
 .column {
     margin-left: 1em;
   float: left;
-  width: 30%;
     overflow: scroll;
   padding: 10px;
   height: 90vh; /* Should be removed. Only for demonstration */
 }
-
+       #een{  width: 25%;}
+       #twee{width: 30%;}
+       #drie{width: 35%;}
 .realcontent{
+    padding-left: 1em;
     width: 100vw;
     position: fixed;
     padding-top: 3em;
@@ -66,7 +77,6 @@ body {margin:0;
   float: left;
   color:black;  
   display: block;
-  text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
@@ -83,13 +93,14 @@ body {margin:0;
   float: right;
   color:black;  
   display: block;
-  text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
 
 #naam {
     float: left;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 2em;
 }
 
 .topnav .icon {
@@ -110,37 +121,39 @@ body {margin:0;
   font-size: 17px;    
   border: none;
   outline: none;
-  font-family: inherit;
   margin: 0;
 }
 .side {
-    padding-right: 1em;
-    padding-top: 4em;
+    padding-right: 2em;
+    padding-top: 6em;
     position: fixed;
     display: none;
     right: 0;
     top: 0;
     writing-mode: vertical-rl;
-    text-orientation: upright;
        }
     .nest {
-    padding:0;
-position: relative;
+        padding-right: 3em;
+        padding-top: 1em;
+          white-space: nowrap;
+position: absolute;
         display: none;
-    writing-mode: vertical-rl;
-        text-orientation:sideways;
+        writing-mode: horizontal-tb;
        }
+       
        .upright{        letter-spacing: -1px;
 }
     .side a {
-  text-transform: uppercase;
+    font-family: Helvetica Neue, sans-serif;
+  text-transform: lowercase;
   padding:0.5em 0;
         float: left;
   color: black;
   text-decoration: none;
   display: block;
 }
-          
+          .nest a{    padding:0em 0em;
+float: right;}
 .dropdown-content a:hover {
   background-color: yellow;
 
@@ -156,12 +169,14 @@ position: relative;
 
        #bio{
            display: none;
-width:70%;
+width:60%;
 text-align:left;
-           padding: 1em 2em 3em 2em;
+           padding: 0em 4em 3em 0em;
            line-height: 1.3;
+           
        }
        .twee{width: 60%}
+       .twee img{margin-bottom: 1em;}
        .drie{display: none;}
        
        
@@ -247,8 +262,8 @@ right: 1em; bottom: 3em;  overflow: hidden;
 <body>
     
 <div class="sidenav" id="mySidenav">
-  <a href="#" onclick="openThree('cv')">curriculum</a>
   <a href="#" onclick="openThree('info')">contact</a>
+  <a href="#" onclick="openThree('cv')">curriculum vitae</a>
 </div>
     
     
@@ -260,52 +275,52 @@ right: 1em; bottom: 3em;  overflow: hidden;
       <a href="#">office</a>
   <a href="#">shop</a>
   <a href="#">social images</a>
-  <a href="#" onclick="openThree('pub')">publications</a>
-  <div class="dropdown right">
-    <a class="dropbtn">expositions</a>
-    <div class="side dropdown-content">
-      <a href="#">Grand Tour</a>
-      <a href="#">Reversed Perspective</a>
-      <a href="#">Labyrinthstage</a>
-    </div>
-  </div>
+  <a href="#" onclick="openKeep('pub')">publications</a>
+<a href="#" onclick="openKeep('expo')">expositions</a>
   <div class="dropdown right">
     <a class="dropbtn">books</a>
     <div class="side dropdown-content">
-              <a href="#" onclick="openTwo('revbook')">Reversed Perspective</a>
-<div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
-             <div class="nest dropdown-content">
-      <a href="#" onclick="openTwo('trip')">my trip to iran</a>
-      <a href="#" onclick="openTwo('inbetween')">'an architecture of the inbetween'</a>
+              <a href="#" onclick="openFull('revbook')">Reversed Perspective</a>
+              <a href="#" onclick="openTiny('aware')">awareness station</a>
+<a href="#" onclick="openFull('empty')">only the emptiness remains</a>
+             <div class="dropdown"> <a href="#" class="dropbtn">20122016</a>
+<div class="nest dropdown-content">
+      <a href="#b122015" onclick="openTiny('bac')">122015</a>
+      <a href="#zeeslag" onclick="openTiny('bac')">062016.01: ZEESLAG ARCHITECTUUR</a>
+      <a href="#context" onclick="openTiny('bac')">062016.02: context</a><br>
+      <a href="#b112014" onclick="openTiny('bac')">112014</a>
+      <a href="#b052015" onclick="openTiny('bac')">052015</a>
     </div>
         </div>
-      <a href="#" onclick="openTwo('bac')">20122016</a>
-      <a href="#" onclick="openTwo('aware')">Station S14</a>
-      <a href="#" onclick="openTwo('bauhausbook')">BAUHAUS:Labyrinthstage</a>        
+<div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
+             <div class="nest dropdown-content">
+      <a href="#" onclick="openFull('db')">my trip to iran</a>
+      <a href="#" onclick="openFull('ib')">'an architecture of the inbetween'</a>
+    </div>
+        </div>
+      <a href="#" onclick="openFull('bauhaus')">BAUHAUS:Labyrinthstage</a>        
     </div>
   </div>
   <div class="dropdown right">
      <a class="dropbtn">physical</a>
     <div class="side dropdown-content">
-              <a href="#" onclick="openTwo('reverse')">Reverse Perspective</a>
-      <a href="#" onclick="openTwo('bldr')">BLDR.</a>
-      <a href="#" onclick="openTwo('caritas')">Maquette dvvt</a>
+              <a href="#" onclick="openFull('los')">los</a>
+      <a href="#" onclick="openFull('bldr')">BLDR.</a>
+        <a href="#" onclick="openFull('trap')">Trap</a>
+        <a href="#" onclick="openFull('caritas')">fragments</a>
+      <a href="#" onclick="openFull('play')">Play</a>
       <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
              <div class="nest dropdown-content">
-      <a href="#" onclick="openTwo('column')">column</a>
-      <a href="#" onclick="openTwo('mirror')">mirror heterotopia</a>
-    <a href="#" onclick="openTwo('textile')">textile plans</a>
-    <a href="#" onclick="openTwo('models')">models</a>
-      <a href="#" onclick="openTwo('drawn')">transparent drawings</a>
-
+      <a href="#" onclick="openFull('column')">column</a>
+      <a href="#" onclick="openFull('mirror')">mirror heterotopia</a>
+    <a href="#" onclick="openFull('textile')">textile plans</a>
+    <a href="#" onclick="openFull('models')">models</a>
+      <a href="#" onclick="openFull('drawn')">transparent drawings</a>
     </div>
         </div>
-      <a href="#">Play</a>
-<a href="#" onclick="openTwo('trap')">Trap</a>
-
     </div>
   </div>
-    <a href="#">drawing</a>
+    <a href="#" onclick="openFull('draw')">drawing</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </div>
@@ -437,16 +452,27 @@ of the house and family,motivated by the culture and too through country’s</p>
   </div>
     </div>
 <script>
-function openThree(a){
-    $("#drie").load('/shervin/'+a+'.html');
-    $("#twee").show();
+function openOne(a,b){
+    $("#een").load('/shervin/'+a+'.html');
+    $("#twee").load('/shervin/'+b+'.html');;
 }
     
-function openTwo(b){
+function openKeep(a){
+    $("#een").load('xp4real.html #drawing1');
+    $("#twee").load(a+'.html #links').css('width','30%');
+    $("#drie").load(a+'.html #rechts').show();
+}
+function openFull(b){
     $("#twee").load('books.html #'+b).css('width','60%');
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b);
 }
+function openTiny(b){
+    $("#twee").load('books.html #'+b).css('width','30%');
+    $("#drie").hide();
+    $("#een").load('bookinfo.html #'+b);
+}
+    
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
