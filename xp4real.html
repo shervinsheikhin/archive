@@ -13,48 +13,71 @@
 <script src="scripts/jquery.cycle2.center.min.js"></script>
                  	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
-   <style>
-       * {
+   <style>* {
   box-sizing: border-box;
 }
-         
-body {margin:0;
-    font-family: 'Crimson Text', serif;
-       cursor: crosshair;
-       overflow: hidden;
-       font-size: 90%;}
-       a{cursor: cell;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  cursor: crosshair;
+  overflow: hidden;
+  font-size: 90%;
+}
 
-       h3{  
-font-weight: 100;
-       font-size: 1.2rem;}
-       
-       h5{
-font-weight: 100;
-       font-size: 0.6rem; }
-       a{text-decoration: none;
-       color: black;}
+h3 {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-weight: 100;
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+    cursor: cell;
+}
 /* Create three equal columns that floats next to each other */
+       #cvholder{display: flex; flex-direction: column; line-height: 1.2}
+       #cvholder > div{display: flex; flex-direction: row;}
+       .item>:first-of-type{width: 20%; max-width: 10em; min-width: 5em;}
+       .item>:nth-of-type(2){width: 80%; }
 .column {
-    margin-left: 1em;
+  scroll-behavior: smooth;
+  margin-left: 2em;
   float: left;
-    overflow: scroll;
-  padding: 10px;
+  overflow: scroll;
+  padding: 0 0 2em 0;
   height: 90vh; /* Should be removed. Only for demonstration */
 }
-       #een{  width: 25%;}
-       #twee{width: 30%;}
-       #drie{width: 35%;}
-.realcontent{
-    padding-left: 1em;
-    width: 100vw;
-    position: fixed;
-    padding-top: 3em;
-    z-index: -1;
-       }
+.column a:hover {
+  text-decoration: underline;
+}
+.inline{display: flex;}
+#een {
+  width: 25%;
+}
+#twee {
+  width: 30%;
+}
+#drie {
+  width: 30%;
+}
+.realcontent {
+  padding-left: 1em;
+  width: 100vw;
+  position: fixed;
+  padding-top: 3em;
+  z-index: -1;
+}
 /* Clear floats after the columns */
 .realcontent:after {
-    position: fixed;
+  position: fixed;
   content: "";
   display: table;
   clear: both;
@@ -66,41 +89,44 @@ font-weight: 100;
     width: 100%;
   }
 }
-       
+
 .mainnav {
-    padding: 2em 2em;
+  padding: 2em 2em;
   overflow: visible;
 }
 
 .mainnav a {
-  padding:0;
+  padding: 0;
   float: left;
-  color:black;  
+  color: black;
   display: block;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav {
-    display: none;
+  display: none;
   overflow: visible;
   position: relative;
   z-index: 1;
 }
 
 .topnav a {
-  padding:0em 1em;
+  padding: 0em 1em;
   float: right;
-  color:black;  
+  color: black;
   display: block;
   text-decoration: none;
   font-size: 17px;
 }
 
 #naam {
-    float: left;
-    font-family: Helvetica Neue, sans-serif;
-    font-size: 2em;
+  float: left;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 1.5em;
+}
+#naam:hover {
+  background-color: yellow;
 }
 
 .topnav .icon {
@@ -111,104 +137,118 @@ font-weight: 100;
   overflow: visible;
 }
 .right {
-  float:right;
+  float: right;
 }
-       .dropped {
-           background-color: yellow;
-       }
+.dropped {
+  background-color: yellow;
+}
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   margin: 0;
 }
 .side {
-    padding-right: 2em;
-    padding-top: 6em;
-    position: fixed;
-    display: none;
-    right: 0;
-    top: 0;
-    writing-mode: vertical-rl;
-       }
-    .nest {
-        padding-right: 3em;
-        padding-top: 1em;
-          white-space: nowrap;
-position: absolute;
-        display: none;
-        writing-mode: horizontal-tb;
-       }
-       
-       .upright{        letter-spacing: -1px;
+  padding-top: 6em;
+  position: fixed;
+  display: none;
+  right: 2em;
+  top: 0;
+  writing-mode: vertical-rl;
 }
-    .side a {
-    font-family: Helvetica Neue, sans-serif;
+.nest {
+  padding-right: 3em;
+  padding-top: 1em;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+  writing-mode: horizontal-tb;
+}
+
+.upright {
+  letter-spacing: -1px;
+}
+.side a {
+  font-family: Helvetica Neue, sans-serif;
   text-transform: lowercase;
-  padding:0.5em 0;
-        float: left;
+  padding: 0.5em 0;
+  float: left;
   color: black;
   text-decoration: none;
   display: block;
 }
-          .nest a{    padding:0em 0em;
-float: right;}
+.nest a {
+  padding: 0em 0em;
+  float: right;
+}
 .dropdown-content a:hover {
   background-color: yellow;
-
 }
-       #letter p{
-           color:navy;
-           line-height: 1;
-       }
-       
-       #drawing img{
-           padding: 1em;
-       }
+#letter p {
+  color: darkblue;
+  line-height: 1.2;
+    text-align: left;
+}
 
-       #bio{
-           display: none;
-width:60%;
-text-align:left;
-           padding: 0em 4em 3em 0em;
-           line-height: 1.3;
-           
-       }
-       .twee{width: 60%}
-       .twee img{margin-bottom: 1em;}
-       .drie{display: none;}
-       
-       
+#drawing img {
+  padding: 1em;
+}
+
+#bio {
+    font-style: italic;
+  display: none;
+  width: 70%;
+  text-align: left;
+  padding: 0em 4em 3em 0em;
+  line-height: 1.3;
+  font-family: Helvetica Neue, sans-serif;
+}
+.twee {
+  width: 60%;
+}
+.twee img {
+  margin-bottom: 1em;
+}
+.drie {
+  display: none;
+}
+
 .sidenav {
-    position: absolute;
-right: 1em; bottom: 3em;  overflow: hidden;
-        writing-mode: vertical-rl;
+  position: absolute;
+  right: 1em;
+  bottom: 3em;
+  overflow: hidden;
+  writing-mode: vertical-rl;
 }
 
 .sidenav a {
-  padding:2em 1em;
+  padding: 2em 1em;
   float: right;
-  color:navy;  
+  color: navy;
   display: block;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
 
-
 @media screen and (max-width: 800px) {
-  .sidenav a, .dropdown .dropbtn {
+  .sidenav a,
+  .dropdown .dropbtn {
     display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .sidenav {transform:none;}
-  .sidenav.responsive {position: relative;}
+  .sidenav {
+    transform: none;
+  }
+  .sidenav.responsive {
+    position: relative;
+  }
   .sidenav.responsive .icon {
     position: absolute;
-    color:red;
+    color: red;
     right: 0;
     top: 0;
   }
@@ -217,8 +257,12 @@ right: 1em; bottom: 3em;  overflow: hidden;
     display: block;
     text-align: left;
   }
-  .sidenav.responsive .dropdown {float: none;}
-  .sidenav.responsive .dropdown-content {position: relative;}
+  .sidenav.responsive .dropdown {
+    float: none;
+  }
+  .sidenav.responsive .dropdown-content {
+    position: relative;
+  }
   .sidenav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -226,21 +270,24 @@ right: 1em; bottom: 3em;  overflow: hidden;
   }
 }
 @media screen and (max-width: 800px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
     float: left;
-    color:black;
+    color: black;
     display: block;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
-    color:red;
+    color: red;
     right: 0;
     top: 0;
   }
@@ -249,20 +296,28 @@ right: 1em; bottom: 3em;  overflow: hidden;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
 }
+p {
+  text-align: justify;
+}
+
 </style>
 </head>
 <body>
     
 <div class="sidenav" id="mySidenav">
-  <a href="#" onclick="openThree('info')">contact</a>
+  <a href="#" onclick="openTwo('contact')">contact</a>
   <a href="#" onclick="openThree('cv')">curriculum vitae</a>
 </div>
     
@@ -276,18 +331,18 @@ right: 1em; bottom: 3em;  overflow: hidden;
   <a href="#">shop</a>
   <a href="#">social images</a>
   <a href="#" onclick="openKeep('pub')">publications</a>
-<a href="#" onclick="openKeep('expo')">expositions</a>
+<a href="#" onclick="openTiny('expo')">expositions</a>
   <div class="dropdown right">
     <a class="dropbtn">books</a>
     <div class="side dropdown-content">
-              <a href="#" onclick="openFull('revbook')">Reversed Perspective</a>
+              <a href="#" onclick="openFull('bac')">Reversed Perspective</a>
               <a href="#" onclick="openTiny('aware')">awareness station</a>
 <a href="#" onclick="openFull('empty')">only the emptiness remains</a>
              <div class="dropdown"> <a href="#" class="dropbtn">20122016</a>
 <div class="nest dropdown-content">
       <a href="#b122015" onclick="openTiny('bac')">122015</a>
-      <a href="#zeeslag" onclick="openTiny('bac')">062016.01: ZEESLAG ARCHITECTUUR</a>
-      <a href="#context" onclick="openTiny('bac')">062016.02: context</a><br>
+      <a href="#zeeslag" onclick="openTiny('bac')">ZEESLAG</a>
+      <a href="#context" onclick="openTiny('bac')">context</a>
       <a href="#b112014" onclick="openTiny('bac')">112014</a>
       <a href="#b052015" onclick="openTiny('bac')">052015</a>
     </div>
@@ -298,16 +353,16 @@ right: 1em; bottom: 3em;  overflow: hidden;
       <a href="#" onclick="openFull('ib')">'an architecture of the inbetween'</a>
     </div>
         </div>
-      <a href="#" onclick="openFull('bauhaus')">BAUHAUS:Labyrinthstage</a>        
+      <a href="#" onclick="openTiny('bauhaus')">BAUHAUS:Labyrinthstage</a>        
     </div>
   </div>
   <div class="dropdown right">
      <a class="dropbtn">physical</a>
     <div class="side dropdown-content">
-              <a href="#" onclick="openFull('los')">los</a>
+              <a href="#" onclick="openTiny('los')">los</a>
       <a href="#" onclick="openFull('bldr')">BLDR.</a>
         <a href="#" onclick="openFull('trap')">Trap</a>
-        <a href="#" onclick="openFull('caritas')">fragments</a>
+        <a href="#" onclick="openTiny('caritas')">fragments</a>
       <a href="#" onclick="openFull('play')">Play</a>
       <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
              <div class="nest dropdown-content">
@@ -320,7 +375,7 @@ right: 1em; bottom: 3em;  overflow: hidden;
         </div>
     </div>
   </div>
-    <a href="#" onclick="openFull('draw')">drawing</a>
+    <a href="#" onclick="open('draw')">drawing</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </div>
@@ -328,7 +383,7 @@ right: 1em; bottom: 3em;  overflow: hidden;
     
 <div class="realcontent">
   <div class="column" id="een"> 
-      <div id="bio">Shervin Sheikh Rezaei is a Belgian architect with Iranian roots who is based in Ghent. Through her profession she converts personal chaos into structural order. In this way she tries to find intrinsic serenity and always utilizes her intuition as a starting point. She transforms her state of mind into a place that is transcended by materiality and thus forms an open narrative. She draws from daily compositions, texts, visual arts, and above all from dialogues with the other. At the moment she works as an architect with Jan De Vylder and Inge Vinck and she teaches Mixed Media and Design at LUCA School of Arts in Ghent and Brussels.</div>
+      <div id="bio">I am a Belgian architect/ creator with Iranian roots who is based in Ghent. Through my profession I convert my personal chaos into structural order. In this way I trie to find intrinsic serenity and I always use my intuition as a starting point. I try to transform my state of mind into a place that is transcended by materiality and thus forms an open narrative. I draw from daily compositions, texts, visual arts, and above all from dialogues with the other. At the moment I work as an architect with Jan De Vylder and Inge Vinck and I teach Mixed Media and Design at LUCA School of Arts in Ghent and Brussels.</div>
       <div id="drawing1">
           <img src="shervin/drawing/spel3.jpg" width="40%">
       <img src="shervin/drawing/spel4.jpg" width="40%"> 
@@ -355,8 +410,7 @@ right: 1em; bottom: 3em;  overflow: hidden;
 </div>
   <div class="column" id="twee">
       <div id="letter">
-    <p>ENSEMBLE: an architecture of the inbetween.<br><br>
-//<br><br>
+    <p>An architecture of the inbetween.<br><br>
 A letter from my dear friend, Weronika Zalewska.<br><br>
 Dear Shervin,<br>
 I feel that when architecture turns towards the investigation
@@ -425,7 +479,8 @@ through its means, makes the dialogue more complicated and estranged.
 When sharing with me the stories of the two cultures, Iran seems to keep within
 people the cultivation of some secret- the treasuring of life within the walls
 of the house and family,motivated by the culture and too through country’s</p>
-  </div></div>
+  </div>
+    </div>
   <div class="column" id="drie">     
       
 <img src="shervin/drawing/a3.jpg" width="100%">
@@ -452,15 +507,19 @@ of the house and family,motivated by the culture and too through country’s</p>
   </div>
     </div>
 <script>
-function openOne(a,b){
-    $("#een").load('/shervin/'+a+'.html');
-    $("#twee").load('/shervin/'+b+'.html');;
+function openThree(a){
+    $("#drie").load(a+'.html');
 }
     
+function openTwo(a){
+    $("#een").load('bookinfo.html #'+a);
+    $("#twee").load('books.html #'+a).css('width','30%');
+}
+  
 function openKeep(a){
     $("#een").load('xp4real.html #drawing1');
-    $("#twee").load(a+'.html #links').css('width','30%');
-    $("#drie").load(a+'.html #rechts').show();
+    $("#twee").load(a+'.html').css('width','30%');
+    $("#drie").load('xp4real.html #drawing2').show();
 }
 function openFull(b){
     $("#twee").load('books.html #'+b).css('width','60%');
@@ -514,7 +573,10 @@ $(this).siblings(".dropdown-content").toggle();
 $(this).parent().siblings().children(".dropdown-content").hide();
 $(this).children("a").addClass("dropped");
 });
-    
+  
+    $(".topnav > a").click(function(){
+$(".side:visible").toggle();
+});
     
 $("#naam").hover(function() {
     $("#bio").toggle();
@@ -525,6 +587,7 @@ $("a").click(function() {
         $("a").not(this).removeClass('dropped');
 });
 
+    
 });
 
 </script>
