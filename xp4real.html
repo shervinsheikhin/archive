@@ -23,7 +23,7 @@ html {
 }
 body {
   margin: 0;
-font-family: 'Spectral', serif;
+font-family: 'Prociono', serif;
     font-size: 80%;
     letter-spacing: 1px;
   cursor: crosshair;
@@ -45,6 +45,9 @@ a {
   color: black;
     cursor: cell;
 }
+       #arc:hover{
+           background-color: yellow;
+       }
 /* Create three equal columns that floats next to each other */
        #cvholder{display: flex; flex-direction: column; line-height: 1.2}
        #cvholder > div{display: flex; flex-direction: row;}
@@ -154,16 +157,14 @@ padding-bottom: 2em;
   margin: 0;
 }
 .side {
-  padding-top: 6em;
+  top: 6em;
   position: fixed;
   display: none;
   right: 2em;
-  top: 0;
   writing-mode: vertical-rl;
 }
 .nest {
-  padding-right: 3em;
-  padding-top: 1em;
+  right: 3em;
   white-space: nowrap;
   position: absolute;
   display: none;
@@ -225,6 +226,9 @@ padding-bottom: 2em;
   font-size: 17px;
 }
 
+.sidenav a:hover {
+  background-color: yellow;
+}
 @media screen and (max-width: 800px) {
   .sidenav a,
   .dropdown .dropbtn {
@@ -515,7 +519,7 @@ $(document).ready(function() {
     
 $(".dropbtn").click(function(){
 $("#arc").hide();
-    $(".sidenav").hide();
+$(".sidenav").hide();
 $(this).siblings(".dropdown-content").toggle();
 $(this).parent().siblings().children(".dropdown-content").hide();
 $(this).children("a").addClass("dropped");
@@ -523,6 +527,9 @@ $(this).children("a").addClass("dropped");
   
     $(".topnav > a").click(function(){
 $(".side:visible").toggle();
+});
+    $(".side > a").click(function(){
+$(this).siblings().children(".dropdown-content").hide();
 });
     
 $("#naam").hover(function() {
