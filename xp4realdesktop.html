@@ -90,14 +90,44 @@ padding-bottom: 2em;
   clear: both;
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #een {
+  width: 100%;
+position: absolute;
+}
+#twee {
+  width: 100%;
+position: }
+#drie {
+  width: 30%;
+}
+}
+
 .mainnav {
-  padding: 2em;
+  padding: 2em 2em;
   overflow: visible;
 }
 
 .mainnav a {
   padding: 0;
   float: left;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav {
+  display: none;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.topnav a {
+  padding: 0em 1em;
+  float: right;
   color: black;
   display: block;
   text-decoration: none;
@@ -111,74 +141,9 @@ padding-bottom: 2em;
 }
 #naam:hover {
   background-color: yellow;
-}   
-       
-
-.topnav {
-  display: none;
-  overflow: visible;
-  position: relative;
-  z-index: 1;
 }
 
-.topnav a {
-  padding: 0em 1em;
-  float: left;
-  color: black;
-  display: block;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-@media screen and (max-width: 600px) {
-    .realcontent {
-        overflow: scroll;
-  padding:0;
-  width: 100vw;
-  position: fixed;
-  z-index: -1;
-}
-  #een {
-  width: 100%;
-position: absolute;
-      opacity: 0.2;
-}
-#twee {
-  width: 100%;
-position:relative;
-    height: auto;}
-#drie {
-  width: 100%;
-    position: relative;
-}
-    .column {
-        overflow: visible;
-        margin: 0;
-  padding: 1em;
-}
-
-.mainnav a, #naam{
-    text-align: center;
-  float: none;
-}
-    #arc{
-        font-style: italic;  
-}
-  .topnav {
-  text-align: center;
-  flex-direction: row-reverse;
-}
-
-.topnav a {
-  float: none;
-position: relative;
- display: flex;
-  flex-direction: row-reverse;}  
-    
-}
-
-.icon {
+.topnav .icon {
   display: none;
 }
 
@@ -274,12 +239,15 @@ position: relative;
 }
 @media screen and (max-width: 800px) {
   .sidenav a,
-  .sidenav .dropdown .dropbtn {
+  .dropdown .dropbtn {
     display: none;
   }
+}
+
+@media screen and (max-width: 800px) {
   .sidenav {
     transform: none;
-  } 
+  }
   .sidenav.responsive {
     position: relative;
   }
@@ -307,7 +275,8 @@ position: relative;
   }
 }
 @media screen and (max-width: 800px) {
-  .topnav .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -359,29 +328,14 @@ p {
 
 <div class="mainnav" id="myMainnav">
   <a href="#" onClick="window.location.reload();" id="naam">SHERVIN SHEIKH REZAEI</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   <div class="dropdown right">
     <a class="dropbtn" id="arc">ARCHIVE</a>
     <div class="topnav dropdown-content" id="myTopnav">
-      <div class="dropdown right">
-        <a class="dropbtn">physical</a>
-        <div class="side dropdown-content">
-          <a href="#" onclick="openTiny('los')">los</a>
-          <a href="#" onclick="openFull('bldr')">BLDR.</a>
-          <a href="#" onclick="openFull('trap')">Trap</a>
-          <a href="#" onclick="openTiny('caritas')">fragments</a>
-          <a href="#" onclick="openFull('play')">Play</a>
-          <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
-            <div class="nest dropdown-content">
-              <a href="#" onclick="openFull('pcolumn')">column</a>
-              <a href="#" onclick="openFull('mirror')">mirror heterotopia</a>
-              <a href="#" onclick="openFull('textile')">textile plans</a>
-              <a href="#" onclick="openFull('drawn')">transparent drawings</a>
-                              <a href="#" onclick="openFull('models')">models</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a href="#" onclick="openThree('office')">office</a>
+      <a href="#" onclick="openTiny('shop')">shop</a>
+      <a href="#">social images</a>
+      <a href="#" onclick="openTiny('pub')">publications</a>
+      <a href="#" onclick="openTiny('expo')">expositions</a>
       <div class="dropdown right">
         <a class="dropbtn">books</a>
         <div class="side dropdown-content">
@@ -406,12 +360,27 @@ p {
           <a href="#" onclick="openTiny('bauhaus')">BAUHAUS:Labyrinthstage</a>
         </div>
       </div>
+      <div class="dropdown right">
+        <a class="dropbtn">physical</a>
+        <div class="side dropdown-content">
+          <a href="#" onclick="openTiny('los')">los</a>
+          <a href="#" onclick="openFull('bldr')">BLDR.</a>
+          <a href="#" onclick="openFull('trap')">Trap</a>
+          <a href="#" onclick="openTiny('caritas')">fragments</a>
+          <a href="#" onclick="openFull('play')">Play</a>
+          <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
+            <div class="nest dropdown-content">
+              <a href="#" onclick="openFull('pcolumn')">column</a>
+              <a href="#" onclick="openFull('mirror')">mirror heterotopia</a>
+              <a href="#" onclick="openFull('textile')">textile plans</a>
+              <a href="#" onclick="openFull('drawn')">transparent drawings</a>
+                              <a href="#" onclick="openFull('models')">models</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="#" onclick="openDraw('draw')">drawing</a>
-      <a href="#" onclick="openTiny('expo')">expositions</a>
-      <a href="#" onclick="openTiny('pub')">publications</a>  
-          <a href="#">social images</a>  
-      <a href="#" onclick="openTiny('shop')">shop</a>
-         <a href="#" onclick="openThree('office')">office</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </div>
 </div>
@@ -446,7 +415,7 @@ p {
       <img src="shervin/drawing/a11.jpg" width="100%"></div>
   </div>
   <div class="column" id="twee">
-    <div id="letter">
+   <div id="letter">
       <p>An architecture of the inbetween.<br><br> A letter from my dear friend, Weronika Zalewska.<br><br> Dear Shervin,<br> I feel that when architecture turns towards the investigation of personal experiences - their influence on perception of the self
         and the outside world - the form can become as if a mold turning one’s state of mind into a place, transcending materiality while becoming an open narrative. It’s something other than an architecture of ideology or principle; shifting towards
         the dialogue of possibilities rather than hoping for ready solutions. Embracing fluidity, as if the only thing sure- in praise of no definite answers. Movement and reinvention- a mode seemingly closest to nature.<br><br> Creating from emotions
@@ -515,7 +484,8 @@ With Love,<br>
 کدام از این فرهنگها تمایل دارند ماهیت خود را، همان اندازه که در
 چشم اندازهای داخلی و بیرونی دیده می شوند، حفظ نمایند و تحقق
 بخشند؛ سفر با شما به کشورهای مختلف، به مانند اعضای خانواده
-        </p></div>
+       </p>
+    </div>
   </div>
   <div class="column" id="drie">
 <div id="drawing2">
@@ -549,7 +519,7 @@ function openThree(a){
     
 function openTwo(a){
     $("#een").load('bookinfo.html #'+a);
-    $("#twee").load('books.html #'+a);
+    $("#twee").load('books.html #'+a).css('width','30%');
 }
   
 function openDraw(a){
@@ -558,12 +528,12 @@ function openDraw(a){
     $("#drie").load('xp4real.html #drawing2').show();
 }
 function openFull(b){
-    $("#twee").load('books.html #'+b);
+    $("#twee").load('books.html #'+b).css('width','60%');
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b);
 }
 function openTiny(b){
-    $("#twee").load('books.html #'+b);
+    $("#twee").load('books.html #'+b).css('width','30%');
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b);
 }

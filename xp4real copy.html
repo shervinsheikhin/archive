@@ -91,7 +91,7 @@ padding-bottom: 2em;
 }
 
 .mainnav {
-  padding: 2em;
+  padding: 2em 2em;
   overflow: visible;
 }
 
@@ -103,34 +103,7 @@ padding-bottom: 2em;
   text-decoration: none;
   font-size: 17px;
 }
-
-#naam {
-  float: left;
-  font-family: Helvetica Neue, sans-serif;
-  font-size: 1.5em;
-}
-#naam:hover {
-  background-color: yellow;
-}   
        
-
-.topnav {
-  display: none;
-  overflow: visible;
-  position: relative;
-  z-index: 1;
-}
-
-.topnav a {
-  padding: 0em 1em;
-  float: left;
-  color: black;
-  display: block;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
 @media screen and (max-width: 600px) {
     .realcontent {
         overflow: scroll;
@@ -157,28 +130,50 @@ position:relative;
         margin: 0;
   padding: 1em;
 }
+    
+    .mainnav {
+  padding: 2em 2em;
+  overflow: visible;
+}
 
-.mainnav a, #naam{
-    text-align: center;
-  float: none;
+.mainnav a {
+  padding: 0;
+  float: left;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
 }
-    #arc{
-        font-style: italic;  
+  
 }
-  .topnav {
-  text-align: center;
-  flex-direction: row-reverse;
+
+
+.topnav {
+  display: none;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
 }
 
 .topnav a {
-  float: none;
-position: relative;
- display: flex;
-  flex-direction: row-reverse;}  
-    
+  padding: 0em 1em;
+  float: right;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.icon {
+#naam {
+  float: left;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 1.5em;
+}
+#naam:hover {
+  background-color: yellow;
+}
+
+.topnav .icon {
   display: none;
 }
 
@@ -307,6 +302,7 @@ position: relative;
   }
 }
 @media screen and (max-width: 800px) {
+  .topnav a:not(:first-child),
   .topnav .dropdown .dropbtn {
     display: none;
   }
@@ -359,29 +355,14 @@ p {
 
 <div class="mainnav" id="myMainnav">
   <a href="#" onClick="window.location.reload();" id="naam">SHERVIN SHEIKH REZAEI</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   <div class="dropdown right">
     <a class="dropbtn" id="arc">ARCHIVE</a>
     <div class="topnav dropdown-content" id="myTopnav">
-      <div class="dropdown right">
-        <a class="dropbtn">physical</a>
-        <div class="side dropdown-content">
-          <a href="#" onclick="openTiny('los')">los</a>
-          <a href="#" onclick="openFull('bldr')">BLDR.</a>
-          <a href="#" onclick="openFull('trap')">Trap</a>
-          <a href="#" onclick="openTiny('caritas')">fragments</a>
-          <a href="#" onclick="openFull('play')">Play</a>
-          <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
-            <div class="nest dropdown-content">
-              <a href="#" onclick="openFull('pcolumn')">column</a>
-              <a href="#" onclick="openFull('mirror')">mirror heterotopia</a>
-              <a href="#" onclick="openFull('textile')">textile plans</a>
-              <a href="#" onclick="openFull('drawn')">transparent drawings</a>
-                              <a href="#" onclick="openFull('models')">models</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a href="#" onclick="openThree('office')">office</a>
+      <a href="#" onclick="openTiny('shop')">shop</a>
+      <a href="#">social images</a>
+      <a href="#" onclick="openTiny('pub')">publications</a>
+      <a href="#" onclick="openTiny('expo')">expositions</a>
       <div class="dropdown right">
         <a class="dropbtn">books</a>
         <div class="side dropdown-content">
@@ -406,12 +387,27 @@ p {
           <a href="#" onclick="openTiny('bauhaus')">BAUHAUS:Labyrinthstage</a>
         </div>
       </div>
+      <div class="dropdown right">
+        <a class="dropbtn">physical</a>
+        <div class="side dropdown-content">
+          <a href="#" onclick="openTiny('los')">los</a>
+          <a href="#" onclick="openFull('bldr')">BLDR.</a>
+          <a href="#" onclick="openFull('trap')">Trap</a>
+          <a href="#" onclick="openTiny('caritas')">fragments</a>
+          <a href="#" onclick="openFull('play')">Play</a>
+          <div class="dropdown"> <a href="#" class="dropbtn">Ensemble</a>
+            <div class="nest dropdown-content">
+              <a href="#" onclick="openFull('pcolumn')">column</a>
+              <a href="#" onclick="openFull('mirror')">mirror heterotopia</a>
+              <a href="#" onclick="openFull('textile')">textile plans</a>
+              <a href="#" onclick="openFull('drawn')">transparent drawings</a>
+                              <a href="#" onclick="openFull('models')">models</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="#" onclick="openDraw('draw')">drawing</a>
-      <a href="#" onclick="openTiny('expo')">expositions</a>
-      <a href="#" onclick="openTiny('pub')">publications</a>  
-          <a href="#">social images</a>  
-      <a href="#" onclick="openTiny('shop')">shop</a>
-         <a href="#" onclick="openThree('office')">office</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </div>
 </div>
@@ -549,7 +545,7 @@ function openThree(a){
     
 function openTwo(a){
     $("#een").load('bookinfo.html #'+a);
-    $("#twee").load('books.html #'+a);
+    $("#twee").load('books.html #'+a).css('width','30%');
 }
   
 function openDraw(a){
@@ -558,12 +554,12 @@ function openDraw(a){
     $("#drie").load('xp4real.html #drawing2').show();
 }
 function openFull(b){
-    $("#twee").load('books.html #'+b);
+    $("#twee").load('books.html #'+b).css('width','60%');
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b);
 }
 function openTiny(b){
-    $("#twee").load('books.html #'+b);
+    $("#twee").load('books.html #'+b).css('width','30%');
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b);
 }
