@@ -132,35 +132,47 @@ padding-bottom: 2em;
 
 
 @media screen and (max-width: 600px) {
+html { overflow-y: scroll; }
+    }
     .realcontent {
-        overflow: scroll;
+        overflow: visible;
   padding:0;
   width: 100vw;
-  position: fixed;
-  z-index: -1;
+  position: relative;
+        z-index: 1;
 }
   #een {
   width: 100%;
 position: absolute;
-      opacity: 0.2;
+      opacity: 0.8;
+      z-index: 5;
 }
 #twee {
   width: 100%;
 position:relative;
-    height: auto;}
+    height: auto;
+             z-index: 4;}
 #drie {
   width: 100%;
     position: relative;
+     height: auto;
+          z-index: 3;
 }
     .column {
         overflow: visible;
         margin: 0;
   padding: 1em;
 }
+    
+    .mainnav{position: relative;    z-index: 10;
+}
 
 .mainnav a, #naam{
+    z-index: 10;
     text-align: center;
   float: none;
+    position: sticky;
+    top:0.5em;
 }
     #arc{
         font-style: italic;  
@@ -279,20 +291,7 @@ position: relative;
   }
   .sidenav {
     transform: none;
-  } 
-  .sidenav.responsive {
     position: relative;
-  }
-  .sidenav.responsive .icon {
-    position: absolute;
-    color: red;
-    right: 0;
-    top: 0;
-  }
-  .sidenav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
   }
   .sidenav.responsive .dropdown {
     float: none;
@@ -307,9 +306,7 @@ position: relative;
   }
 }
 @media screen and (max-width: 800px) {
-  .topnav .dropdown .dropbtn {
-    display: none;
-  }
+
   .topnav a.icon {
     float: left;
     color: black;
@@ -408,8 +405,8 @@ p {
       </div>
       <a href="#" onclick="openDraw('draw')">drawing</a>
       <a href="#" onclick="openTiny('expo')">expositions</a>
-      <a href="#" onclick="openTiny('pub')">publications</a>  
-          <a href="#">social images</a>  
+      <a href="#" onclick="openThree('pub')">publications</a>  
+      <a href="#">social images</a>  
       <a href="#" onclick="openTiny('shop')">shop</a>
          <a href="#" onclick="openThree('office')">office</a>
     </div>
@@ -544,7 +541,8 @@ With Love,<br>
 </div>
 <script>
 function openThree(a){
-    $("#drie").load(a+'.html');
+    $("#drie").load(a+'.html').css('width','100%');
+    $('#twee,#een').hide();
 }
     
 function openTwo(a){
@@ -559,30 +557,20 @@ function openDraw(a){
 }
 function openFull(b){
     $("#twee").load('books.html #'+b);
+    $("#twee").find(img).css('width','100%');
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b);
+    $("#een").load('bookinfo.html #'+b).css('width','75%');
 }
 function openTiny(b){
-    $("#twee").load('books.html #'+b);
+    $("#twee").load('books.html #'+b).css('width','100%');
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b);
-}
-    
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-function myFunction() {
-  var x = document.getElementById("mySidenav");
-  if (x.className === "sidenav") {
-    x.className += " responsive";
-  } else {
-    x.className = "sidenav";
-  }
+    $("#een").load('bookinfo.html #'+b).css('width','75%');
+    $(window).scroll(function(){
+        if ($(this).scrollTop()>50){
+            $('#een p').slideUp();
+        }else {  $('#een p').slideDown();}
+    });
+
 }
        function initComparisons() {
   var x, i;
@@ -600,7 +588,8 @@ function myFunction() {
 
     
 $(document).ready(function() {
-
+    
+    
   $("h3 > a").click(function(){
     $(this).parent('h3').siblings('p').toggle();
   });
