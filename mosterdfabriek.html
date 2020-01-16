@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SHERVIN SHEIKH REZAEI</title>
+        <meta name="keywords" content="architect, shervin, ghent, art, subbacultcha, subba, luca">
+        <meta name="author" content="Shervin Sheikh Rezaei">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>  body{
+   	  font-family: Plantin;
+    background-color: black;
+   }
+   
+ 
+	  * {box-sizing: border-box}
+.mySlides {display: none;
+position: relative;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+top:-1.5em;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+position: fixed;
+  top: 50%;
+    width: auto;
+  padding:16px;
+  margin-top: -22px;
+  color: white;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{left:0;}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: black;
+}
+
+</style>
+  </head>
+    <body>
+		 
+	<div class="slideshow-container">
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_01.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_02.jpg" width="100%">
+</div>
+
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_03.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_04.jpg" width="100%">
+</div>
+        <div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_05.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_06.jpg" width="100%">
+</div>
+
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_07.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_08.jpg" width="100%">
+</div>
+        <div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_09.jpg" width="100%">
+</div>
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_10.jpg" width="100%">
+</div>
+
+<div class="mySlides">
+<img src="mosterd/mosterdfabriek_Page_11.jpg" width="100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+<a class="next" onclick="plusSlides(1)">&#8594;</a>
+</div>
+	 <script>
+	    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	 </script>
+	 
+    </body>
+</html>
