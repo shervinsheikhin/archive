@@ -448,28 +448,30 @@ p {
     $(".realcontent").load(a+'.html');
 }
 function openThree(a){
-    $("#drie").load(a+'.html');
+    $("#drie").load(a+'.html').show();
+    $("#een").load('#letter').css('width','25%').show();
+    $("#twee").load('books.html #'+a).css('width','30%').show();
 }
     
 function openTwo(a){
-    $("#een").load('bookinfo.html #'+a);
-    $("#twee").load('books.html #'+a).css('width','30%');
+    $("#een").load('bookinfo.html #'+a).css('width','25%').show();
+    $("#twee").load('books.html #'+a).css('width','30%').show();
 }
   
 function openDraw(a){
-    $("#een").load('xp4real.html #drawing1');
-    $("#twee").load(a+'.html').css('width','30%');
-    $("#drie").load('xp4real.html #drawing2').show();
+    $("#een").load('#drawing1').css('width','25%').show();
+    $("#twee").load(a+'.html').css('width','30%').show();
+    $("#drie").load('#drawing2').show();
 }
 function openFull(b){
-    $("#twee").load('books.html #'+b).css('width','60%');
+    $("#twee").load('books.html #'+b).css('width','60%').show();
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b);
+    $("#een").load('bookinfo.html #'+b).css('width','25%').show();
 }
 function openTiny(b){
-    $("#twee").load('books.html #'+b).css('width','30%');
+    $("#twee").load('books.html #'+b).css('width','30%').show();
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b);
+    $("#een").load('bookinfo.html #'+b).css('width','25%').show();
 }
     
 function myFunction() {
