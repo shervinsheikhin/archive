@@ -76,7 +76,7 @@ padding-bottom: 2em;
 }
 #twee {
   width: 30%;
-        padding: 0;
+        padding: 0 0 2em 0;
 }
 #drie {
   width: 30%;
@@ -648,9 +648,9 @@ function openTiny(b){
 }
 
 function openMid(z){
-    $("#twee").load('books.html #'+b).css('width','30%').show();
+    $("#twee").load('books.html #'+z).css('width','30%').show();
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b).css('width','25%').show();}
+    $("#een").css('width','25%').show();}
     
 function myFunction() {
   var x = document.getElementById("myTopnav");
