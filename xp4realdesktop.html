@@ -15,7 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alegreya|Fondamento|Ibarra+Real+Nova|Lora|Prociono|Spectral|Stoke&display=swap" rel="stylesheet">
 
-   <style>* {
+   <style>
+       * {
   box-sizing: border-box;
 }
 html {
@@ -31,9 +32,10 @@ font-family: 'Arial', sans-serif;
 
 h3 {
     padding-top: 0;
+    margin-top: 0;
 font-family: 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 h2{
     padding-top: 0;
@@ -50,6 +52,9 @@ a {
   color: black;
     cursor: cell;
 }
+       #arc{
+             font-size: 1.5em;
+       }
        #arc:hover{
            background-color: yellow;
        }
@@ -144,7 +149,8 @@ position: }
 #naam {
     float: left;
   font-family: Arial, sans-serif;
-  font-size: 1.5em;
+      font-size: 1.5em;
+
 }
 #naam:hover {
   background-color: yellow;
@@ -162,6 +168,8 @@ position: }
 }
 .dropped {
   background-color: yellow;
+               border: 1px dashed blue;
+
 }
 
 .dropdown .dropbtn {
@@ -178,7 +186,7 @@ position: }
   writing-mode: vertical-rl;
 }
 .nest {
-  right: 3em;
+  right: 5em;
   white-space: nowrap;
   position: absolute;
   display: none;
@@ -201,6 +209,7 @@ position: }
 }
 .dropdown-content a:hover {
   background-color: yellow;
+               border: 1px dashed blue;
 }
 #letter {
   color: darkblue;
@@ -225,7 +234,7 @@ position: }
 }
 .sidenav {
   position: absolute;
-  right: 1em;
+  right: 2em;
   top: 6em;
   overflow: hidden;
   writing-mode: vertical-rl;
@@ -341,20 +350,20 @@ p {
         <a href="javascript:void(0)" onclick="openTiny('shop')">shop</a>
         <a href="javascript:void(0)" onclick="openAll('instagram')">social images</a>
         <a href="javascript:void(0)" onclick="openTiny('pub')">publications</a>
-        <a href="javascript:void(0)" onclick="openTiny('expo')">expositions</a>
+        <a href="javascript:void(0)" onclick="openFull('expo')">expositions</a>
         <div class="dropdown right">
           <a class="dropbtn">books</a>
           <div class="side dropdown-content">
             <a href="javascript:void(0)" onclick="openFull('revbook')">Reversed Perspective</a>
             <a href="javascript:void(0)" onclick="openFull('aware')">awareness station</a>
             <a href="javascript:void(0)" onclick="openFull('empty')">only the emptiness remains</a>
-            <div class="dropdown"> <a href="javascript:void(0)" class="dropbtn">20122016</a>
+            <div class="dropdown"> <a href="javascript:void(0)" onclick="openFull('bac')" class="dropbtn">20122016</a>
               <div class="nest dropdown-content">
-                <a href="#b122015" onclick="openTiny('bac')">122015</a>
-                <a href="#zeeslag" onclick="openTiny('bac')">ZEESLAG</a>
-                <a href="#context" onclick="openTiny('bac')">context</a>
-                <a href="#b112014" onclick="openTiny('bac')">112014</a>
-                <a href="#b052015" onclick="openTiny('bac')">052015</a>
+                <a href="#b122015" onclick="openFull('bac')">122015</a>
+                <a href="#zeeslag" onclick="openFull('bac')">ZEESLAG</a>
+                <a href="#context" onclick="openFull('bac')">context</a>
+                <a href="#b112014" onclick="openFull('bac')">112014</a>
+                <a href="#b052015" onclick="openFull('bac')">052015</a>
               </div>
             </div>
             <div class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Ensemble</a>
@@ -484,6 +493,8 @@ Weronika, spring 2018</p>
         <img src="drawing/furniturep30.png" width="100%">
         <img src="drawing/handjes.jpg" width="100%">
         <img src="drawing/aa10.jpg" width="100%">
+          <img src="drawing/detailjoint.gif" width="100%">
+
         <img src="drawing/aa8.jpg" width="100%" width="100%">
         <img src="drawing/tapijt1.jpg" width="100%">
         <img src="drawing/tapijt2.jpg" width="100%">
@@ -496,10 +507,10 @@ Weronika, spring 2018</p>
         <img src="drawing/a7.jpg" width="100%">
         <img src="drawing/comp9.jpg" width="100%">
         <img src="drawing/a2.jpg" width="100%">
-        <img src="drawing/a9.jpg" width="50%">
-        <img src="drawing/a10.jpg" width="50%">
-        <img src="drawing/spel3.jpg" width="48%">
-        <img src="drawing/spel4.jpg" width="48%">
+        <img src="drawing/a9.jpg" width="100%">
+        <img src="drawing/a10.jpg" width="100%">
+        <img src="drawing/spel3.jpg" width="100%">
+        <img src="drawing/spel4.jpg" width="100%">
       </div>
     </div>
   </div>
@@ -511,7 +522,7 @@ Weronika, spring 2018</p>
     $("#realcontent").css('padding','0').css('margin','0');
 }
 function openThree(a){
-    $("#drie").load(a+'.html').css('width','20%').show();
+    $("#drie").load(a+'.html').css('width','40%').show();
     $("#een").load('xp4realdesktop.html #drawing1').css('width','20%').show();
     $("#twee").load('xp4realdesktop.html #letter').css('width','20%').show();
 }
@@ -532,7 +543,7 @@ function openTiny(b){
 }
 
 function openMid(z){
-    $("#twee").load('books.html #'+z).css('width','20%').show();
+    $("#twee").load('books.html #'+z).css('width','40%').show();
     $("#drie").hide();
     $("#een").css('width','20%').show();}
     
