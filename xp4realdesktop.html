@@ -181,8 +181,9 @@ position: }
   top: 6em;
   position: fixed;
   display: none;
-  right: 2em;
+  right: 3em;
   writing-mode: vertical-rl;
+    background-color: white;
 }
 .nest {
   right: 5em;
@@ -332,6 +333,13 @@ p {
 }
        #bac p{display: none;}
 
+       
+       .glitch{
+           display: flex;
+flex-flow: row nowrap;
+           overflow: scroll;
+       }
+       .glitch >div{flex: 1;}
 </style>
 </head>
 <body> <div class="sidenav" id="mySidenav">
@@ -517,7 +525,7 @@ Weronika, spring 2018</p>
     function openAll(a){
     $("#een, #drie").hide();
     $("#twee").load('books.html #'+a).css('width','100%').show().css('padding','0');
-    $("#realcontent").css('padding','0').css('margin','0');
+    $(".realcontent").css('padding','0').css('margin','0');
 }
 function openThree(a){
     $("#drie").load(a+'.html').css('width','40%').show();
@@ -611,6 +619,10 @@ $("a").click(function() {
         $("a").not(this).removeClass('dropped');
 });
 
+$("#arc").click(function(){ 
+                $(".realcontent").load('books.html').addClass('glitch');
+    $(".realcontent > div").css('flex','1');
+});
     
 });
 
