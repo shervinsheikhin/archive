@@ -101,7 +101,21 @@ padding-bottom: 2em;
   display: table;
   clear: both;
 }
-
+       .modal{
+           width: 50vw;
+           height: 90vh;
+           padding: 1em;
+           margin: 0;
+           display: none;
+           position: fixed;
+           top:0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+       }
+       .modal > img{
+                    object-fit: contain;  
+       }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   #een {
@@ -335,11 +349,15 @@ p {
 
        
        .glitch{
+           padding-left: 2em;
+           width: 65%;
            display: flex;
 flex-flow: row nowrap;
            overflow: scroll;
        }
-       .glitch >div{flex: 1;}
+       .glitch >div{flex: 1; overflow: scroll;}
+       .glitch div{height: auto;  transition: background-color 0.5s ease;
+}
 </style>
 </head>
 <body> <div class="sidenav" id="mySidenav">
@@ -404,12 +422,18 @@ flex-flow: row nowrap;
       </div>
     </div>
   </div>
-
+    
+    
+    <div class='modal'></div>
+    
+    
+    
   <div class="realcontent">
+      <div id="craze"></div>
     <div class="column" id="een">
       <div id="bio">I am a Belgian architect/ creator with Iranian roots who is based in Ghent. Through my profession I convert my personal chaos into structural order. In this way I try to find intrinsic serenity and I always use my intuition as a starting point.
         I try to transform my state of mind into a place that is transcended by materiality and thus forms an open narrative. I draw from daily compositions, texts, visual arts, and above all from dialogues with the other.</div>
-      <div id="drawing1">
+      <div class="drawing" id="drawing1">
                   <img src="drawing/meubelgif25.gif" width="100%">
         <img src="drawing/fun1.jpg" width="100%">
         <img src="drawing/a4.jpg" width="100%">
@@ -492,7 +516,7 @@ Weronika, spring 2018</p>
       </div>
     </div>
     <div class="column" id="drie">
-      <div id="drawing2">
+      <div class="drawing" id="drawing2">
         <img src="drawing/a3.jpg" width="100%">
         <img src="drawing/aa9.jpg" width="100%">
         <img src="drawing/aa1.jpg" width="100%">
@@ -538,6 +562,7 @@ function openTwo(a){
     $("#twee").load('books.html #'+a).css('width','20%').show();
 }
 function openFull(b){
+    $("#craze").hide;
     $("#twee").load('books.html #'+b).css('width','40%').show();
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b).css('width','20%').show();
@@ -582,8 +607,7 @@ function myFunction() {
     }
     }
 
-
-    
+        
 $(document).ready(function() {
 
   $("h3 > a").click(function(){
@@ -620,10 +644,25 @@ $("a").click(function() {
 });
 
 $("#arc").click(function(){ 
-                $(".realcontent").load('books.html').addClass('glitch');
-    $(".realcontent > div").css('flex','1');
+    $("#craze").load('books.html').addClass('glitch');
+    $(".column").hide();
+    $("#craze > div").css('flex','1');
 });
     
+$(".drawing > img").click(function(){
+    $(this).clone();
+    $('.modal').append(this).show();
+});
+    
+   $("video").prop("volume", 0.5); 
+
+    $(document).click(function(event) {
+  if (!$(event.target).closest(".modal").length) {
+    $("body").find(".modal").empty().hide();
+  }
+    });
+    
+        
 });
 
 </script>
