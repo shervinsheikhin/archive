@@ -260,14 +260,17 @@ p {
            position: fixed;
            color: yellow;
                  -webkit-text-stroke: 2px black;
-  font-size: 15.5vw;
+  font-size: 15vw;
            font-weight: bold;
            text-transform: uppercase;
            z-index: 1000;
            line-height: 0.8;
+           padding: 0;
        }
        #countdown p{padding: 0;margin: 0;
-       text-align: center;
+width: 100%;
+           text-align: center;
+           float: center;
        bottom: 0;
        position: fixed;}
        @media screen and (max-width: 800px) {
@@ -350,8 +353,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-    <div id="countdown">
-    </div>
     <div class="sidenav" id="mySidenav">
     <a href="javascript:void(0)" onclick="openTwo('contact')">contact</a>
     <a href="javascript:void(0)" onclick="openThree('cv')">curriculum vitae</a>
