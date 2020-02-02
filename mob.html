@@ -69,27 +69,29 @@ a {
 margin-left: 2em;
     float: left;
   overflow: scroll;
-padding-bottom: 2em;
+padding-bottom: 6em;
     margin-bottom: 2em;
     height: 90vh; /* Should be removed. Only for demonstration */
 }
 .column a:hover {
   text-decoration: underline;
 }
+       .column > div p:first-of-type {
+           margin-top: 0;
+       }
 .inline{display: flex;}
 #een {
   width: 20%;
 }
 #twee {
   width: 20%;
-        padding: 0 0 6em 0;
 }
 #drie {
   width: 20%;
 }
 .realcontent {
   padding-left: 0;
-  width: 100vw;
+  width: 300vw;
   position: fixed;
   padding-top: 3em;
   z-index: -1;
@@ -101,34 +103,31 @@ padding-bottom: 2em;
   display: table;
   clear: both;
 }
+       
+       @media screen and (max-width: 800px) {
+           body{       font-size:80%;
+}
+       }
        #modal{
-           width: 50vw;
-           height: 90vh;
-           padding: 1em;
+           z-index: 100;
+           width: 30vw;
+           height: 94vh;
+           padding: 0;
            margin: 0;
            display: none;
            position: fixed;
-           top:0;
-           bottom: 0;
-           left: 0;
+           top:3vh;
+           bottom: 3vh;
+           left: 20%;
            right: 0;
+           text-align: center;
        }
        #modal > img{
-                    object-fit: contain;  
+                    height: 100%;  
+           width: auto;
+           border: 20px solid navy;
        }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  #een {
-  width: 100%;
-position: absolute;
-}
-#twee {
-  width: 100%;
-position: }
-#drie {
-  width: 30%;
-}
-}
+
 
 .mainnav {
   padding: 2em 2em;
@@ -359,6 +358,8 @@ flex-flow: row nowrap;
        .glitch >div{flex: 1; overflow: scroll;}
        .glitch div{height: auto;  transition: background-color 0.5s ease;
 }
+       zz {
+  white-space: pre;}
 </style>
 </head>
 <body> <div class="sidenav" id="mySidenav">
@@ -397,7 +398,7 @@ flex-flow: row nowrap;
                 <a href="javascript:void(0)" onclick="openFull('ib')">'an architecture of the inbetween'</a>
               </div>
             </div>
-            <a href="javascript:void(0)" onclick="openTiny('bauhaus')">BAUHAUS:Labyrinthstage</a>
+            <a href="javascript:void(0)" onclick="openFull('bauhaus')">BAUHAUS:Labyrinthstage</a>
           </div>
         </div>
         <div class="dropdown right">
@@ -425,17 +426,19 @@ flex-flow: row nowrap;
   </div>
     
     
-    <div id='modal'></div>
+    <div id='modal'>
+    
+    </div>
     
     
     
   <div class="realcontent">
       <div id="craze"></div>
     <div class="column" id="een">
-      <div id="bio">I am a Belgian architect/ creator with Iranian roots who is based in Ghent. Through my profession I convert my personal chaos into structural order. In this way I try to find intrinsic serenity and I always use my intuition as a starting point.
+      <div id="bio">I am a Belgian architect/creator with Iranian roots who is based in Ghent. Through my profession I convert my personal chaos into structural order. In this way I try to find intrinsic serenity and I always use my intuition as a starting point.
         I try to transform my state of mind into a place that is transcended by materiality and thus forms an open narrative. I draw from daily compositions, texts, visual arts, and above all from dialogues with the other.</div>
       <div class="drawing" id="drawing1">
-                  <img src="drawing/meubelgif25.gif" width="100%">
+        <img src="drawing/meubelgif25.gif" width="100%">
         <img src="drawing/fun1.jpg" width="100%">
         <img src="drawing/a4.jpg" width="100%">
         <img src="drawing/context39.png" width="70%">
@@ -547,39 +550,38 @@ Weronika, spring 2018</p>
   </div>
 
 <script>
+    function modalClose(){
+    $(document).click(function(event) {
+  if (!$(event.target).closest("#modal, .drawing>img").length) {
+    $("body").find("#modal").empty().hide();
+  }
+    });
+    }
     function openAll(a){
-                $("#craze").hide();
     $("#een, #drie").hide();
-    $("#twee").load('books.html #'+a).css('width','100%').show().css('padding','0');
-    $(".realcontent").css('padding','0').css('margin','0');
+    $("#twee").load(a+'.html').css('width','calc(100% - 6em)').show();
 }
 function openThree(a){
-            $("#craze").hide();
     $("#drie").load(a+'.html').css('width','50%').show();
     $("#een").load('xp4realdesktop.html #drawing1').css('width','20%').show();
     $("#twee").load('xp4realdesktop.html #letter').css('width','20%').show();
 }
-    
 function openTwo(a){
-            $("#craze").hide();
     $("#een").load('bookinfo.html #'+a).css('width','20%').show();
     $("#twee").load('books.html #'+a).css('width','20%').show();
 }
 function openFull(b){
-        $("#craze").hide();
-    $("#twee").load('books.html #'+b).css('width','40%').show();
+    $("#twee").load('books.html #'+b).css('width','50%').show();
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b).css('width','20%').show();
 }
 function openTiny(b){
-            $("#craze").hide();
     $("#twee").load('books.html #'+b).css('width','20%').show();
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b).css('width','20%').show();
 }
 
 function openMid(z){
-            $("#craze").hide();
     $("#twee").load('books.html #'+z).css('width','40%').show();
     $("#drie").hide();
     $("#een").css('width','20%').show();}
@@ -650,24 +652,18 @@ $("a").click(function() {
         $("a").not(this).removeClass('dropped');
 });
 
-$("#rc").click(function(){ 
-    $("#craze").load('books.html').addClass('glitch');
-    $(".column").hide();
-    $("#craze > div").css('flex','1');
-       $("video").prop("volume", 0.5); 
+$("#arc").click(function(){ 
+       $("#letter,.drawing").css("opacity", 0.5); 
 });
     
-$(".drawing > img").click(function(){
+$(".drawig > img").click(function(){
         $("#modal").show();
     $("#modal").html('<img src="'+$(this).attr('src')+'" width="100%">');
+    modalClose();
 });
     
 
-    $(document).click(function(event) {
-  if (!$(event.target).closest("#modal").length) {
-    $("body").find("#modal").empty().hide();
-  }
-    });
+    
     
         
 });
