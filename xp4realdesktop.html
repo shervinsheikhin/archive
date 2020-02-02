@@ -365,6 +365,8 @@ flex-flow: row nowrap;
        .glitch >div{flex: 1; overflow: scroll;}
        .glitch div{height: auto;  transition: background-color 0.5s ease;
 }
+       zz {
+  white-space: pre;}
 </style>
 </head>
 <body> <div class="sidenav" id="mySidenav">
@@ -571,13 +573,12 @@ function openThree(a){
     $("#een").load('xp4realdesktop.html #drawing1').css('width','20%').show();
     $("#twee").load('xp4realdesktop.html #letter').css('width','20%').show();
 }
-    
 function openTwo(a){
     $("#een").load('bookinfo.html #'+a).css('width','20%').show();
     $("#twee").load('books.html #'+a).css('width','20%').show();
 }
 function openFull(b){
-    $("#twee").load('books.html #'+b).css('width','40%').show();
+    $("#twee").load('books.html #'+b).css('width','50%').show();
     $("#drie").hide();
     $("#een").load('bookinfo.html #'+b).css('width','20%').show();
 }
