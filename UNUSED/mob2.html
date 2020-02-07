@@ -20,13 +20,16 @@
   box-sizing: border-box;
 }
 html {
+    width: 100vw;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
+    width: 100%;
 font-family: 'Arial', sans-serif;
     font-size: 70%;
   cursor: crosshair;
+    overflow: hidden;
 }
 
 h3 {
@@ -89,11 +92,11 @@ padding-bottom: 6em;
 }
 .realcontent {
   padding-left: 0;
-  width: 100%;
-  position: fixed;
+  width: 300vw;
+  position: relative;
   padding-top: 3em;
   z-index: -1;
-    overflow: hidden;
+    overflow: scroll;
 }
 /* Clear floats after the columns */
 .realcontent:after {

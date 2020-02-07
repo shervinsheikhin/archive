@@ -95,14 +95,14 @@ padding-bottom: 6em;
 .realcontent {
   padding-left: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
   padding-top: 3em;
   z-index: -1;
     overflow: hidden;
 }
 /* Clear floats after the columns */
 .realcontent:after {
-  position: fixed;
+  position: absolute;
   content: "";
   display: table;
   clear: both;
@@ -130,8 +130,9 @@ padding-bottom: 6em;
 
 .mainnav {
   padding: 2em 2em;
-  overflow: visible;
-}
+position: absolute;
+    top: 0;
+       }
 
 .mainnav a {
   padding: 0;
