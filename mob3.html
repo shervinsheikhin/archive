@@ -32,14 +32,12 @@ font-family: 'Arial', sans-serif;
 h3 {
     padding-top: 0;
     margin-top: 0;
-font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
 h2{
     padding-top: 0;
-  font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -52,12 +50,7 @@ a {
   color: black;
     cursor: cell;
 }
-       #arc{
-             font-size: 1.5em;
-       }
-       #arc:hover{
-           background-color: yellow;
-       }
+      
 /* Create three equal columns that floats next to each other */
        #cvholder{display: flex; flex-direction: column; line-height: 1.2}
        #cvholder > div{display: flex; flex-direction: row;}
@@ -69,10 +62,13 @@ a {
     float: left;
     position: relative;
 }
+.column img {
+  padding-bottom: 1em
+}
 .column a:hover {
   text-decoration: underline;
 }
-       .column > div p:first-of-type {
+.column > div p:first-of-type {
            margin-top: 0;
        }
 #een {
@@ -84,6 +80,9 @@ a {
 #drie {
   width: 80%;
 }
+       .drwing img{
+           width: 49%;
+       }
 .realcontent {
   padding-left: 0;
   width: 100%;
@@ -99,23 +98,7 @@ a {
   clear: both;
 }
        #modal{
-           z-index: 100;
-           width: 30vw;
-           height: 94vh;
-           padding: 0;
-           margin: 0;
            display: none;
-           position: fixed;
-           top:3vh;
-           bottom: 3vh;
-           left: 20%;
-           right: 0;
-           text-align: center;
-       }
-       #modal > img{
-                    height: 100%;  
-           width: auto;
-           border: 20px solid navy;
        }
 
 
@@ -134,9 +117,20 @@ a {
   display: block;
   text-decoration: none;
   font-size: 1.1em;
-    
+      padding: 0 1em 0 1em;
 }
-
+       #naam {
+    float: left;
+      font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.dropped, .dropdown-content a:hover, .sidenav a:hover, #naam:hover{
+  background-color: yellow;
+}
+ #arc{
+         float: right;
+    font-size: 1.5em;
+       }
 .topnav {
           z-index: 5;
   display: none;
@@ -146,7 +140,6 @@ a {
 }
 
 .topnav a {
-  padding: 0 0 0 1em;
   float: right;
   color: black;
   display: block;
@@ -154,31 +147,13 @@ a {
   font-size: 1.1em;
 }
 
-#naam {
-    width: 300px;
-    float: left;
-  font-family: Arial, sans-serif;
-      font-size: 1.5em;
-    margin-bottom: 0.5em;
 
-}
-#naam:hover {
-  background-color: yellow;
-}
-
-.topnav .icon {
-  display: none;
-}
 
 .dropdown {
   overflow: visible;
 }
 .right {
   float: right;
-}
-.dropped {
-  background-color: yellow;
-
 }
 
 .dropdown .dropbtn {
@@ -211,14 +186,13 @@ a {
   color: black;
   text-decoration: none;
   display: block;
+    background-color: white;
 }
 .nest a {
     display: block;
   padding: 0em 0em;
   float: right;
-}
-.dropdown-content a:hover {
-  background-color: yellow;
+    background-color: white;
 }
 #letter {
   color: darkblue;
@@ -229,9 +203,7 @@ a {
        #persian p{
            text-align: right;
        }
-#drawing img {
-  padding: 1em;
-}
+
 
 #bio {
   display: none;
@@ -260,25 +232,10 @@ a {
   font-size: 1.1em;
 }
 
-.sidenav a:hover {
-  background-color: yellow;
-}
 p {
   text-align: left;
 }
-       #bac p{display: none;}
-
-       
-       .glitch{
-           padding-left: 2em;
-           width: 65%;
-           display: flex;
-flex-flow: row nowrap;
-           overflow: scroll;
-       }
-       .glitch >div{flex: 1; overflow: scroll;}
-       .glitch div{height: auto;  transition: background-color 0.5s ease;
-}
+    
        zz {
   white-space: pre;}
 </style>
@@ -341,7 +298,6 @@ flex-flow: row nowrap;
             </div>
           </div>
         </div>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </div>
@@ -558,12 +514,6 @@ $("a").click(function() {
 
 $("#arc").click(function(){ 
        $("#letter,.drawing").css("opacity", 0.5); 
-});
-    
-$(".drawing > img").click(function(){
-        $("#modal").show();
-    $("#modal").html('<img src="'+$(this).attr('src')+'" width="100%">');
-    modalClose();
 });
     
     
