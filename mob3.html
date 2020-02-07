@@ -471,36 +471,36 @@ Weronika, spring 2018</p>
 
 <script>
     function openAll(a){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#een, #drie").hide();
     $("#twee").load(a+'.html').show();
 }
 function openThree(a){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#een").load(a+'.html').show();
     $("#drie").load('xp4realdesktop.html #drawing1').show();
     $("#twee").load('xp4realdesktop.html #letter').show();
 }
 function openTwo(a){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#een").load('loadinfo.html #'+a).show();
     $("#twee").load('loads.html #'+a).show();
 }
 function openFull(b){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#twee").load('loads.html #'+b).show();
     $("#drie").hide();
     $("#een").load('loadinfo.html #'+b).show();
 }
 function openTiny(b){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#twee").load('loads.html #'+b).show();
     $("#drie").hide();
     $("#een").load('loadinfo.html #'+b).show();
 }
 
 function openMid(z){
-    $(".column").scrollTop(0);
+   window.scrollTo(0, 0);
     $("#twee").load('loads.html #'+z).show();
     $("#drie").hide();
     $("#een").show();}
