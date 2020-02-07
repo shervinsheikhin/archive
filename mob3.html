@@ -470,39 +470,38 @@ Weronika, spring 2018</p>
   </div>
 
 <script>
-    function modalClose(){
-    $(document).click(function(event) {
-  if (!$(event.target).closest("#modal, .drawing>img").length) {
-    $("body").find("#modal").empty().hide();
-  }
-    });
-    }
     function openAll(a){
+    $(".column").scrollTop(0);
     $("#een, #drie").hide();
     $("#twee").load(a+'.html').show();
 }
 function openThree(a){
-    $("#drie").load(a+'.html').show();
-    $("#een").load('xp4realdesktop.html #drawing1').show();
+    $(".column").scrollTop(0);
+    $("#een").load(a+'.html').show();
+    $("#drie").load('xp4realdesktop.html #drawing1').show();
     $("#twee").load('xp4realdesktop.html #letter').show();
 }
 function openTwo(a){
-    $("#een").load('bookinfo.html #'+a).show();
-    $("#twee").load('books.html #'+a).show();
+    $(".column").scrollTop(0);
+    $("#een").load('loadinfo.html #'+a).show();
+    $("#twee").load('loads.html #'+a).show();
 }
 function openFull(b){
-    $("#twee").load('books.html #'+b).show();
+    $(".column").scrollTop(0);
+    $("#twee").load('loads.html #'+b).show();
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b).show();
+    $("#een").load('loadinfo.html #'+b).show();
 }
 function openTiny(b){
-    $("#twee").load('books.html #'+b).show();
+    $(".column").scrollTop(0);
+    $("#twee").load('loads.html #'+b).show();
     $("#drie").hide();
-    $("#een").load('bookinfo.html #'+b).show();
+    $("#een").load('loadinfo.html #'+b).show();
 }
 
 function openMid(z){
-    $("#twee").load('books.html #'+z).show();
+    $(".column").scrollTop(0);
+    $("#twee").load('loads.html #'+z).show();
     $("#drie").hide();
     $("#een").show();}
     
@@ -566,9 +565,14 @@ $(".drawing > img").click(function(){
     modalClose();
 });
     
+    
+   window.onscroll = function() {myFunction()};
 
-    
-    
+function myFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    $(".nest").hide();
+  } 
+} 
         
 });
 
