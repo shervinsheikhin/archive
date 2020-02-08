@@ -20,11 +20,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: yellow;
+  background: navy;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: yellow;
+  background: navy;
 }
 svg {
   pointer-events: none;
