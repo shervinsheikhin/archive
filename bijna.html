@@ -11,9 +11,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                  	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-       <script src="all.js"></script>
+       <script type="text/javascript">
+           
+           $(window).on("load", function() {
+    $("#wait").delay(500).fadeOut("slow");
+    $("svg").delay(500).fadeOut("slow")
+});
+
+           
+        (function() {
+    if( window.innerWidth > 700 ) {
+        var theScript = document.createElement('script');
+            theScript.type = 'text/javascript';
+            theScript.src = 'js-pc.js';
+
+        var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(theScript, s);
+    } else{
+          var theScript = document.createElement('script');
+            theScript.type = 'text/javascript';
+            theScript.src = 'js-gsm.js';
+
+        var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(theScript, s);
+    }
+})();
+        </script>
 </head>
-<body> <div class="sidenav" id="mySidenav">
+
+<body>
+     <svg id="wait" viewBox="0 0 300 300">
+<text fill="darkblue">   
+<animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 150 150"
+                          to="360 150 150"
+                          dur="10s"
+                          repeatCount="indefinite"/>
+<textPath textLength="452" lengthAdjust="spacing" xlink:href="#move">ARCHIVE LOADING ARCHIVE LOADING</textPath>
+  </text>
+  <path id="move" d=" M 150 150 m -75, 0 a 75,75 0 0,1 150,0 a 75,75 0 0,1 -150,0 " fill="none"/>  
+</svg>
+    <div class="sidenav" id="mySidenav">
     <a href="javascript:void(0)" onclick="openTwo('contact')">contact</a>
     <a href="javascript:void(0)" onclick="openThree('cv')">curriculum vitae</a>
   </div>
@@ -110,19 +150,7 @@
 </div>
     </div>
     <div class="column" id="twee">
-        <svg id="wait" viewBox="0 0 300 300">
-<text fill="darkblue">   
-<animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          from="0 150 150"
-                          to="360 150 150"
-                          dur="10s"
-                          repeatCount="indefinite"/>
-<textPath textLength="452" lengthAdjust="spacing" xlink:href="#move">ARCHIVE Loading ARCHIVE Loading</textPath>
-  </text>
-  <path id="move" d=" M 150 150 m -75, 0 a 75,75 0 0,1 150,0 a 75,75 0 0,1 -150,0 " fill="none"/>  
-</svg>
+       
       <div id="letter"><p>Dear Shervin,
 </p><p>
 I feel that when architecture turns towards the investigation of personal experiences–their

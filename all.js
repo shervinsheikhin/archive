@@ -1,12 +1,11 @@
-(function() {
-    if( window.innerWidth > 700 ) {
-        $(document).ajaxStart(function() {
-  $("#wait").css("display", "block");
-});
-$(document).ajaxComplete(function() {
-  $("#wait").css("display", "none");
+$(window).on("load", function() {
+    $("#wait").delay(500).fadeOut("slow");
+    $("svg").delay(500).fadeOut("slow")
 });
 
+(function() {
+    if( window.innerWidth > 700 ) {
+        
 function modalClose() {
   $(document).click(function(event) {
     if (!$(event.target).closest(".drawing>img").length) {
