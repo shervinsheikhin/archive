@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Alegreya|Fondamento|Ibarra+Real+Nova|Lora|Prociono|Spectral|Stoke&display=swap" rel="stylesheet">
 
    <style>
-       * {
+* {
   box-sizing: border-box;
 }
 html {
@@ -24,22 +24,29 @@ html {
 }
 body {
   margin: 0;
-font-family: 'Arial', sans-serif;
-    font-size: 70%;
+  font-family: "Arial", sans-serif;
+  font-size: 70%;
   cursor: crosshair;
 }
-       
-      
+
+svg {
+  position: fixed;
+  height: 100vh;
+  width: 20vw;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  display: none;
+}
 
 h3 {
-    padding-top: 0;
-    margin-top: 0;
+  padding-top: 0;
+  margin-top: 0;
   font-weight: 400;
   font-size: 1rem;
 }
 
-h2{
-    padding-top: 0;
+h2 {
+  padding-top: 0;
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -50,31 +57,46 @@ h5 {
 a {
   text-decoration: none;
   color: black;
-    cursor: cell;
+  cursor: cell;
 }
-      
-/* Create three equal columns that floats next to each other */
-       #cvholder{display: flex; flex-direction: column; line-height: 1.2;width: 105%;}
-       #cvholder > div{display: flex; flex-direction: row;}
-       .item{padding-bottom: 0.4em;}
-       .item>:first-of-type{width: 20%; max-width: 10em; min-width: 6em;}
-       .item>:nth-of-type(2){width: 80%; }
+
+#cvholder {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  width: 105%;
+}
+#cvholder > div {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  padding-bottom: 0.4em;
+}
+.item > :first-of-type {
+  width: 20%;
+  max-width: 10em;
+  min-width: 6em;
+}
+.item > :nth-of-type(2) {
+  width: 80%;
+}
 .column {
   scroll-behavior: smooth;
   margin: 0 2em;
-    float: left;
-    position: relative;
-    padding-bottom: 2em;
+  float: left;
+  position: relative;
+  padding-bottom: 2em;
 }
 .column img {
-  padding-bottom: 1em
+  padding-bottom: 1em;
 }
 .column a:hover {
   text-decoration: underline;
 }
 .column > div p:first-of-type {
-           margin-top: 0;
-       }
+  margin-top: 0;
+}
 #een {
   width: 80%;
 }
@@ -84,64 +106,58 @@ a {
 #drie {
   width: 80%;
 }
-       .drwing img{
-           width: 49%;
-       }
 .realcontent {
   padding-left: 0;
   width: 100%;
   position: relative;
   padding-top: 8em;
-    overflow: scroll;
+  overflow: scroll;
 }
-/* Clear floats after the columns */
 .realcontent:after {
   position: fixed;
   content: "";
   display: table;
   clear: both;
 }
-       #modal{
-           display: none;
-       }
-
+#modal {
+  display: none;
+}
 
 .mainnav {
-      z-index: 5;
-    position: fixed;
+  z-index: 5;
+  position: fixed;
   padding: 2em 2em 0 2em;
   overflow: visible;
-    
 }
 
 .mainnav a {
-  padding: 0;
   float: left;
   color: black;
   display: block;
   text-decoration: none;
   font-size: 1.1em;
-      padding: 0 1em 0 1em;
-        background-color: white;
+  padding: 0 1em 0 1em;
+  background-color: white;
 }
-       #naam {
-    float: left;
-      font-size: 1.5em;
-    margin-bottom: 0.5em;
+#naam {
+  float: left;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
-.dropped, .dropdown-content a:hover, .sidenav a:hover{
+.dropped,
+.dropdown-content a:hover,
+.sidenav a:hover {
   background-color: yellow;
 }
- #arc{
-         float: right;
-    font-size: 1.5em;
-       }
+#arc {
+  float: right;
+  font-size: 1.5em;
+}
 .topnav {
-          z-index: 5;
+  z-index: 5;
   display: none;
   overflow: visible;
   position: relative;
-  z-index: 1;
 }
 
 .topnav a {
@@ -150,8 +166,6 @@ a {
   text-decoration: none;
   font-size: 1.1em;
 }
-
-
 
 .dropdown {
   overflow: visible;
@@ -172,7 +186,7 @@ a {
   display: none;
   right: 1em;
   writing-mode: vertical-rl;
-    background-color: white;
+  background-color: white;
 }
 .nest {
   right: 3em;
@@ -183,30 +197,27 @@ a {
 }
 
 .side a {
-  font-family: Arial, sans-serif;
   text-transform: lowercase;
   padding: 0.5em 0;
   float: left;
   text-decoration: none;
   display: block;
-    background-color: white;
+  background-color: white;
 }
 .nest a {
-    display: block;
+  display: block;
   padding: 0em 0em;
   float: right;
-    background-color: white;
+  background-color: white;
 }
 #letter {
   color: darkblue;
   line-height: 1.2;
-    text-align: left;
-  font-family: Arial, sans-serif;
+  text-align: left;
 }
-       #persian p{
-           text-align: right;
-       }
-
+#persian p {
+  text-align: right;
+}
 
 #bio {
   display: none;
@@ -214,10 +225,9 @@ a {
   text-align: left;
   padding: 0em 4em 3em 0em;
   line-height: 1.3;
-  font-family: Arial, sans-serif;
 }
 .sidenav {
-          z-index: 5;
+  z-index: 5;
   position: fixed;
   right: 1em;
   top: 9em;
@@ -238,9 +248,11 @@ a {
 p {
   text-align: left;
 }
-    
-       zz {
-  white-space: pre;}
+
+zz {
+  white-space: pre;
+}
+
 </style>
 </head>
 <body> <div class="sidenav" id="mySidenav">
@@ -430,104 +442,141 @@ Weronika, spring 2018</p>
   </div>
 
 <script>
-    function openAll(a){
-   window.scrollTo(0, 0);
-    $("#een, #drie").hide();
-    $("#twee").load(a+'.html').show();
-}
-function openThree(a){
-   window.scrollTo(0, 0);
-    $("#een").load(a+'.html').show();
-    $("#drie").load('xp4realdesktop.html #drawing1').show();
-    $("#twee").load('xp4realdesktop.html #letter').show();
-}
-function openTwo(a){
-   window.scrollTo(0, 0);
-    $("#een").load('loadinfo.html #'+a).show();
-    $("#twee").load('loads.html #'+a).show();
-}
-function openFull(b){
-   window.scrollTo(0, 0);
-    $("#twee").load('loads.html #'+b).show();
-    $("#drie").hide();
-    $("#een").load('loadinfo.html #'+b).show();
-}
-function openTiny(b){
-   window.scrollTo(0, 0);
-    $("#twee").load('loads.html #'+b).show();
-    $("#drie").hide();
-    $("#een").load('loadinfo.html #'+b).show();
-}
-
-function openMid(z){
-    $("#twee").load('loads.html #'+z, function(){   window.scrollTo(0, 500);
-}).show();
-    $("#drie").hide();
-    $("#een").show();}
     
-       function initComparisons() {
-  var x, i;
-  x = $(".side");
-  for (i = 0; i < x.length; i++) {
-    settingIt(x[i]);
-  }  
-    function settingIt(sider){
-        var sider;
-        var w = sider.offsetWidth;
-        sider.style.paddingLeft = (w/2) + "px";
-    }
-    }
+    $(document).ajaxStart(function() {
+  $("#wait").css("display", "block");
+});
+$(document).ajaxComplete(function() {
+  $("#wait").css("display", "none");
+});
 
-        
+function openAll(a) {
+  window.scrollTo(0, 0);
+  $("#een, #drie").hide();
+  $("#twee")
+    .load(a + ".html")
+    .show();
+}
+function openThree(a) {
+  window.scrollTo(0, 0);
+  $("#een")
+    .load(a + ".html")
+    .show();
+  $("#drie")
+    .load("xp4realdesktop.html #drawing1")
+    .show();
+  $("#twee")
+    .load("xp4realdesktop.html #letter")
+    .show();
+}
+function openTwo(a) {
+  window.scrollTo(0, 0);
+  $("#een")
+    .load("loadinfo.html #" + a)
+    .show();
+  $("#twee")
+    .load("loads.html #" + a)
+    .show();
+}
+function openFull(b) {
+  window.scrollTo(0, 0);
+  $("#twee")
+    .load("loads.html #" + b)
+    .show();
+  $("#drie").hide();
+  $("#een")
+    .load("loadinfo.html #" + b)
+    .show();
+}
+function openTiny(b) {
+  window.scrollTo(0, 0);
+  $("#twee")
+    .load("loads.html #" + b)
+    .show();
+  $("#drie").hide();
+  $("#een")
+    .load("loadinfo.html #" + b)
+    .show();
+}
+
+function openMid(z) {
+  $("#twee")
+    .load("loads.html #" + z, function() {
+      window.scrollTo(0, 500);
+    })
+    .show();
+  $("#drie").hide();
+  $("#een").show();
+}
+
 $(document).ready(function() {
-
-  $("h3 > a").click(function(){
-    $(this).parent('h3').siblings('p').toggle();
+  $(".dropbtn").click(function() {
+    $("#arc").hide();
+    $(this)
+      .siblings(".dropdown-content")
+      .toggle();
+    $(this)
+      .parent()
+      .siblings()
+      .children(".dropdown-content")
+      .hide();
+    $(this)
+      .parent()
+      .siblings()
+      .children(".dropdown-content")
+      .children("dropdown")
+      .hide();
+    $(this)
+      .children("a")
+      .addClass("dropped");
   });
-    
-$(".dropbtn").click(function(){
-$("#arc").hide();
-$(this).siblings(".dropdown-content").toggle();
-$(this).parent().siblings().children(".dropdown-content").hide();
-$(this).parent().siblings().children(".dropdown-content").children('dropdown').hide();    
-$(this).children("a").addClass("dropped");
-});
-$(".topnav .dropbtn").click(function(){
-  $(".sidenav").hide();  
-});
-  
-    $(".topnav > a").click(function(){
-$(".side:visible").toggle();
-});
-    $(".side > a").click(function(){
-$(this).siblings().children(".dropdown-content").hide();
-});
-    
-$("#naam").hover(function() {
-    $("#bio").show();
-    $("#naam").html("شروین شیخ رضائی");
-}, function() {
-    $("#bio").hide();
-    $("#naam").html("SHERVIN SHEIKH REZAEI");});
-    
-$("a").click(function() {
-   $(this).addClass('dropped');
-        $("a").not(this).removeClass('dropped');
-});
+  $(".topnav .dropbtn").click(function() {
+    $(".sidenav").hide();
+  });
 
-$("#arc").click(function(){ 
-       $("#letter,.drawing").css("opacity", 0.5); 
-});
-    
-    
-   window.onscroll = function() {myFunction()};
+  $(".topnav > a").click(function() {
+    $(".side:visible").toggle();
+  });
+  $(".side > a").click(function() {
+    $(this)
+      .siblings()
+      .children(".dropdown-content")
+      .hide();
+  });
 
-function myFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    $(".nest").hide();
-  } 
-} 
-        
+  $("#naam").hover(
+    function() {
+      $("#bio").show();
+      $("#naam").html("شروین شیخ رضائی");
+    },
+    function() {
+      $("#bio").hide();
+      $("#naam").html("SHERVIN SHEIKH REZAEI");
+    }
+  );
+
+  $("a").click(function() {
+    $(this).addClass("dropped");
+    $("a")
+      .not(this)
+      .removeClass("dropped");
+  });
+
+  $("#arc").click(function() {
+    $("#letter,.drawing").css("opacity", 0.5);
+  });
+
+  window.onscroll = function() {
+    myScroll();
+  };
+  function myScroll() {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      $(".nest").hide();
+    }
+  }
 });
 
 </script>
