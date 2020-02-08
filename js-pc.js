@@ -30,11 +30,11 @@ function openThree(a) {
     .css("width", "50%")
     .show();
   $("#een")
-    .load("xp4realdesktop.html #drawing1")
+    .load("index.html #drawing1")
     .css("width", "20%")
     .show();
   $("#twee")
-    .load("xp4realdesktop.html #letter")
+    .load("index.html #letter")
     .css("width", "20%")
     .show();
 }

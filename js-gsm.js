@@ -18,10 +18,10 @@ function openThree(a) {
     .load(a + ".html")
     .show();
   $("#drie")
-    .load("xp4realdesktop.html #drawing1")
+    .load("index.html #drawing1")
     .show();
   $("#twee")
-    .load("xp4realdesktop.html #letter")
+    .load("index.html #letter")
     .show();
 }
 function openTwo(a) {
