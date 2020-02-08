@@ -59,6 +59,8 @@ a {
 .item > :nth-of-type(2) {
   width: 80%;
 }
+.item{padding-bottom: 0.5em;}
+
 .column {
   margin: 0 2em;
   float: left;

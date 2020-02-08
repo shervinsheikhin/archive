@@ -77,6 +77,7 @@ a {
 .item > :nth-of-type(2) {
   width: 80%;
 }
+.item{padding-bottom: 0.5em;}
 .column {
   scroll-behavior: smooth;
   margin: 0;
