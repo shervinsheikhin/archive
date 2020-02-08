@@ -36,7 +36,7 @@ function openTwo(a) {
 function openFull(b) {
   window.scrollTo(0, 0);
   $("#twee")
-    .load("loads.html #" + b)
+    .load("m-loads.html #" + b)
     .show();
   $("#drie").hide();
   $("#een")
@@ -56,8 +56,8 @@ function openTiny(b) {
 
 function openMid(z) {
   $("#twee")
-    .load("loads.html #" + z, function() {
-      window.scrollTo(0, 500);
+    .load("m-loads.html #" + z, function() {
+      window.scrollTo(0, 400);
     })
     .show();
   $("#drie").hide();
