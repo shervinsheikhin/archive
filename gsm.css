@@ -90,16 +90,16 @@ padding-bottom: 1em;
   position: fixed;
   padding: 2em 2em 0 2em;
   overflow: visible;
-  background-color: white;
 }
 
 .mainnav a {
-  padding: 0;
+  padding: 0 1em;
   float: left;
   color: black;
   display: block;
   text-decoration: none;
   font-size: 1.1em;
+  background-color: white;
 }
 
 .topnav {
@@ -111,7 +111,7 @@ padding-bottom: 1em;
 }
 
 .topnav a {
-  padding: 0 1 0 1em;
+  padding: 0 1em;
   float: right;
   color: black;
   display: block;
@@ -135,7 +135,7 @@ padding-bottom: 1em;
 .right {
   float: right;
 }
-.dropped {
+.dropped, .sidenav a:active, .dropdown-content a:active, #naam:active, #arc:active{
   background-color: yellow;
 }
 
