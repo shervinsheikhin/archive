@@ -11,24 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                  	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-       <script>
-        (function() {
-    if( window.innerWidth > 600 ) {
-        var theScript = document.createElement('script');
-            theScript.type = 'text/javascript';
-            theScript.src = 'js-pc.js';
-
-        var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(theScript, s);
-    } else {
-          var theScript = document.createElement('script');
-            theScript.type = 'text/javascript';
-            theScript.src = 'js-gsm.js';
-
-        var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(theScript, s);   
-    }
-})();</script>
+       <script src="all.js"></script>
 </head>
 <body> <div class="sidenav" id="mySidenav">
     <a href="javascript:void(0)" onclick="openTwo('contact')">contact</a>
