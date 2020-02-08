@@ -65,6 +65,7 @@ a {
   margin: 0 2em;
   float: left;
   position: relative;
+  padding-bottom: 1em;
 }
 .column img{
 padding-bottom: 1em;
