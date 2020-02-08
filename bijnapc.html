@@ -28,7 +28,29 @@ font-family: 'Arial', sans-serif;
   cursor: crosshair;
   overflow: hidden;
 }
+       ::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: yellow; 
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: yellow; 
+}
+ svg{
+  pointer-events: none;
+  position:fixed;
+  height:100vh;
+  width:20vw;
+  font-size:1.2rem;
+opacity: 0.7;
+     display: none;
+}
 h3 {
     padding-top: 0;
     margin-top: 0;
@@ -105,13 +127,14 @@ padding-bottom: 6em;
            z-index: 100;
            width: 30vw;
            height: 94vh;
+           max-height: 1500px;
            padding: 0;
            margin: 0;
            display: none;
            position: fixed;
            top:3vh;
            bottom: 3vh;
-           left: 20%;
+           left: 15%;
            right: 0;
            text-align: center;
        }
@@ -119,20 +142,9 @@ padding-bottom: 6em;
                     height: 100%;  
            width: auto;
            border: 20px solid navy;
+                      background-color: navy;
        }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  #een {
-  width: 100%;
-position: absolute;
-}
-#twee {
-  width: 100%;
-position: }
-#drie {
-  width: 30%;
-}
-}
+
 
 .mainnav {
   padding: 2em 2em;
@@ -271,97 +283,10 @@ position: }
 .sidenav a:hover {
   background-color: yellow;
 }
-@media screen and (max-width: 800px) {
-  .sidenav a,
-  .dropdown .dropbtn {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 800px) {
-  .sidenav {
-    transform: none;
-  }
-  .sidenav.responsive {
-    position: relative;
-  }
-  .sidenav.responsive .icon {
-    position: absolute;
-    color: red;
-    right: 0;
-    top: 0;
-  }
-  .sidenav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .sidenav.responsive .dropdown {
-    float: none;
-  }
-  .sidenav.responsive .dropdown-content {
-    position: relative;
-  }
-  .sidenav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-@media screen and (max-width: 800px) {
-  .topnav a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: left;
-    color: black;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 800px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    color: red;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-  .topnav.responsive .dropdown-content {
-    position: relative;
-  }
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
 p {
   text-align: left;
-}
-       #bac p{display: none;}
-
-       
-       .glitch{
-           padding-left: 2em;
-           width: 65%;
-           display: flex;
-flex-flow: row nowrap;
-           overflow: scroll;
-       }
-       .glitch >div{flex: 1; overflow: scroll;}
-       .glitch div{height: auto;  transition: background-color 0.5s ease;
 }
        zz {
   white-space: pre;}
@@ -470,6 +395,19 @@ flex-flow: row nowrap;
 </div>
     </div>
     <div class="column" id="twee">
+        <svg id="wait" viewBox="0 0 300 300">
+<text fill="darkblue">   
+<animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 150 150"
+                          to="360 150 150"
+                          dur="10s"
+                          repeatCount="indefinite"/>
+<textPath textLength="452" lengthAdjust="spacing" xlink:href="#move">ARCHIVE Loading ARCHIVE Loading</textPath>
+  </text>
+  <path id="move" d=" M 150 150 m -75, 0 a 75,75 0 0,1 150,0 a 75,75 0 0,1 -150,0 " fill="none"/>  
+</svg>
       <div id="letter"><p>Dear Shervin,
 </p><p>
 I feel that when architecture turns towards the investigation of personal experiences–their
@@ -598,9 +536,16 @@ With Love,<br>
   </div>
 
 <script>
+    $(document).ajaxStart(function(){
+    $("#wait").css("display", "block");
+  });
+  $(document).ajaxComplete(function(){
+    $("#wait").css("display", "none");
+  });
+    
     function modalClose(){
     $(document).click(function(event) {
-  if (!$(event.target).closest("#modal, .drawing>img").length) {
+  if (!$(event.target).closest(".drawing>img").length) {
     $("body").find("#modal").empty().hide();
   }
     });

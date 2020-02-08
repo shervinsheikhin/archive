@@ -28,6 +28,8 @@ font-family: 'Arial', sans-serif;
     font-size: 70%;
   cursor: crosshair;
 }
+       
+      
 
 h3 {
     padding-top: 0;
@@ -52,7 +54,7 @@ a {
 }
       
 /* Create three equal columns that floats next to each other */
-       #cvholder{display: flex; flex-direction: column; line-height: 1.2;padding-bottom: 3em;}
+       #cvholder{display: flex; flex-direction: column; line-height: 1.2;width: 105%;}
        #cvholder > div{display: flex; flex-direction: row;}
        .item{padding-bottom: 0.4em;}
        .item>:first-of-type{width: 20%; max-width: 10em; min-width: 6em;}
@@ -62,6 +64,7 @@ a {
   margin: 0 2em;
     float: left;
     position: relative;
+    padding-bottom: 2em;
 }
 .column img {
   padding-bottom: 1em
@@ -126,7 +129,7 @@ a {
       font-size: 1.5em;
     margin-bottom: 0.5em;
 }
-.dropped, .dropdown-content a:hover, .sidenav a:hover, #naam:hover{
+.dropped, .dropdown-content a:hover, .sidenav a:hover{
   background-color: yellow;
 }
  #arc{
@@ -457,8 +460,8 @@ function openTiny(b){
 }
 
 function openMid(z){
-   window.scrollTo(0, 0);
-    $("#twee").load('loads.html #'+z).show();
+    $("#twee").load('loads.html #'+z, function(){   window.scrollTo(0, 500);
+}).show();
     $("#drie").hide();
     $("#een").show();}
     
