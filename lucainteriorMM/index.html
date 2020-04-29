@@ -346,11 +346,8 @@ src="https://www.youtube.com/embed/T0SukjAs_9w?autoplay=0&enablejsapi=1&fs=0&loo
 frameborder="0" allowfullscreen></iframe></div>
     
      <img src="assets/melis/scans1.jpg">
-     <img src="assets/melis/scans2.jpg">
      <img src="assets/melis/scans3.jpg">
-     <img src="assets/melis/scans4.jpg">
      <img src="assets/melis/scans5.jpg">
-         <img src="assets/melis/scans6.jpg">
 
 
 </div>
@@ -541,11 +538,6 @@ frameborder="0" allowfullscreen></iframe></div>
 </body>
     <script>
         $(document).ready(function(){ 
-                var ifr = $('.item').contents();
-
-            $(ifr).click (function(){
-                $('.item').click();
-            });
         $('.item').click(function(){
             $(this).siblings('.item').find( "iframe" ).each(function() {
   var idd = $(this).attr('id');
