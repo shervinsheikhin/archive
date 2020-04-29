@@ -344,6 +344,15 @@ Your browser does not support the audio element.
 <div><iframe id="melis" type="text/html"
 src="https://www.youtube.com/embed/T0SukjAs_9w?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
 frameborder="0" allowfullscreen></iframe></div>
+    
+     <img src="assets/melis/scans1.jpg">
+     <img src="assets/melis/scans2.jpg">
+     <img src="assets/melis/scans3.jpg">
+     <img src="assets/melis/scans4.jpg">
+     <img src="assets/melis/scans5.jpg">
+         <img src="assets/melis/scans6.jpg">
+
+
 </div>
     
     
@@ -531,10 +540,12 @@ frameborder="0" allowfullscreen></iframe></div>
     
 </body>
     <script>
-        function updateDiv()
-{  
-}
-        
+        $(document).ready(function(){ 
+                var ifr = $('.item').contents();
+
+            $(ifr).click (function(){
+                $('.item').click();
+            });
         $('.item').click(function(){
             $(this).siblings('.item').find( "iframe" ).each(function() {
   var idd = $(this).attr('id');
@@ -544,5 +555,8 @@ frameborder="0" allowfullscreen></iframe></div>
             $(this).addClass('open').removeClass('close');
             $(this).siblings('.item').animate({scrollTop:0}, 500, 'swing').on('hover').removeClass('open').addClass('close');
         });
+            
+           
+            });
 </script>
 </html>
