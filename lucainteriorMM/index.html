@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>d1000</title>
+        <link rel="icon" href="" type="image/jpg">
+        <meta name="keywords" content="">
+        <meta name="author" content="Deveny Faruque - deve1000">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <style>
+/*BASIC BODY*/
+@font-face {
+  font-family: "outline";
+  src: url("fonts/SFFlorencesansOutline-Itali.ttf");
+}
+            html {
+  scroll-behavior: smooth;
+}
+            
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blue; 
+}
+
+body {
+  font-family:Helvetica Neue;
+  margin:0;
+  padding:0;
+  left:0;
+  top:0;
+  width:100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: content-box;
+          scroll-snap-type: y mandatory;
+    scroll-padding: 25vh 0 0 0;
+            }
+            
+            
+            audio { 
+  width: 100%; 
+                filter: contrast(200%);
+}
+/*LETTERS*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ 
+            h1{font-size: 4rem;
+            color: blue;
+            text-align: center;
+            font-weight: 400;}  
+            h3{padding: 2em 0em;
+            color: blue;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.9rem;}
+            h2{font-size: 1.2rem;
+            font-family: Times New Roman;
+            color: black;
+                font-weight: 500;
+            }
+            h4{padding: 2em 0em;
+            color: blue;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2rem;}
+            p{color: blue;
+            font-size: 0.8rem;}
+            h5{bottom: 0;
+                font-weight: 400;
+            text-align: center;
+            font-size: 0.7rem;
+            color: black;}
+            a#arrow {font-size: 4rem;
+            color: white;
+            text-align: center;
+                font-weight: 100;}
+/*video*/
+            .foot{
+                margin-top: 5em;
+                height: 10vh;
+                width: 100vw;
+                text-align: center;
+                bottom: 0;
+                position: relative;
+
+            }
+            .head{
+                width: 100%;
+                position: fixed;
+                top: 0;
+                text-align: center;
+                z-index: 200;
+                  scroll-snap-align: start;
+            }
+            .info{
+                position: relative;
+                top:3em;
+                padding: 2em;
+                text-align: center;
+                  scroll-snap-align: start;
+
+            }
+            .snapshots{
+overflow: hidden;
+                display: flex;
+                padding: 0em 2em;
+                height: 45vh;
+                margin: 1em 0em 5em 0em;
+                justify-content: center;
+            }
+            .snapshots img{
+                padding: 0.5em;
+                height: 95%;
+                width: auto;
+            }
+            .wij{writing-mode: vertical-rl;
+text-orientation: mixed;
+            position: fixed;
+            left: 1em;
+            top:1em;
+            font-size: 0.8rem;}
+.grid-container {
+  display: flex;
+    flex-wrap: wrap;
+  padding: 0;
+    margin: 3vh auto;
+    height: auto;
+    width: 90vw;
+    position: relative;
+
+}
+
+.item {
+    height: 45vh;
+    margin: 1vw;
+    width: 40.5vw;
+  padding:0em 1em 1em 1em;
+    transition: overflow 5s;
+  scroll-snap-align: start;
+}
+.close{     
+    overflow: hidden;
+                        border: 1px solid white;
+    opacity: 0.2;
+            }
+            .left{text-align: left;
+}
+            .right{text-align: right;}
+            iframe{width: 100%;
+            height: 45vh;}
+            .text{
+                min-height: 45vh;
+            }
+            .item img{padding: 1em 0em;
+            height: 45vh;
+            width: auto;
+            max-width: 100%;
+            display: block;
+            text-align: center;}
+            .item p{
+                color:blue;
+            }
+            .item:hover {
+            border-color: blue;
+               cursor: pointer;
+                opacity: 1;
+            }
+            
+            .open{
+                overflow-y: scroll;
+                border-color: blue;
+                opacity: 1;
+            }
+            
+            @media only screen and (max-width: 600px) {
+                
+            .snapshots{
+                flex-direction: column;
+                padding: 0em 2em;
+                margin: 0 0 4em 0;;
+                height: auto;
+                justify-content: flex-start;
+            }
+            .snapshots img{
+                width: 50vw;
+                height: auto;
+                padding: 0.5em;
+                margin: 0 auto;
+
+            }
+                h1{font-size: 2.5rem;}
+                h3{font-size: 0.8rem;}
+                .wij{
+            position: absolute;
+            top:45vh;
+            font-size: 0.7rem;}
+                .grid-container {
+  display: block;
+}
+      .item{display: block; width: auto; margin:2em 0em;
+                }
+                iframe{width: 100%;
+            height: 35vh;}
+                .close{opacity: 0.8; border: 1px solid blue;height: 35vh;}
+                .open{overflow-y: hidden;height: auto;border 1px solid red;}
+  
+}
+</style>
+</head>
+<body>
+    <div class="wij">atelierverantwoordelijken:<br>
+Shervin Sheikh Rezaei & Deveny Faruque</div>
+<div class="head"><h1>DRUKKUNST ONLINE/OFFLINE</h1>
+    </div>
+    
+<div class="info"><h3>ONLINE EXHIBITION PLATFORM<br>MIXED MEDIA LUCA INTERIEURVORMGEVING,<br>2E BACHELOR GENT</h3>
+    <div class="snapshots"><img src="assets/info3.jpg"><img src="assets/info2.jpg"><img src="assets/info1.jpg"> 
+    </div><p>Gezien de nieuwe maatregelen omtrent COVID-19, kon ons zeefdrukatelier- workshopweek niet doorgaan. We besloten een online platform op te richten,<br> waarbij de studenten de mogelijkheid kregen om online begeleidingen te volgen en verschillende lezingen bij te wonen. Zeefdrukken was niet meer mogelijk,<br> maar ze gingen op een originele manier op zoek naar oplossingen om hun werk thuis aan te pakken. Hier tonen we u graag het resultaat:</p>
+    <a href="#here" id="arrow">&dArr;</a>
+    </div>
+    
+    
+<div id="here" class="grid-container">
+    
+<div class="item close left"><div class="text">
+    <h2>Kaat Stiers</h2><p>In onze maatschappij zijn er helaas nog veel mensen die de realisaties, het succes of het kunnen van hun naasten, vrienden of collega’s niet oprecht geheel kunnen erkennen en waarderen. In plaats van openlijk en gemeend deel uit te maken van dit succes, blijft men afwezig (fysiek of in het debat), zoekt men kritiek, is men jaloers, soms zelfs rancuneus.</p><p>
+Doorheen het verhaal komen deze variatie aan niet altijd even fraaie menselijke eigenschappen aan bod. Dit resulteert erin dat de koningen elkaar wensen te overtreffen: altijd meer, mooier, groter, duurder.
+Beide koningen geven uitdrukking aan ego en macht via hun constructies. De volgende realisatie dient mooier, hoger, imposanter, ingewikkelder te zijn. Het dient de vorige constructie te overtreffen.</p><p>
+Het overtreffende in al zijn facetten, wil ik in beeld brengen.</p><p>
+Enerzijds in mijn collages:</p><p>
+- Een opeenstapeling van gebouwen, hoog, hoger, hoogst !
+- Het samenbrengen van delen van totaal verschillende gebouwen architecturaal en bouwkundig huzarenstuk.
+- Een aaneenschakeling van ruimtes, openingen en mogelijke in- het labyrint</p><p>
+Anderzijds mijn gekozen techniek, het zeefdrukken.
+Zeefdrukken is een techniek van overlapping.
+Startende van een vlak uit één kleur, wordt de creatie laag na
+vormelijk ingewikkelder, veelzijdiger, boeiender, kleurrijker.
+Elke bijkomende laag geeft een nieuwe creatie die de vorige creatie (laag) wil overtreffen in al zijn facetten.</p>
+    </div>
+    
+    <audio controls>
+  <source src="assets/kaat.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+    <img src="assets/kaat/col1.jpg">
+    <img src="assets/kaat/col2.jpg">
+    <img src="assets/kaat/col3.jpg">
+    <img src="assets/kaat/col4.jpg">
+    <img src="assets/kaat/col5.jpg">
+    
+    <img src="assets/kaat/ruim1.jpeg">
+    <img src="assets/kaat/ruim2.jpeg">
+    <img src="assets/kaat/ruim3.jpeg">
+    <img src="assets/kaat/ruim4.jpg">
+    <img src="assets/kaat/ruim5.jpeg">
+    
+<div><iframe id="kaat" type="text/html"
+src="https://www.youtube.com/embed/YGfwvrHeCgE?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+    
+    
+<div class="item close right"><div class="text">
+    <h2>Kyara Schellens</h2><p>Het kortverhaal “de kleinste vrouw ter wereld” gaat over een Franse ontdekkingsreiziger die de kleinste stam ter wereld ontdekt. In het specifiek de kleinste vrouw ter wereld. Deze vrouw wordt op de voorpagina van een krant geplaatst. Er volgen meerdere reactie vanuit verschillende families. Mensen hebben het soms moeilijk om andere stammen te aanvaarden omdat ze er anders uitzien en andere gewoontes hebben. In de tekst wordt er gezegd dat ze haar ‘zielig’ vinden, dat ze er ‘ongelukkig’ uitziet. Maar is dat wel zo? Ze is net heel gelukkig, omdat voor hun geluk een andere betekenis heeft. Ze is namelijk gelukkig omdat ze nog leeft en dat is in hun cultuur het grootste geschenk dat ze kunnen hebben. Ze leven in een gevaarlijke situatie en elke dag gaat het om leven of dood. Ik had toen een zin uit het verhaal gehaald, namelijk: ‘Aan het kwaadaardige verlangen van ons ongelukkig te zijn’ Met als onderzoeksvraag: ‘Wat bepaald geluk in de Westerse cultuur?’ Vanuit die onderzoeksvraag heb ik een boek van Bell Hooks gelezen ‘All about love’. Zij richt zich op de romantische liefde en gelooft dat in de Amerikaanse cultuur mannen gesocialiseerd zijn om de waarde en kracht van liefde te wantrouwen, terwijl vrouwen gesocialiseerd zijn om lief te hebben in de meeste situaties- zelfs als hun behoefte om liefde te ontvangen niet wordt vervuld. Anderzijds heb ik een tekst van Sarah Ahmed gelezen ‘Killjoy Manifesto’. In deze tekst laat ze zien hoe feministische theorie wordt gegenereerd uit het dagelijks leven en de gewonen ervaringen van feministe thuis en op het werk. Mijn eerste beelden zijn dus gebaseerd op de thema’s tijd en geluk. In de beelden wou ik de twee leefwerelden van de westerse cultuur en de cultuur van de kleinste vrouw ter wereld samen brengen. Toen ik het verhaal las, had ik direct het gevoel dat deze 2 werelden op het zelfde moment afspeelden en dat vond ik een interessant punt om in mijn collage toe te voegen. Anderzijds heb ik het thema geluk ook proberen te verwerken in mijn collages. Ik heb eigenlijk 2 beelden gecombineerd. Enerzijds een interieurbeeld omdat de Westerse Cultuur veel belang hecht aan een mooi huis of veel geld. Het andere beeld slaat op de cultuur van de kleinste vrouw ter wereld, hier wordt de jungle voorgesteld. Zij vinden geluk in hun overleving en zien geluk in de kleine dingen van het leven. Maar omdat ‘Geluk’ heel moeilijk is om af te beelden en eigelijk heel persoonlijk is, ben ik verder gegaan met het thema tijd. Ik ben eigenlijk foto’s van natuur en cultuur gaan opzoeken en die op dezelfde manier als in 1 van mijn eerste collages gaan samen ‘versmelten’. Eerst heb ik wat proefcollages gemaakt om te testen welke 2 beelden het best bij elkaar passen en ergens ook een soort ‘mind-fuck’ creëren. Die ik dan eigenlijk wou gaan zeefdrukken maar door de corona-crisis is dit helaas niet kunnen doorgaan. Maar doordat ik toch al eens heb kunnen drukken in de workshop net voor de maatregelen, heb ik gemerkt dat je foto’s enkel kan zeefdrukken als het in ‘bitmap’ staat dus heb ik mijn collages ook in bidmap gezet om toch een resultaat te verkrijgen die zo dicht mogelijk aanleunt bij wat ik wou doen, moest ik hebben gezeefdrukt. Daaruit heb ik dan mijn eindresultaat gemaakt.
+
+    </p></div>
+    <audio controls>
+  <source src="assets/kyara.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+    <img src="assets/kyara/zw1.png">
+    <img src="assets/kyara/zw2.png">
+    <img src="assets/kyara/zw3.png">
+    <img src="assets/kyara/zw4.png">
+    <img src="assets/kyara/zw5.png">
+    <img src="assets/kyara/zw6.png">
+        <img src="assets/kyara/zw7.png">
+    <img src="assets/kyara/scans1.jpg">
+    <img src="assets/kyara/scans2.jpg">
+    <img src="assets/kyara/scans3.jpg">
+        <img src="assets/kyara/scans4.jpg">
+    <img src="assets/kyara/zw5.png">
+</div>
+    
+<div class="item close left"><div class="text">
+    <h2>Yanou Baily</h2><p>
+    Hoe social media de maatschappij beïnvloedt. Verhaal: Masker van de rode dood.
+    </p><p>
+In het verhaal is er een duidelijke grens tussen “de elite” en de rest van de maatschappij (deze is letterlijk gemaakt dmv een kasteel, binnen VS buiten). Hierbij spelen de factoren: afkomst, geld, imago, enz... Een rol. Dit heb ik gelinkt aan de elite van vandaag via social media. Het grote verschil hierbij is dat de vorige factoren hier geen rol in spelen, in de tijd van nu kan iedereen plots tot de elite behoren ongeacht de afkomst enzovoort. Het systeem van de elite geldt hier wel nog steeds, namelijk de (vaste) bekende influencers hebben een grote invloed op hoe de maatschappij eruit ziet, veel mensen kijken naar hen op en willen erbij horen, anderen volgen gewoon ter entertainment, er zijn ook mensen die hier niets mee te maken willen hebben en mensen die jaloers zijn en haat genereren. zonder deze mensen bestaat de elite van nu niet, dit was vroeger anders (de elite werd niet bepaald door het volk). Binnen de elite (wat het kasteel voorstelt in de tekst) is het niet altijd rozengeur en maneschijn. Een deel is graag bekend en wordt graag dag in dag uit gevolgd, een ander deel zou eigenlijk graag stoppen, maar dit lukt niet altijd (ze zitten vast in het systeem). 
+    </p><p>
+Beide kanten zijn in mijn neutraal standpunt gelijkwaardig (want de toeschouwer behoort niet tot deze “maatschappij”,en staat volledig los van alles). Binnen is het niet beter dan buiten, omgekeerd hetzelfde. Het is een wisselwerking tussen de twee die een maatschappij bepalen. 
+    </p><p>
+Om dit standpunt ruimtelijk te vertalen heb ik verschillende lagen gecreëerd die elkaar beïnvloeden eens je ze naast of achter elkaar plaatst.</p>
+    </div>
+<div><iframe id="yanou" type="text/html"
+src="https://www.youtube.com/embed/zbKd6QPAhKo?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+
+<div class="item close right"><div class="text">
+    <h2>Melis Deveci</h2><p>Ik ben begonnen bij het verhaal van de twee koningen en de twee labyrinten die als volgt gaat, er is een Babylonische en een Arabische koning. De Babylonische koning sluit de Arabische koning op in zijn labyrint, met veel obstakels en valkuilen. De Arabische koning geraakt uit het labyrint dankzij goddelijk hulp. Als wraak neemt de Arabische koning de Babylonische koning gevangen in zijn eigen labyrint, namelijk de woestijn. 
+    </p><p>
+
+1ste interpretatie: Het ging niet anders dan het verhaal vanuit een geloofsperspectief te interpreteren. Meteen viel er me een onderwerp op. “Wraak” en met als gevolg “het lot”. Mijn allereerste mening over het verhaal was, dat de Babylonische koning “de slechterik” is in het verhaal. Na mijn onderzoek over wraak en het lot bleek dat er een plot twist te zijn in het verhaal. Mijn bron voor mijn onderzoek over deze twee onderwerpen was de koran. Ik heb verschillende verzen (soera’s) gevonden die bewijzen dat wraak nemen op een ander niet aan de mens is overgelaten, dat je dan met andere woorden als mens geen recht hebt volgend de Islam om te spelen met het lot van een ander. Dus wat maakt dat de Arabische koning even slecht of zelfs slechter is als de Babylonische koning. 
+    </p><p>
+
+Gevolg: Dus terwijl men dacht dat ze heel verschillend waren, bleek het achteraf gezien dat ze niet zo ver liggen van elkaar. Ze vallen beide in hun menselijkheid. 
+    </p><p>
+
+2de interpretatie: Ik ging er steeds van uit, doorheen heel mijn onderzoeksproces, dat de Arabische rijk, het oosten is en dat de Babylonische rijk het westen is. Dus dat er een enorm contrast is tussen beide culturen. De waarden en normen die zeer verschillend zijn tussen beide culturen. Tijdens mijn onderzoek heb ik ontdekt dat er tussen Babylonië (Midden-Oosten) en de Arabische rijk (Oosten) een duidelijke grens was. Nu, is die grens amper te zien. Waardoor de twijfel ontstaat. 
+    </p><p>
+
+Gevolg: Bij beide interpretaties werd er eerst anders over gedacht door de twijfel die aanwezig is. Na onderzoek bleek dit anders te zijn. Conclusie: Ik legde de focus op het twijfelende contrast tussen die 2 culturen. Ik zocht bij beide werelden een object dat als symbool staat voor die cultuur. Voor het Oosten, de Arabische rijk, heb ik een Perzisch tapijt genomen, puur door de zeer herkenbare figuratieve, organische vormen. En voor het Midden-Oosten (Babylonië) heb ik een patroon ontworpen, die zeer kenmerkend is voor de Babylonische rijk, met geometrische, rechte, harde vormen. De reden waarom ik voor een gele kleur heb gekozen is om het contrast duidelijker te laten uitkomen. Op die manier wordt ook het Oosten vervaagd. De geometrische, Babylonische vormen zijn niet zomaar onafhankelijk maar ze volgen toch ook wel “de route” van het Oosten.
+    </p></div>
+    <audio controls>
+  <source src="assets/melis.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div><iframe id="melis" type="text/html"
+src="https://www.youtube.com/embed/T0SukjAs_9w?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+    
+    
+<div class="item close left">
+    <h2>Jolien Gielijns</h2>
+<div><iframe id="jolien" type="text/html"
+src="https://www.youtube.com/embed/ITSqoj1L2CM?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+    <img src="assets/jolien.jpg" >
+</div>
+
+<div class="item close right">
+    <h2>Margaux Desmyter</h2><p>In het verhaal van “de kleinste vrouw” werd mijn aandacht getrokken tot de toeschouwers van haar foto. Het krantenartikel met kleine bloem op ware grootte trok de aandacht van verschillende (klassen van) mensen. De schrijfster spendeerde heel wat aandacht aan de reacties van die individuen. Het ene gezin werd gechoqueerd door het zien van haar foto. Een ander individu werd dan net weer gekoppeld aan verlangens en specifiek erotische verlangens... Een kind fantaseerde over hoe ze met haar kon spelen. Een andere mevrouw werd herinnerd aan wat iemand haar ooit vertelde. De persoon die als kind in het weeshuis zat had verzwegen dat één van de kinderen was overleden. Ze verstopte het kind om dan later met haar te spelen. Alsof ze een levensechte pop was...
+        </p><p>
+Deze mensen spelen volgens mij de belangrijkste rol in het verhaal. De mens als toeschouwer en zijn gedachten. 
+Die subjectieve reacties van de toeschouwers trokken mijn aandacht. Ik vond het fascinerend te zien dat elk individu in het verhaal, ventileert met telkens henzelf als centraal punt, en net dat is heel belangrijk. Een beeld kan krachtig zijn, in de zin van de persoonlijke wereld van de toeschouwer. De toeschouwer verplaatst zich niet snel verder dan wat ze weten, of denken te weten. Alles is gekoppeld aan hun eigen wereld en beleving van die wereld. Hun gedachten zijn gekoppeld aan hun ervaring. Getriggerd door herinneringen, trauma’s hun eigen cultuur en tijd waarin ze leven... De wereld van kleine bloem doet er eigenlijk niets toe, want die kennen ze niet. 
+        </p><p>
+Met het idee om te gaan werken rond die gedachten, ben ik gaan onderzoeken wat juist mensen gaat triggeren. Wat denken ze bij het zien van bepaalde beelden? En aan wat gaan ze die associëren. Zo heb ik een reeks van beelden/foto’s voorgelegd aan personen met de leeftijdsklasse van 18 tot en met 30 jaar. 
+        </p><p>
+Dit zorgde voor veel “trial and error”. Het was helemaal niet evident om zo hun spontane gedachten te laten vertellen. Voor sommige voelde dit aan als een druk. Uiteraard zijn we gewend om een groot deel van gedachten voor ons zelf te houden. Voor de eerste uitspraken zijn er al een hele reeks aan associaties voorafgegaan. Wat wel heel erg in het oog sprong waren de associaties die mensen maken. Die associaties die voortkomen uit misschien zelf een hele kleine prikkel. Iets die eerst banaal en onbelangrijk lijkt, leidt tot interessante bedenkingen en zelf inspiratie. 
+Het medium dat ik koos is video. Video is volgens mij een goed medium om gedachten weer te geven. Ook is video een medium waar ik geen ervaring mee had. Ik vond het interessant dit te leren kennen. Door dat ik dit mijzelf moest aanleren, gaf dit mij de kans te botsen op inspirerende toevalligheden. In de video zijn de denkpatronen en associaties vertaald. Eigenlijk kan zo die video eerder een collage video worden genoemd. 
+
+    </p>
+    <audio controls>
+  <source src="assets/margaux.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div><iframe id="margaux" type="text/html"
+src="https://www.youtube.com/embed/8Ca0bElpUfA?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+
+
+<div class="item close left"><div class="text">
+    <h2>Manon Maeckelbergh</h2><p>
+
+In het begin van het eerste semester moest ik het verhaal van de rode dood lezen. Het verhaal ging over een ziekte, namelijk de rode dood, de rode dood zorgde voor veel herrie in het land doordat er veel mensen aan stierven. Prins Prospero was baas van het land en koos ervoor om al zijn vrienden en kennissen in zijn kasteel binnen te nemen. Hij had de macht om te kiezen wie er dus ging sterven of niet, ook al waren ze veilig stierven de mensen die binnen in het kasteel waren ook. 
+        </p><p>
+
+De themas die uitspringen in dit verhaal zijn de dood, priviléges/ untitlement, macht en ongelijkheid. Het thema waar ik ben op gaan verder werken is privilége, privilége is een thema die voor altijd een rol zal spelen in de maatschappij maar waar we vaak niet op letten. 
+        </p><p>
+
+Een privilége is een recht dat aan een persoon/ groep wordt toegekend om deze meer of andere rechten te geven dan men normaal aanspraak op maakt. Met andere woorden : men krijgt een voorrecht, een persoon die bevoorrecht wordt heeft dat meestal niet door, bij de persoon die niet bevoorrecht wordt kan er ergernis ontstaan. 
+De hoofdvraag die ik stelde in het eerste semester was ook over privilege. Ik vroeg me af in welke mate ik bevoorrecht werd, de vraag die ik stelde was: In welke mate word ik bevoorrecht als blanke vrouw levende in een welgesteld gezin?` 
+Dat waren namelijk white privilege, socio-economisch privilege, heteroseksuele privilege, ... Het white privilege is in de westere cultuur nog zeer fel aanwezig maar omdat we van geluk mogen spreken dat we dat privilege bezitten vergeten we het gewoon. Socio- economisch privilege is een privilege waar je mee geboren wordt, het gaat over het kapitaal dat je ouders bezitten. Aan de hand van dit kapitaal word je bevoorrecht, als je ouders het breder hebben is de kans dat je meer ervaringen oploopt dan andere mensen die een lager kapitaal hebben groot. Heteroseksuele privilege, als hetero komt het niet voor dat je rechten aan de kant worden geschoven door je geaardheid, als homoseksuele wel. 
+Na dat ik het besef heb gekregen dat ik bezit over tal van privileges waar ik nooit op lette ben ik gaan nadenken hoe ik de maatschappij hetzelfde kan laten doen. Iedereen even laten nadenken over welke voorrechten ze bezitten en ze er stil bij laten staan. Het tweede dat ik wou aantonen is de impact van privileges, het gevolg dat het kan hebben als een persoon een privilege als dan niet beschikt. 
+        </p><p>
+
+Terug naar het eerste, waar ik de bevolking even wil herinneren aan welke privileges ze wel of niet bezitten. Dit heb ik gedaan aan de hand van een poster waarbij het woord ‘PRIVILEGE’ uitspringt, het is de bedoeling dat het een interactieve poster is. Een poster waarbij de voorbijganger even tijd in wilt steken. Het basiskleur van de poster is lichtblauw, een basiskleur. Op mijn poster heb ik duidelijk gemaakt dat iedereen van een privilege bezit. 
+Als ik de voorbijganger zijn aandacht heb is het de bedoeling dat hij/zij de checklist maakt. Door de checklist in hun hoofd in te vullen zullen ze bewust zijn van het thema privileges en er bij stilstaan. 
+De coupons die onderaan de poster hangen zijn stellen een metafoor voor, ik ben gaan denken aan hoe ik een privileges een vorm kan geven. Ik ben op een coupon gekomen, een toegangsticket. Ik dacht aan een banaal toegangsticket tot een pretpark of tot attracties op de kermis. Waarbij sommige kinderen het privilege bezitten dat ze wel binnen mogen en andere niet, de kinderen die wel een toegangsticket krijgen tot de attracties beseffen het geluk niet dat ze hebben. Zo is dat ook in het dagelijks leven met de bevolking en privileges. 
+        </p><p>
+
+Als je bezit over privileges is dat recht vaak een toegang tot zaken waar enkel jij of een bepaalde groep over mag bezitten. Het toegangsticket of de coupon kan je zien als meerdere opties of open deuren die jij kan verkrijgen omdat je tot de ‘ideale’ groep behoort. 
+Het tweede werk is een ruimtelijk werk, waarbij ik wil aantonen dat privileges kunnen doorwegen op iemands leven. Een persoon die een ‘groot’ privilege bezit zal niet aanvoelen dat dat kan doorwegen op iemands leven. Een persoon die dat niet bezit zal dat wel merken.    </p><p>
+Ik ben met 3 grootes en 3 zwaartes gaan werken, één grote; één midden en een kleine coupon. De 3 coupons zijn neutraal, zonder specifieke naam of uitleg. De 3 coupons stellen 3 privileges voor, geen één van de coupons is een specifiek privilege, dat kies je persoonlijk. 
+GROTE COUPON: STELT EEN PRIVILEGE DIE VEEL INVLOED HEEFT OP JE LEVEN, WAARDOOR JE VEEL MEER KANSEN KRIJGT DAN EEN PERSOON DIE DAT NIET HEEFT.
+MIDDEN COUPON: STELT EEN PRIVILEGE VOOR DIE NOG STEEDS EEN VOORRECHT IS MAAR DIE JE MINDER VAAK TEGENKOMT DAN DE GROTE COUPON EN MINDER ZAL DOORWEGEN OP JE LEVEN. 
+KLEINE COUPON: JE HEBT NIET DOOR DAT DIT EEN PRIVILEGE IS IN JE LEVEN MAAR HET SPEELT TOCH EEN ROL, JE WORDT TOCH BEVOORRECHT.     </p><p>
+
+Voor elke persoon kan een privilege anders aanvoelen, een persoon met een donkere huid of andere afkomst kan vinden dat de witte bevolking meeste voorrechten bezit. Hij zal dus vinden dat de grote coupon ‘white privilege’ is. Een jongen die homoseksueel is kan vinden dat heteroseksuelen veel voorrechten krijgen en zal dus vinden dat de grote coupon ‘heteroseksueel privilege’ is. Ik wil aantonen dat iedereen zijn gevoelen, mening en zicht er over anders is en soms niet te bespreken valt. Privileges liggen vaak gevoelig bij mensen die ze niet bezitten 
+ 
+    </p>
+    </div>
+<div><iframe id="manon" type="text/html"
+src="https://www.youtube.com/embed/GswjufS7aLo?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+
+<div class="item close right"><div class="text">
+    <h2>Neena Verliefde</h2><p>Al te vaak worden omtrent gentrificatie extreme standpunten ingenomen. Het verschijnsel dekt dan ook veel definities. Volgens de een behandelt het begrip puur stelselmatig stijgende huurprijzen, ik plaats het begrip meer in een culturele context. Waar het vooral gaat om de afbraak van authenticiteit en culturele rijkdom. Gentrificatie is een stedelijk proces waardoor stadsdelen die eerder onpopulair waren geleidelijk gewilder en duurder worden. Tijd is dus een belangrijke, maar onschatbare factor! Is er geen vernieuwing dan dreigt een buurt in stilstand te geraken. Ik stel mezelf hierbij deze vragen: Wat maakt dat een gebouw kan blijven bestaan in plaats van afgebroken te worden? Wie bepaalt de levensduur ervan? De propagandaposter die ik hierbij heb ontworpen werpt zijn vruchten af als indicatie op die vragen. Heel wat steden worden vandaag de dag geconfronteerd met een toenemende of voortschrijdende segregatie en suburbanisatie. De huizen die ik gekozen heb geven de woonvoorkeur aan voor een vrijstaande eengezinswoning met eigen tuin, gesitueerd in een residentiële wijk wat zorgt voor een verstedelijking van het platteland. Dit is de oorzaak van gentrificatie en zal op lange termijn zich dus steeds verder verspreiden waardoor de authenticiteit van een buurt soms in het gedrang komt te staan. Deze wordt te vaak herleid uit een puur visueel paradigma. Gebouwen hebben pas culturele waarde wanneer ze een bepaalde duur hebben doorstaan en worden dan als erfgoed beschouwd. Erfgoed is dat wat een groep mensen waardevol vindt om te bewaren. Waardevol betekent dat die dingen die in het verleden een betekenis hadden, ook nu nog een rol kunnen spelen en belangrijk genoeg geacht worden om door te geven naar toekomstige generaties. Zo kennen de beluiken, arbeidershuizen… van vroeger nu een onschatbare waarde omwille van hun geschiedenis en waardig karakter. Net zoals vakmanschap en ambachten opnieuw hoog worden aangeschreven in een wereld die steeds sneller draait, globaler, maar ook ondoorzichtiger wordt. De workshop zeefdrukken was voor mij een kans om op traditionele wijze met de handen te kunnen werken. Hierbij wil ik de focus leggen op de morele kwaliteit en eerlijkheid dat terugkomt in de oude ambacht om zo een tegenreactie te vormen op de eenhorigheid van de samenleving waarin alles zomaar gekopieerd wordt zonder nog na te denken. Het begrip authenticiteit wordt veel te makkelijk gebruikt en in scène gezet. Nieuwe woningen tonen een contemporain karakter en zijn gebouwd om snel weer af te breken. Vandaar dat ik een houdbaarheidsdatum erop plak. 
+
+    </p></div>
+    <audio controls>
+  <source src="assets/neena.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div><iframe id="neena" type="text/html"
+src="https://www.youtube.com/embed/pZQHnWa5wVs?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+    
+    
+    
+<div class="item close left">
+    <h2>Lies Christiaens</h2>
+<div><iframe id="lies" type="text/html"
+src="https://www.youtube.com/embed/k-UWRhAtvvc?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+
+<div class="item close right"><div class="text">
+    <h2>Hannah Tielemans</h2>
+    <p>
+De tekst die ik gelezen heb, is de tekst van de 2 koningen en de 2 labyrinten. Wat mij opviel in de tekst is geloof. Bijvoorbeeld waneer de Arabische koning de uitweg van het labyrint niet kan vinden, bid hij tot Allah en vindt hem toch, ook het zinnetje “maar god weet beter” en het stukje waar men zegt dat alleen god verwarring mag zaaien en dit niet aan de gewone mens is. 
+    </p><p>
+
+Toen ik wist dat ik rond geloof wou werken ben ik collages beginnen maken met allerlei godsdiensten. Dit waren er heel veel dus heb ik me gefocuusd op de islam en het christendom. De godsdiensten uit het verhaal. De vraag die ik me stelde was: “wat is geloof eigellijk en hoe wordt het beleefd?” Al snel kwam ik tot de conclusie dat je niet altijd naar de kerk of moskee moet gaan om geloof de beleven. Dit kan ook thuis, in de natuur, bij vrienden… Hierdoor ben ik begonnen met 2 collages, die de Islam en het Christendom vergelijken met een huiselijke ruimte. Wat me daar opviel was dat een tafel wel een krachtig symbool is. Het samenzijn rond de tafel in een maatschappij die vaak druk is, en waar velen soms naast elkaar leven, tijd nemen om toch eens naar elkaar te luisteren. Maar ook veel belangrijke dingen gebeuren aan een tafel. Bijvoorbeeld een huwelijksacte ondertekenen, wetten worden er gemaakt, maar ook bijvoorbeeld een altaar… De tafel wou ik dus wel gebruiken in mijn ontwerp. 
+    </p><p>
+
+Wat er voor mij toch nog ontbrak was een link met het Christendom en de Islam. Ik onderzocht de verschillende gewoontes en rituelen van beide godsdiensten en zocht een link. Je had bijvoorbeeld de doop, Het rein zijn voor je de Moskee binnenkomt en je dus je  voeten… moet Wassen. De paaskaars die wordt aangestoken maar ook de begrafenis, crematie in beide geloven. In heel veel van de rituelen kwamen één van de 4 elementen voor. 
+     </p><p>
+
+Ik zocht dus een ontwerp met 3 “onderdelen” het samenzijn, de tafel, en de 4 elementen.
+    </p><p>
+
+Nu drukkunst niet doorging leek het wel leuk om korte filmpjes te maken. Ik zocht een manier om de elemeten letterlijk op een tafel te krijgen. Voor vuur waren dit kaarsen. Voor water regen. Voor aarde grond met planten en voor lucht spiegels die de lucht reflecteerden. Om het samenzijn in beeld te brengen heb ik mensen handen laten geven bij een tafel. 
+    </p><p>
+
+Ik heb dus 4 korte fragmenten gefilmd om dit aan te tonen.
+</div>
+<div><iframe id="hannah" type="text/html"
+src="https://www.youtube.com/embed/ONtl3eqhQY8?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+
+<div class="item close left"><div class="text">
+    <h2>Zoë Engels</h2><p>
+Deze plek is opgebouwd uit architecturale onderdelen van religieuze gebouwen over heel de wereld. De Islamitische aspecten zijn afkomstig van een Noord-Afrikaanse moskee en een moskee uit het Midden-Oosten. Daarnaast zijn er ook Westerse onderdelen van een Europese en Amerikaanse kerk in verwerkt. Het samenvoegen van deze uiteenlopende bouwkunst tot één geheel staat symbool voor het evolueren naar één hechte maatschappij. Het overnemen van bepaalde religieuze elementen representeert dan weer het behouden van de individualiteit. De structuur van dit gebouw is niet enkel gebaseerd op overeenkomsten en compromissen, maar ook verschillen liggen mee aan de basis. Het beste van beide leefwerelden wordt hier samengebracht tot een nieuw geheel. Deze utopische ruimte is in essentie een plek waar elke cultuur gerespecteerd wordt. In deze verzoenende utopie is iedereen gelijk, maar toch is er ruimte voor een ieder om zijn individualiteit te behouden. Die individualiteit wou ik zichtbaar maken door het gebouw in verschillende lagen te zeefdrukken. Elke laag heeft zijn eigen kleur en symboliseert een cultuur. Aangezien dit niet meer mogelijk was heb ik de vier grondplannen digitaal in lagen over elkaar geplaatst. Vanuit die overlappingen heb ik bepaalde delen gecombineerd tot één samenhangend gebouw. Vervolgens heb ik deze ruimte handmatig op een kalk getekend om de fragiliteit van de utopie te weerspiegelen. 
+    </p><p>
+
+CONCLUSIE: LINK FICTIEF GEBOUW ~ FICTIEF VERHAAL Architectuur wordt ingezet als middel om verschillende leefwerelden te verbinden tot één hechte maatschappij. De utopische ruimte staat symbool voor een samenleving waarin iedereen zichzelf kan zijn en als gelijkwaardig wordt beschouwd. Bouwkunst uit de Islamitische en Westerse cultuur zijn hier samengebracht tot een harmonieus geheel en representeren de individualiteit van een ieder. Dit utopische gebouw vindt zijn plek in hartje Brussel. Ik ben opgegroeid in deze multiculturele stad en heb zelf ondervonden wat voor meerwaarde dit is. Nergens anders leven zo veel verschillende culturen zo nauw met elkaar samen. Deze wereldstad sluit het dichtst aan bij mijn utopie en is de ideale plek om mijn verzoenende wereld te realiseren.    </p><p>
+In het verhaal is er een duidelijke grens tussen “de elite” en de rest van de maatschappij (deze is letterlijk gemaakt dmv een kasteel, binnen VS buiten). Hierbij spelen de factoren: afkomst, geld, imago, enz... Een rol. Dit heb ik gelinkt aan de elite van vandaag via social media. Het grote verschil hierbij is dat de vorige factoren hier geen rol in spelen, in de tijd van nu kan iedereen plots tot de elite behoren ongeacht de afkomst enzovoort. Het systeem van de elite geldt hier wel nog steeds, namelijk de (vaste) bekende influencers hebben een grote invloed op hoe de maatschappij eruit ziet, veel mensen kijken naar hen op en willen erbij horen, anderen volgen gewoon ter entertainment, er zijn ook mensen die hier niets mee te maken willen hebben en mensen die jaloers zijn en haat genereren. zonder deze mensen bestaat de elite van nu niet, dit was vroeger anders (de elite werd niet bepaald door het volk). Binnen de elite (wat het kasteel voorstelt in de tekst) is het niet altijd rozengeur en maneschijn. Een deel is graag bekend en wordt graag dag in dag uit gevolgd, een ander deel zou eigenlijk graag stoppen, maar dit lukt niet altijd (ze zitten vast in het systeem). 
+    </p>
+    
+    <audio controls>
+  <source src="assets/zoe.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    </div>
+    <img src="assets/zoe/zw1.png">
+    <img src="assets/zoe/zw2.jpg">
+    <img src="assets/zoe/zw3.png">
+    
+    <img src="assets/zoe/DETAIL1.jpg">
+    <img src="assets/zoe/DETAIL2.jpg">
+    <img src="assets/zoe/DETAIL3.jpg">
+    <img src="assets/zoe/DETAIL4.jpg">
+    <img src="assets/zoe/plan.jpg">
+</div>
+
+
+
+<div class="item close right"><div class="text">
+    <h2>Amelie Gheerardyn</h2><p>De twee Koningen en de twee Labyrinten
+Het verhaal zelf had veel verschillende levenslessen en interpretaties. In de beginnende weken van het project ging het mij vooral over de manier waarop de woestijn, een natuurlijk fenomeen eigenlijk de bovenhand had over iets dat specifiek ontworpen was met de enige bedoeling om een mens eeuwig vast te houden. Die woestijn was “machtiger” dan het mensenlijke labyrint. Altijd veranderend en fluide.</p><p>
+De twee koningen hadden een ander soort conflict. Aan de ene kant had je de Babylonische koning die a.d.h.v goud en rijkdom zijn macht toonde. Aan de andere kant had je de Arabische Koning die eerder als
+tussenpersoon diende tussen zijn rijk en God. Bij mijn onderzoek was dit een leidraad om de link
+tussen geloof en politieke macht te bestuderen. Dit is een heel filosofische vraag die uiteindelijk niet bleek te kloppen. Nu zie ik dat er geen connectie is tussen de twee. Ze gaan samen hand in hand doorheen de geschiedenis, maar uiteindelijk zijn het beide manieren van machtsuitdrukking. Alles kan machtig zijn, maar dat blijft ook niet altijd zo.
+Het is altijd veranderend en ‘vloeiend’ zoals de woestijn uit het verhaal. Iets dat eens machtig is, kan in andere situaties ook ondergeschikt zijn. daarom wil ik iets fragiel creëren dat toch op zijn eigen manier sterk staat en diezelfde vloeibaarheid uitdrukt.
+    </p></div>
+    
+    <img src="assets/amelie.jpg">
+        <img src="assets/amelie2.jpg">
+
+</div>
+    
+
+<div class="item close left"><div class="text">
+    <h2>Audrey Stael</h2><p>Ik had het verhaal over de twee koningen en de twee labyrinten. Het verhaal gaat over een Babylonische koning die de Arabische koning uitnodigde om zijn bronzen labyrint te bezoeken. De Arabische koning was verdwaald in het labyrint. Hij was zo kwaad op de Babylonische koning dat hij later terug keerde met zijn leger en de Babylonische koning meenam naar zijn eigen labyrint. Hij liet hem los in de woestijn en liet hem sterven van de honger. Het verhaal gaat voornamelijk over de macht van de twee koningen. Deze macht uiten de twee koningen op een verschillende manier. De Babylonische door zijn rijkdom te laten tonen. En Arabische door de kracht van zijn leger en de kracht van de natuur. De twee koningen hebben ook alle twee een ander geloof dus ben ik verder gaan onderzoeken wat bepaalde religies betekenen voor verschillende landen. Eigenlijk welk invloed een bepaalde religie heeft op de politiek en de wetten van het land. Daarbij heb ik 4 verschillende landen vergeleken met verschillende meerderheid van godsdienst in hun land. In België garanderen ze de vrijheid van godsdienst. Iedereen heeft recht om te geloven in ieder welke godsdienst. Ook zijn er al 6 religies en overtuigingen erkend in België, waarvan vier christelijke ( orthodox, protestants, anglicaans en de meerderheid geloof rooms-katholicisme) en dan ook het Jodendom en de Islam. Maar de Katholieke kerk krijgt nog altijd meer dan 80 procent van alle subsidies, hoewel dat totaal niet meer in verhouding is met zijn grootte. De moslimgemeenschap krijgt nog altijd maar een klein deel van de subsidies maar ze wel sterk aan het toenemen zijn. en als de religie en/of wereldbeschouwing een privézaak is, dan moet de staat geen subsidies geven. In India daar is de politiek enorm beïnvloed door het hindoeïsme. Ondanks dat het recht op vrijheid van godsdienst of overtuiging duidelijk erkend wordt in de grondwet. Is de discriminatie van religieuze minderheden in India verankerd in de grondwet. Zo worden anti-bekerings- en koeienwetten voornamelijk gebruikt om de religieuze minderheid te discrimineren of buitengerechtelijke executies, geweld en gedwongen bekering te rechtvaardigen. De koeienwetten verbieden mensen om koeien te slachten, een dier dat hindoes als heilig beschouwen, elke staat heeft echter het recht om deze wet af te dwingen toch zijn er 21 van de 29 staten die een gevangenisstraf hebben voor deze wet. Ook worden er anti-conversiewetten aangenomen in verschillende staten deze anti-bekeringswetten zorgen ervoor dat mensen hun geloof niet vrij kunnen uitoefenen. Maar deze wetten schenden ook hun recht op bescherming van minderheden. Het is dus erg gevaarlijk voor niet hindoes in India. In Israël is er een vrijheid van religie. Ook al is het een Joodse staat. Hoewel Israël geen grondwet heeft is het Israëlische parlement bezig om basiswetten op te nemen in verband met vrijheid van religieuze overtuiging en praktijk bescherming. Maar is dit wel echt een land met vrije religie. Tijdens de 19de eeuw gaan er veel joden opzoek naar het beloofde land omdat ze namelijk moeilijk hebben in Europa. Zo komen ze terecht in het toen genoemde Palestina. Dit leidt tot spanniingen met de Arabische bevolking. Na de tweed wereldoorlog stelt de Verenigde Naties het gebied op in twee delen het Arabisch en het Joodse. IN 1948 wordt de staat uitgeroepen tot Israël. Maar dit leidt direct tot conflicten. Door dit conflict bedacht Israël een groot deel van de Palestijnse staat waardoor 700.000 Palestijnse vluchten naar de Buurlanden. Tot nu toe is de onafhankelijkheidsoorlog voorbij. Maar er is nog steed spanning tussen de Joden en de Arabieren. In Marokko is een rare verstandhouding van vrijheid in religie, zij gunnen buitenlanders om hun religie te uiten. Maar bij de bevolking is dit niet zo volgens de Marokkaanse wet is een Marokkaan een moslim. En moslim bekeren naar een andere religie is illegaal in Marokko. Als je een moslim bekeerd kan je een gevangenisstraf van 3 tot 6 maanden krijgen en een geldboete. Marokkanen die zich tot christendom bekeerden mogen de kerken niet bezoeken in Marokko. De kerken die nog afstammen van de koloniale tijd zijn alleen bedoeld voor niet Marokkanen. Niet religieuze zijn ook uitgesloten van sommige regeringskantoren. De staatswetgeving is gedeeltelijk afgeleid van religieus recht of door religieuze autoriteit. Religieus of ideologisch onderwijs is ook verplicht ander onderwijs wordt niet gefinancierd door de overheid. Ook hebben die religieuze scholen de bevoegdheid om te discrimineren bij toelating of werk bij de school. Dit alles heb ik proberen duidelijk maken aan de hand van 4 straatbeelden uit de 4 landen. Het eerste beeld is een straat in Brussel met de achtergrond een kerk toren dat verwijst naar het christendom. Ook zijn de gebouwen opgevuld met een oude tekst uit de bijbel. Het tweede beeld is een straatbeeld uit India. Op de voorgrond zie je een koe wat voor de hindoes heilig is. Dus die mogen gewoon op de straat lopen. Dan ook bij dit beeld zijn de gebouwen ook opgevuld met een tekst in het hindoes. Het derde beeld is in Israël. Namelijk in Jeruzalem waar zowel de joodse als de Arabische bevolking het zeggen op hebben. Dit zie je ook in het beeld er hangen joodse vlagen maar er wandelen mensen met een Arabische afkomst. Het laatste beeld is een Beeld uit Marokko. In dit beeld zie je voornamelijk de invloed van de islam bij de mensen. Ze dragen er een hoofddoek, maar je ziet ook dat het een toeristisch deel is van de stad. De teksten in de beelden beelden de hoofd-godsdienst in de landen voor. Dus in iedere land heeft de godsdienst een andere invloed op de politiek en de inwoners. De ene hebben al wat meer vrijheid dan de andere.</p>
+    </div>
+    
+    <audio controls>
+  <source src="assets/audrey.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div><iframe id="audrey" type="text/html"
+src="https://www.youtube.com/embed/Q4cEEZehRv8?autoplay=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe></div>
+</div>
+<div class="item close"><div class="text">
+    <h4>ZOOM LEZING 30.03.2020<br>KOI PERSYN<br>DEVENY FARUQUE</h4></div>
+    
+    <img src="assets/lezing/lezing1.jpeg">
+        <img src="assets/lezing/lezing2.jpeg">
+    <img src="assets/lezing/lezing3.jpeg">
+    <img src="assets/lezing/lezing4.jpeg">
+    <img src="assets/lezing/lezing5.jpeg">
+
+</div>
+   
+</div>
+     <div class="foot">
+    <h5>LUCA Gent Interieurvormgeving<br>Mixed Media<br>2020 ©</h5></div>
+    
+</body>
+    <script>
+        function updateDiv()
+{  
+}
+        
+        $('.item').click(function(){
+            $(this).siblings('.item').find( "iframe" ).each(function() {
+  var idd = $(this).attr('id');
+        $(this).parent('div').load("index.html #"+ idd );
+});
+             $(this).siblings('.item').find( "audio" ).muted = true;
+            $(this).addClass('open').removeClass('close');
+            $(this).siblings('.item').animate({scrollTop:0}, 500, 'swing').on('hover').removeClass('open').addClass('close');
+        });
+</script>
+</html>
