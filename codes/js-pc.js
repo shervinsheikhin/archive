@@ -80,6 +80,8 @@ $(document).ajaxStart(function () {
                     $(this).parent().siblings().children(".dropdown-content").hide(),
                     $(this).parent().siblings().children(".dropdown-content").children("dropdown").hide(),
                     $(this).children("a").addClass("dropped"),
+                    $(this).parent(".dropdown").siblings("a").removeClass("dropped"),
+                    $(this).siblings("a").removeClass("dropped"),
                     $(this).siblings(".side").children("a:first-child").click(),
                     $(this).siblings(".side").children("a").eq(0).addClass("dropped");
             }),
@@ -104,7 +106,10 @@ $(document).ajaxStart(function () {
                 }
             ),
             $("a").click(function () {
-                $(this).addClass("dropped"), $(this).siblings("a").not(this).removeClass("dropped"), $(".right > a, .topnav > a").not(this).removeClass("dropped");
+                $(this).addClass("dropped"), $(this).siblings("a").not(this).removeClass("dropped"), 
+                $(this).siblings(".dropdown").children(".dropbtn").removeClass("dropped"), 
+                $(".right > a, .topnav > a").not(this).removeClass("dropped");
+
             }),
             $(".drawing > img").click(function () {
                 $("#modal").show(), $("#modal").html('<img src="' + $(this).attr("src") + '" width="100%">'), modalClose();
