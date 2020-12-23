@@ -78,6 +78,7 @@ $(document).ajaxStart(function () {
                 $("#arc").hide(),
                     $(this).siblings(".dropdown-content").toggle(),
                     $(this).parent().siblings().children(".dropdown-content").hide(),
+                    $(this).parent().siblings().children(".dropbtn").removeClass("dropped"),
                     $(this).parent().siblings().children(".dropdown-content").children("dropdown").hide(),
                     $(this).children("a").addClass("dropped"),
                     $(this).parent(".dropdown").siblings("a").removeClass("dropped"),
