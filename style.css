@@ -69,6 +69,7 @@ img {
     width: auto;
     max-width: 90%;
     height: 90%;
+    object-fit: contain;
   }
   
   span.close {
