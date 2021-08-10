@@ -3,9 +3,7 @@
 
       var allImages = document.querySelectorAll('img');
 
-const mediaQuery = window.matchMedia("(min-width: 768px)")
-                        
-                        if (mediaQuery.matches) {
+
 
        for (var i = 0; i < allImages.length; i++) {
            var modal = document.getElementById("imgModal");
@@ -29,4 +27,4 @@ const mediaQuery = window.matchMedia("(min-width: 768px)")
              }
        }
                             
-                        }
+                        
