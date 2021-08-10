@@ -1,9 +1,4 @@
-
-       
-
-      var allImages = document.querySelectorAll('img');
-
-
+var allImages = document.querySelectorAll('img');
 
        for (var i = 0; i < allImages.length; i++) {
            var modal = document.getElementById("imgModal");
@@ -26,5 +21,3 @@
                }
              }
        }
-                            
-                        
