@@ -60,9 +60,9 @@
         "title":"Homers",
         "colab":"Publisher: Surfaces Utiles,<br>Curator: Piero Bisello",
         "place":"",
-        "detail":"Lotte BECKWÉ, Guillaume BOUTROLLE, Facteur CHEVAL, Miklós HARASZTI, Lorenza LONGHI, Emanuele MARCUCCIO, Laurent MARISSAL, Céline MATHIEU, Batsheva ROSS, Juan PABLO SAENZ, Shervin(e) SHEIKH REZAEI, Erik THYS, Bas VAN DEN HOUT<br><br>Edited by Piero BISELLO",
+        "detail":"Lotte BECKWÉ, Guillaume BOUTROLLE, Facteur CHEVAL, Miklós HARASZTI, Lorenza LONGHI, Emanuele MARCUCCIO, Laurent MARISSAL, Céline MATHIEU, Batsheva ROSS, Juan PABLO SAENZ, Shervin(e) SHEIKH REZAEI, Erik THYS, Bas VAN DEN HOUT<br><br>Edited by Piero BISELLO",
         "images": ["","",""],
-        "longtext":"<i>Homer</i> is an English translation of the Hungarian word <i>fusizni</i>, a subversive practice from 1970s communist Hungary described by philosopher Miklós Haraszti: unbeknownst to their bosses, steel factory workers would distract themselves from the repetitive labour by using the machines and equipment to candidly make objects for themselves. Mundane objects, were it not for them being glimpses of life, true dreams of self­expression and welcome free thought, <i>homers</i> consisted of things such as ashtrays, bases for flower pots, keychains—real independent work, perhaps. <br>This book collects artworks and texts related to <i>homers</i>, sometimes directly, sometimes not. It tries to merge art with labor, just like <i>homers</i> struggle to do.",
+        "longtext":"<i>Homer</i> is an English translation of the Hungarian word <i>fusizni</i>, a subversive practice from 1970s communist Hungary described by philosopher Miklós Haraszti: unbeknownst to their bosses, steel factory workers would distract themselves from the repetitive labour by using the machines and equipment to candidly make objects for themselves. Mundane objects, were it not for them being glimpses of life, true dreams of self­expression and welcome free thought, <i>homers</i> consisted of things such as ashtrays, bases for flower pots, keychains—real independent work, perhaps. <br>This book collects artworks and texts related to <i>homers</i>, sometimes directly, sometimes not. It tries to merge art with labor, just like <i>homers</i> struggle to do.",
         "iframe":"",
         "detailimg":"",
         "detailimgclass":"",
@@ -466,7 +466,7 @@
         "colab":"In detail with Celien Demets and Wietse De Cooman",
         "place":"Kunsthal,<br>Gent",
         "detail":"Shelter: 360 x 360 x 240 cm<br>Analogue pictures: Adriënne Van der Werf",
-        "images": ["imgbig/physical/e2/a1.jpg","imgbig/physical/e2/a2.jpg","imgbig/physical/e2/a2.jpg","imgbig/physical/e2/a3.jpg","imgbig/physical/e2/a4.jpg","imgbig/physical/e2/a5.jpg","imgbig/physical/e2/a6.jpg","imgbig/physical/e2/a7.jpg","imgbig/physical/e2/a8.jpg","imgbig/physical/e2/a9.jpg","imgbig/physical/e2/e1.jpg","imgbig/physical/e2/e2.jpg","imgbig/physical/e2/e3.jpg","imgbig/physical/e2/e4.jpg","imgbig/physical/e2/e5.jpg"],
+        "images": ["imgbig/physical/e2/a1.jpg","imgbig/physical/e2/a2.jpg","imgbig/physical/e2/a3.jpg","imgbig/physical/e2/a4.jpg","imgbig/physical/e2/a5.jpg","imgbig/physical/e2/a6.jpg","imgbig/physical/e2/a7.jpg","imgbig/physical/e2/a8.jpg","imgbig/physical/e2/a9.jpg","imgbig/physical/e2/e1.jpg","imgbig/physical/e2/e2.jpg","imgbig/physical/e2/e3.jpg","imgbig/physical/e2/e4.jpg","imgbig/physical/e2/e5.jpg"],
         "longtext":"A shelter.<br>A pavilion of columns made of aera- ted concrete blocks (20 x 10 x 60 cm) stacked on top of each other.<br>Exhibition: Enter Through The Void, Exit Through The Giftshop, February, 2020, Kunsthal Gent, Belgium<br><br>In reference: The Sufi Tradition in Persian Architecture.<br>Stations of the moon, divided into four quarters.<br>MATTER, FOUR HUMORS: original, physical, universal and artifacts.<br>",
         "iframe":"",
         "detailimg":"imgbig/physical/e2/e5.jpg",
@@ -680,7 +680,7 @@
         "images":  ["imgbig/physical/ensemble/textile/doek1.jpg","imgbig/physical/ensemble/textile/doek2.jpg","imgbig/physical/ensemble/textile/doek3.jpg","imgsmall/m-expo/ensexpo/48.jpeg"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"imgsmall/m-expo/ensexpo/48.jpeg",
+        "detailimg":"imgbig/physical/ensemble/textile/doek1.jpg",
         "detailimgclass":"detailimg2",
         "styleclass":"style3"
     },
@@ -694,8 +694,8 @@
         "images": ["imgbig/physical/ensemble/tdrawings/01.jpg","imgbig/physical/ensemble/tdrawings/02.jpg","imgbig/physical/ensemble/tdrawings/03.jpg"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"imgbig/physical/ensemble/tdrawings/01.jpg",
-        "detailimgclass":"detailimg2",
+        "detailimg":"",
+        "detailimgclass":"",
         "styleclass":"style3"
     },
     {   
@@ -722,8 +722,8 @@
         "images": ["imgbig/books/dagboekiran/db1.jpg","imgbig/books/dagboekiran/db2.jpg","imgbig/books/dagboekiran/db3.jpg","imgbig/books/dagboekiran/db4.jpg","imgbig/books/dagboekiran/db5.jpg","imgbig/books/dagboekiran/db6.jpg","imgbig/books/dagboekiran/db7.jpg","imgbig/books/dagboekiran/db8.jpg","imgbig/books/dagboekiran/db9.jpg","imgbig/books/dagboekiran/db10.jpg","imgbig/books/dagboekiran/db11.jpg","imgbig/books/dagboekiran/db12.jpg","imgbig/books/dagboekiran/db13.jpg","imgbig/books/dagboekiran/db14.jpg","imgbig/books/dagboekiran/db15.jpg","imgbig/books/dagboekiran/db16.jpg","imgbig/books/dagboekiran/db17.jpg","imgbig/books/dagboekiran/db18.jpg","imgbig/books/dagboekiran/db19.jpg","imgbig/books/dagboekiran/db20.jpg","imgbig/books/dagboekiran/db21.jpg","imgbig/books/dagboekiran/db22.jpg","imgbig/books/dagboekiran/db23.jpg","imgbig/books/dagboekiran/db24.jpg","imgbig/books/dagboekiran/db25.jpg","imgbig/books/dagboekiran/db26.jpg","imgbig/books/dagboekiran/db27.jpg","imgbig/books/dagboekiran/db28.jpg","imgbig/books/dagboekiran/db29.jpg"],
         "longtext":"ENSEMBLE:<br>my trip to Iran<br><br>Mentaal vrij zware reis, het ging allemaal wat moeilijker voorbij. <br>Ik was er graag, ik ben er graag, ik ga meer terugkeren, maar er waren veel prikkels aanwezig die ik er liever niet bij had. De eerlijkheid ontbreekt me soms. De vlotheid in mijn taal komt vooruit (met moeite), ik overtuig de mensen graag, ik heb het graag over het leven. Ik denk graag vooruit, maar hoeft niet altijd. Ik voel me ergens nog eenzaam in mijn denkwijze en dat is moeilijk, het is lastig om hen te doen voelen wat ik voel of wat ik denk, omdat de visie zo ver uiteen ligt. Ik kom er dichter bij, zij komen dichter bij mij en dan begin ik nu al met het missen. Er staat nog veel te wachten op mij. Er zullen heel wat emoties loskomen, maar misschien klopt de cliché dan toch, dat je jezelf leert kennen op zo’n momenten.<br><br>dobareh bas tanha misham.",
         "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
+        "detailimg":"imgbig/books/dagboekiran/db14.jpg",
+        "detailimgclass":"detailimg2",
         "styleclass":"style4"
     },
     {   
