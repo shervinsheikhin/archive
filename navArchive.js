@@ -28,12 +28,10 @@ const categoryToggle = document.querySelector("nav div.category div.category-tog
 
 categoryTag.addEventListener("click", function () {
     categoryToggle.classList.toggle("open");
-
+    category.classList.toggle("clicked");
 })
 
-const mediaQuery = window.matchMedia("(min-width: 768px)")
-                        
-if (mediaQuery.matches) {
+
 
 const headerTagEn = document.querySelector("header a.nameEn");
 const headerTag = document.querySelector("header a.nameFarsi");
@@ -68,30 +66,35 @@ document.addEventListener("scroll", function () {
 
 headerTagEn.addEventListener("mouseenter", function () {
 bioEn.classList.add("open");
+tableTd.classList.add("open");
 });
 
 headerTagEn.addEventListener("mouseleave", function () {
 bioEn.classList.remove("open");
+tableTd.classList.remove("open");
 });
 
 headerTagEn.addEventListener("click", function () {
 bioEn.classList.toggle("open");
+tableTd.classList.toggle("open");
 });
 
 headerTag.addEventListener("mouseenter", function () {
 bioFar.classList.add("open");
+tableTd.classList.add("open");
 });
 
 headerTag.addEventListener("mouseleave", function () {
 bioFar.classList.remove("open");
+tableTd.classList.remove("open");
 });
 
 
 headerTag.addEventListener("click", function () {
 bioFar.classList.toggle("open");
+tableTd.classList.toggle("open");
 });
 
-}
 
 const subnav = document.querySelector("nav div.subnav");
 const subnavLink = document.querySelector("nav div.subnav div.subnavLinks");
