@@ -123,7 +123,11 @@ header {
     top: 3%;
     display: flex;
     flex-direction: row;
-    z-index: 4;
+    z-index: 5;
+}
+
+header.scrolled {
+    z-index: 3;
 }
 
 header a.nameEn {
@@ -147,6 +151,7 @@ header div.bioEn {
     display: none;
     font-size: 1em;
     widows: 80%;
+    height: 90%;
 }
 header div.bioFar {
     font-family: Nazli;
@@ -165,6 +170,7 @@ header div.bioEn.open, header div.bioFar.open {
     top: 20%;
     left: 0;
     padding: 0 1%;
+
 }
 
 nav div.mainnav {
@@ -284,7 +290,7 @@ table td a:hover {
 }
 
 table td {
-    z-index: 2;
+    z-index: 4;
 }
 
 table.archiveTable th, table.detailTable th {
@@ -580,6 +586,7 @@ div.CVtable table {
     
     
 }
+
 div.CVtable table th {
     border-right: 1px dashed;
     text-align: left;
@@ -592,10 +599,14 @@ div.CVtable table th:nth-child(2) {
     border-right: 0px dashed;
 }
 div.CVtable table td {
-    
     vertical-align: top;
     padding: 1.5% 2% 1.5% 2%;
 }
+
+div.CVtable table td a {
+    font-family: Above the Beyond;
+}
+
 div.CVtable table td.dateCV {
     border-right: 1px dashed;
     width: 20%;
@@ -656,6 +667,24 @@ section div iframe.lightwidget-widget {
     display: block;
 }
 
+footer {
+    width: 100%;
+    padding: 0% 0 1% 46.5vw;
+    text-align: left;
+    font-size: 1em;
+    border: none;
+    line-height: 2;
+    
+}
+
+footer div {
+    border-right: 1px dashed;
+}
+
+footer table.detailtable td {
+    border: none;
+}
+
 /*div#shop div#slider {
     position: relative;
     z-index: 2;
@@ -673,6 +702,8 @@ div#shop div#slider img:first-child {
 
 .active {
     height: 500px;
+    background-color: #FFFFFA;
+    background: linear-gradient(90deg, rgba(255,255,245,0.8) 0%, rgba(255,255,255,0.8) 100%);
     }
 
 @media only screen and (max-width: 800px) {
@@ -701,12 +732,32 @@ div#shop div#slider img:first-child {
     top: 1%;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+
     }
 
     header a.nameFarsi {
     transform: translate(0%, 0%);
     }
+    
+    header a.nameFarsi.scrolled {
+    transform: translate(0%, 0%);
+}
+    
+    header div.bioEn {
+    font-size: 0.6em;
+    widows: 80%;
+    height: 90%;
+}
+header div.bioFar {
+    font-size: 0.6em;
+    widows: 80%;
+    height: 90%;
+    direction: rtl;
+}
+header div.bioEn.open, header div.bioFar.open {
+    top: 16%;
+
+}
     
     nav div.mainnav {
     font-size: 1.2em;   
@@ -748,9 +799,14 @@ div#shop div#slider img:first-child {
         top: 18%;
         padding-left: 1%;
         font-size: 1.2em;
+        z-index: 4;
     }
     nav div.category.scrolled {
-        z-index: 0;
+        z-index: 5;
+    }
+    
+    nav div.category.clicked {
+        z-index: 5;
     }
     
     main {
