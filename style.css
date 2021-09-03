@@ -219,7 +219,7 @@ nav div.category {
     border-radius: 0px;
     padding: 0.2%;
     background-color: #ffffff;
-    z-index: 3;
+    z-index: 5;
 }
 nav div.category a:hover {
     text-decoration: underline;    
