@@ -1,5 +1,47 @@
 [  
     {
+        "date":"122021.",
+        "category":"exhibition",
+        "title":"Am I now consciously making art or what? (working title)",
+        "colab":"special thanks to Els Roelandt, Simon Delobel, Bart Cassiman, Céline Mathieu",
+        "place":"KIOSK,<br>Louis Pasteurlaan 2,<br>9000 Gent",
+        "detail":"opening: 11.12.2021<br>closing: 06.02.2022<br><br><i>I was peeling eggplants that my father had prepared for my mother, while watching The Love Life of an Octopus, a movie by Jean Painlevé & Geneviève Hamon (1965). It felt like I had this creature in my hands. Because of this, I decided to go to the sea, the grey and cold North Sea close to our home in Oostende, to get seaweed.</i><br><br>Transparency, the juxtaposition between mechanical and human action, the exploration of the fluidity and invasiveness of nature in contrast with controlled and impersonal computer drawing are researched in this new series of work that Shervin/e Sheikh Rezaei developed specially for this exhibition at <a href='https://kiosk.art/am-i-now-consciously-making-art-or-what-working-title?fbclid=IwAR2aYhBbg0C-IJyeDoHoTpliBnExZexzpiHL5sC6DOFtVSPthv6_8BVAVJY' target='_blank'>KIOSK</a>.",
+        "images": ["imgsmall/m-expo/kiosk.jpeg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"imgsmall/m-expo/kiosk.jpeg",
+        "detailimgclass":"detailimg1",
+        "styleclass":"style7"
+    },
+    {
+        "date":"092021.",
+        "category":"physical",
+        "title":"Crying at the workshop with Leo Gabin",
+        "colab":"",
+        "place":"LUCA School of Arts,<br>Gent",
+        "detail":"",
+        "images": ["imgsmall/m-physical/crying.jpg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style7"
+    },
+    {
+        "date":"092021.",
+        "category":"video",
+        "title":"So much on practical matters",
+        "colab":"Crying at the workshop with Leo Gabin",
+        "place":"LUCA School of Arts,<br>Gent",
+        "detail":"",
+        "images": ["imgsmall/m-video/crying.mp4"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style7"
+    },
+    {
         "date":"082021.",
         "category":"exhibition",
         "title":"Art Meditation Process",
@@ -287,8 +329,8 @@
         "images": [""],
         "longtext":"",
         "iframe":"https://odmagazine.eu/Ensemble-book-Shervin-Sheikh-Rezaei",
-        "detailimg":"imgsmall/m-physical/enstapestry/4.jpeg",
-        "detailimgclass":"detailimg1",
+        "detailimg":"",
+        "detailimgclass":"",
         "styleclass":"style1"
     },
     {
@@ -329,8 +371,8 @@
         "images": ["imgsmall/m-physical/enstapestry/1.jpeg","imgsmall/m-physical/enstapestry/2.jpeg","imgsmall/m-physical/enstapestry/3.jpeg","imgsmall/m-physical/enstapestry/4.jpeg"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"imgsmall/m-physical/enstapestry/3.jpeg",
-        "detailimgclass":"detailimg2",
+        "detailimg":"",
+        "detailimgclass":"",
         "styleclass":"style3"
     },
     {
