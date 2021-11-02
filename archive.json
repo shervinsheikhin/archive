@@ -312,11 +312,11 @@
         "colab":"Curators: Koi Persyn and Jef Declercq",
         "place":"BLANCO, <br>Gent",
         "detail":"Pictures: Paule Josephe<br>Graphic design poster/plan: Emma Raymaekers<br>",
-        "images": ["imgsmall/m-expo/ensexpo/93.jpeg","imgsmall/m-expo/ensexpo/182.jpeg","imgsmall/m-expo/ensexpo/141.jpeg","imgsmall/m-expo/ensexpo/135-2.jpeg","imgsmall/m-expo/ensexpo/197.jpeg","imgsmall/m-expo/ensexpo/157.jpeg","imgsmall/m-expo/ensexpo/19.jpeg","imgsmall/m-expo/ensexpo/30.jpeg","imgsmall/m-expo/ensexpo/32.jpeg","imgsmall/m-expo/ensexpo/193-2.jpeg","imgsmall/m-expo/ensexpo/38.jpeg","imgsmall/m-expo/ensexpo/110.jpeg","imgsmall/m-expo/ensexpo/104.jpeg","imgsmall/m-expo/ensexpo/11.jpeg","imgsmall/m-expo/ensexpo/107.jpeg","imgsmall/m-expo/ensexpo/102.jpeg","imgsmall/m-expo/ensexpo/15.jpeg","imgsmall/m-expo/ensexpo/128.jpeg","imgsmall/m-expo/ensexpo/144-2.jpeg","imgsmall/m-expo/ensexpo/9.jpeg","imgsmall/m-expo/ensexpo/69-2.jpeg","imgsmall/m-expo/ensexpo/165.jpeg","imgsmall/m-expo/ensexpo/213.jpeg","imgsmall/m-expo/ensexpo/174.jpeg","imgsmall/m-expo/ensexpo/175.jpeg","imgsmall/m-expo/ensexpo/48.jpeg","imgsmall/m-expo/ensexpo/60.jpeg","imgsmall/m-expo/ensexpo/176.jpeg"],
+        "images": ["imgsmall/m-expo/ensexpo/posterEns.jpg","imgsmall/m-expo/ensexpo/93.jpeg","imgsmall/m-expo/ensexpo/182.jpeg","imgsmall/m-expo/ensexpo/141.jpeg","imgsmall/m-expo/ensexpo/135-2.jpeg","imgsmall/m-expo/ensexpo/197.jpeg","imgsmall/m-expo/ensexpo/157.jpeg","imgsmall/m-expo/ensexpo/19.jpeg","imgsmall/m-expo/ensexpo/30.jpeg","imgsmall/m-expo/ensexpo/32.jpeg","imgsmall/m-expo/ensexpo/193-2.jpeg","imgsmall/m-expo/ensexpo/38.jpeg","imgsmall/m-expo/ensexpo/110.jpeg","imgsmall/m-expo/ensexpo/104.jpeg","imgsmall/m-expo/ensexpo/11.jpeg","imgsmall/m-expo/ensexpo/107.jpeg","imgsmall/m-expo/ensexpo/102.jpeg","imgsmall/m-expo/ensexpo/15.jpeg","imgsmall/m-expo/ensexpo/128.jpeg","imgsmall/m-expo/ensexpo/144-2.jpeg","imgsmall/m-expo/ensexpo/9.jpeg","imgsmall/m-expo/ensexpo/69-2.jpeg","imgsmall/m-expo/ensexpo/165.jpeg","imgsmall/m-expo/ensexpo/213.jpeg","imgsmall/m-expo/ensexpo/174.jpeg","imgsmall/m-expo/ensexpo/175.jpeg","imgsmall/m-expo/ensexpo/48.jpeg","imgsmall/m-expo/ensexpo/60.jpeg","imgsmall/m-expo/ensexpo/176.jpeg"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
+        "detailimg":"imgsmall/m-expo/ensexpo/posterEns.jpg",
+        "detailimgclass":"detailimg1",
         "styleclass":"style3"
     },
     {
