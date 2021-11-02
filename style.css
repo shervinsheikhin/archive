@@ -45,6 +45,7 @@ a {
 
 img {
   max-height: 800px;
+  object-fit: cover;
 }
 
 .modal {
