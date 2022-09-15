@@ -52,8 +52,8 @@
         "images": ["imgsmall/m-pub/hart1.jpg","imgsmall/m-pub/hart2.jpg","imgsmall/m-pub/hart3.jpg"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
+        "detailimg":"imgsmall/m-pub/hart1.jpg",
+        "detailimgclass":"detailimg1",
         "styleclass":"style3"
     },
     {
