@@ -168,7 +168,7 @@ header div.bioFar {
 header div.bioEn.open, header div.bioFar.open {
     display: block;
     position: fixed;
-    top: 20%;
+    top: 24%;
     left: 0;
     padding: 0 1%;
 
@@ -624,7 +624,7 @@ div.CVtable table td.textCV {
 div.myGallery {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
 }
 div.myGallery img {
     width: 100%;
