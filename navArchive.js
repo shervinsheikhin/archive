@@ -2,19 +2,19 @@ const mainnavLink = document.querySelector("div.mainnav");
 const mainnavLinkA = mainnavLink.querySelector("a");
 
 function mainnavLinkChange() {
-    if (mainnavLinkA.innerHTML == "ARCHIVE") {
+    if (mainnavLinkA.innerHTML == "CATALOG") {
         mainnavLinkA.addEventListener("mouseover", function () {
-            mainnavLinkA.innerHTML = "REGISTER"
+            mainnavLinkA.innerHTML = "ARCHIVE"
         });
         mainnavLinkA.addEventListener("mouseleave", function () {
-            mainnavLinkA.innerHTML = "ARCHIVE"
+            mainnavLinkA.innerHTML = "CATALOG"
         });
     } else {
         mainnavLinkA.addEventListener("mouseover", function () {
-            mainnavLinkA.innerHTML = "ARCHIVE"
+            mainnavLinkA.innerHTML = "CATALOG"
         });
         mainnavLinkA.addEventListener("mouseleave", function () {
-            mainnavLinkA.innerHTML = "REGISTER"
+            mainnavLinkA.innerHTML = "ARCHIVE"
         });
     }
 }
