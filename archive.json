@@ -1,5 +1,117 @@
 [  
     {
+        "date":"062023.",
+        "category":"drawing",
+        "title":"Leia Ibai",
+        "colab":"Drawings made for novel written by Jeremy Pavoncelli",
+        "place":"Residency: Dar Meso, Tunis, Tunis",
+        "detail":"",
+        "images": ["imgsmall/m-series/leia/leia1.jpg","imgsmall/m-series/leia/leia2.jpg","imgsmall/m-series/leia/leia3.jpg"],
+        "longtext":"Je me souviens de la Major, l’indicible expression de la fumée de cigarette, prémisse d’un langage, profondeur de champs qui révèle ses lèvres indigo. Nous marchions sur l’esplanade qui recouvrait des vestiges périssables, d’une époque hellénistique. Sur l’horizon nous pouvions percevoir les voiles blanches et s’investir dans des souvenirs plus lointains encore. La mythologie d’un âge d’or, celle des métamorphoses. Souvent, nous rencontrions là-bas un vieil homme à qui la mer avait tout pris mais qui la chérissait encore. Après son travail il venait s’asseoir là, sur les pierres taillées de l’esplanade pour voir les ferrys et leur fumée noire partir vers ses montagnes, vers Tabarka. Elle avait la peau ébène, elle me dit que si ses lèvres étaient bleues, c’était en souvenir du fleuve qui l’avait portée et du mouvement de l’eau. <br><br>- J. Pavoncelli",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style4"
+    },
+    {
+        "date":"052023.",
+        "category":"exhibition",
+        "title":"Groupshow: De overwinning van de mens op de dingen. Over sport",
+        "colab":"Curated by Nadia Bijl, Pepa De Maesschalck and Vedran Kopljar",
+        "place":"Lichtekooi, Antwerpen",
+        "detail":"MULTIMEDIA INSTALLATION:<br>Title: Solitaire PATIEN(T)CE, 2023<br>Material: Paper, marker, pencil, tape, charcoal, steel (15mm), wood (5mm), glass (3mm)<br>Format: various<br>Solitaire PATIEN(T)CE bestaat uit een installatie en een tekening in drie delen. Sheikh Rezaei refereert naar (de) perfectie in de natuur en het streven naar perfectie door de mens, die het lichaam tracht te preserveren. Er wordt gespeeld met de verwijzing naar het kaartspel (solitaire of patience) en tegelijkertijd gerefereerd naar de eenzaamheid. Het werk speelt tevens met de notie ‘patience’, geduld, volharding, streven naar perfectie en het zichzelf uitdagen, en het woord ‘patient’, wat men wordt wanneer de uitdaging te groot blijkt en men de volharding in het streven naar perfectie zo ver doordrijft dat men het eigen lichaam geweld aandoet.<br><br>Pictures by Fabien Silvestre Suzor",
+        "images": ["imgsmall/m-expo/lichtekooi/lk1.jpg","imgsmall/m-expo/lichtekooi/lk2.jpg","imgsmall/m-expo/lichtekooi/lk3.jpg","imgsmall/m-expo/lichtekooi/lk4.jpg","imgsmall/m-expo/lichtekooi/lk5.jpg","imgsmall/m-expo/lichtekooi/lk6.jpg","imgsmall/m-expo/lichtekooi/lk7.jpg"],
+        "longtext":"With works by Aline Bouvy, Denicolai & Provoost, Harun Farocki, Meschac Gaba, Ingeborg Lüscher, Sandrine Morgante, Thenjiwe Niki Nkosi, Shervin/e Sheikh Rezaei, Amber Vanluffelen, Jivan van der Ende, Benjamin Verhoeven, Gert Verhoeven and Ken Verhoeven<br><br>13.05.2023 – 24.06.2023<br>What need have these men to attack? Why are men disturbed by this spectacle? Why do they commit themselves to it so completely? Why this useless combat? What is sport? What is it then that men put into sports? Themselves, their human universe. Sport is made in order to speak the human contract.<br>—Roland Barthes, What is Sport?<br><br>Sport is a rewarding metaphor for the human condition, for political power structures, social relations, the art world . . . Does sport express the “superiority” of humans over the resistance of things (nature, animals, gravity, time . . .)? Doesn’t the pursuit of victory over things lead to an objectification—the “becoming thing”—of humans themselves? And what is the toll of that struggle on humans and the body? In today’s social climate, in the Anthropocene, where there is a certain shame about that victory over things, is there still room for humanity’s victory over things? These reflections form the playing field for the group exhibition.<br>[1] The title of the exhibit—De overwinning van de mens op de dingen. Over sport [The Victory of Humans over Things: On Sport]—is borrowed from Roland Barthes’s 1961 essay “Qu’est-ce que le sport?” from 1961.",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style4"
+    },
+    {
+        "date":"032023.",
+        "category":"bibliography",
+        "title":"Tentakels en Waterlichamen_ dromende kwallen",
+        "colab":"Rekto:verso, editie 98: DIER Writer: Zeynep Kubat<br>Pg. 34 Tentakels en Waterlichamen_ dromende kwallen",
+        "place":"",
+        "detail":"",
+        "images": ["","",""],
+        "longtext":"",
+        "iframe":"https://www.rektoverso.be/artikel/tentakels-en-waterlichamen",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style1"
+    },
+    {
+        "date":"022023.",
+        "category":"drawing",
+        "title":"Nectar",
+        "colab":"",
+        "place":"",
+        "detail":"Format: 297 x 420 mm<br>Material: paper, marker, pencil, charcoal",
+        "images": ["imgsmall/m-series/nectar.jpg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style7"
+    },
+    {
+        "date":"022023.",
+        "category":"drawing",
+        "title":"Regina, rein",
+        "colab":"",
+        "place":"",
+        "detail":"Format: 297 x 420 mm<br>Material: paper, marker, pencil, charcoal",
+        "images": ["imgsmall/m-series/regina.jpg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"imgsmall/m-series/regina.jpg",
+        "detailimgclass":"detailimg1",
+        "styleclass":"style7"
+    },
+    {
+        "date":"012023.",
+        "category":"in situ",
+        "title":"MURAL: I HAVE BEEN LIVING ALL MY LIFE DREAMING, BETWEEN ME AND THE WORLD THERE IS ALWAYS A SPACE OF UNREALITY I DON’T WANT",
+        "colab":"",
+        "place":"Els Roelandt’s house, house ten bos by Jan De Vylder, BE",
+        "detail":"intervention by Maxime Prananto<br><br>Pictures by Lars Duchateau",
+        "images": ["imgsmall/m-insitu/els/1.jpg","imgsmall/m-insitu/els/2.jpg","imgsmall/m-insitu/els/3.jpg","imgsmall/m-insitu/els/4.jpg","imgsmall/m-insitu/els/5.jpg","imgsmall/m-insitu/els/6.jpg","imgsmall/m-insitu/els/7.jpg","imgsmall/m-insitu/els/8.jpg","imgsmall/m-insitu/els/9.jpg","imgsmall/m-insitu/els/10.jpg","imgsmall/m-insitu/els/11.jpg","imgsmall/m-insitu/els/12.jpg"],
+        "longtext":"AUGUST 2022 - JANUARY 2023: <br>I FEEL I AM SWIMMING THROUGH A COMPLETE BLINDNESS, A NEW DARKNESS. LIKE I AM SINKING. I AM REACHING FOR AIR. I CAN’T HELP MYSELF, DROWNING IN AN OCEAN OF THOUGHTS. AND I FEEL TODAY THAT THE ONLY WAY OUT, MY ONLY HOPE, IS TO OVERFLOW, PERHAPS INTO THIS DARKNESS, THROUGH THIS FLUID LINES, INTO THIS DRAWING, COMPLETELY. I FEEL NUMB, A PART OF MY BODY IS DEPRIVED OF THE POWER OF ITS PHYSICAL SENSATION. I LOST ALL EMOTIONS, REMINISCENCES. I AM SO LOST THAT I CAN ONLY THINK ABOUT THE BLANKNESS. WHEN IS THIS VOID STARTING TO FILL? DID I CHOOSE THIS VOID? OR DID THIS VOID CHOOSE ME? WHERE IS MY VOICE, ARE YOU HEARING ME? THERE’S NO WAY TO RUN FROM IT. SO I START TO STARE AND EMBRACE IT. I GO BEYOND THIS FEELING. THIS FEELING OF GOING NOWHERE, OF BEING AFRAID OF THE NEXT STEP. <br>I KEEP GETTING COMPLETELY IRRATIONAL, INCOMPREHENSIBLE F F E E E E L L I I N N G G S S . . S S O O I I H H A A V V E E L L E E A A R R N N E E D D T T O O A A C C C C E E P P T T M M Y Y S S E E L L F F T T H H A AT T T T H H I I S S I I S S J J U U S S T T HOW I AM, THIS IS HOW I GUESS I AM AND I THINK THAT IS OK. I MEAN, I STILL THINK IT IS. AS LONG AS I AM GOING SOMEWHERE, SOME OF US GO NOWHERE AND I HAVE NOT THE VAGUEST IDEA OF WHERE I AM GOING NOW MYSELF THESE DAYS. A SORT OF IN-BETWEEN SOMETHING, OR NOTHING. INSIDE OR OUT. SOMEWHERE HERE OR THERE, BALANCING ON SOME KIND OF INVISIBLE DOT, LINE, LINE, DOT. <br>SOME CALL IT UNSTABLE, I RATHER CALL IT A PLACE OF DOUBT, WHERE DO I STICK MY FORK IN? <br>A A S S L L O O N N G G A A S S I I D D O O N N ’ ’ T T U U N N F F O O L L D D M M Y Y S S E E L L F F, , A A S S L L O O N N G G A A S S I I S S T T A A Y Y V V E E R R T T I I C C A A L L L LY Y , , S S K K Y Y- - H H I I G G H H , , I I D D O O N N ’ ’ T T H H A A V V E E T T O O M M O O V V E E F F O O R R W W A A R R D D S S , , I I D D O O N N ’ ’ T T H H A A V V E E TO MAKE PAINFUL AND TERRIBLE DECISIONS OR CHOICES, WHERE TO GO, WHAT TO DRAW AND HOW TO MOVE MYSELF. <br>I START TO TRAVEL THRU THE BOREDOM. THERE ARE MINOR GLIMPSES OF MATHEMATIC SCORES, ORGANIC FORMS, CIRCLES, DOTS, SO I HAVE SOME IDEA WHERE I AM GOING. BUT THERE IS STILL TOO MUCH CLARITY AND STRAIGHT ORDER. THINGS, NOT ENOUGH S S H H U U F F F F L L I I N N G G . . I I A A M M G G E E T T T T I I N N G G A A L L W W A AY Y S S T T H H E E S S A A M M E E C C O O M M P P O O S S I I T T I I O O N N S S , , NUMBERS, LINES, GRIDS, SOMEHOW. AND I HAVE HAD ENOUGH OF IT. MY HEART IS POISONED, MY BRAIN IS PEELING IN SHREDS OF FATIGUE. I WON’T LET THIS ROOM DOWN, BUT YOU DID WEIRD THINGS TO MY HEAD. SO NOW I FEEL LIKE I OWE YOU NOTHING, LIKE I CAN GO ANYWHERE, LIKE ANY DIRECTION WITHOUT EVEN CONSIDERING ALL ALIEN IMPULSES. <br>“I SEEM TO ENJOY ONLY BRIEF GLIMPSES OF INTIMACY, HAPPINESS. SHORT CONCENTRATED GLIMPSES. I DO NOT BELIEVE THAT THEY COULD BE EXTENDED, PROLONGED. SO I KEEP MOVING AHEAD, AGAIN AND AGAIN, L LO O O O K K I I N N G G A A H H E E A A D D F FO O R R O OT T H H E E R R M M O O M M E E N N T T S S. . “ “ THE QUESTION IS:W W A A S S I I B B O O R R N N A A D D I I S S P P L L A AC C E E D D P P E E R R S S O O N N , ,OR DID THIS DISORDERED WORLD MAKE ME ONE?",
+        "iframe":"",
+        "detailimg":"imgsmall/m-insitu/els/1.jpg",
+        "detailimgclass":"detailimg3",
+        "styleclass":"style4"
+    },
+    {
+        "date":"012023.",
+        "category":"performance",
+        "title":"I HAVE BEEN LIVING ALL MY LIFE DREAMING",
+        "colab":"",
+        "place":"",
+        "detail":"Performances in dialogue with the house of Els Roelandt by Amber Meulenijzer, Deveny Faruque, OST Suite (Margarita Maximova and Joeri Bultheel), Shervin/e Sheikh Rezaei and Karel Naessens, SOLINA LAPSUS, Ferre Sergeant Marnef<br><br>Pictures by Jente Waerzeggers<br><br>Graphic Design by Septian Priyatna",
+        "images": ["imgsmall/m-lecture/els/POSTER.jpg","imgsmall/m-lecture/els/1.jpg","imgsmall/m-lecture/els/2.jpg","imgsmall/m-lecture/els/3.jpg","imgsmall/m-lecture/els/4.jpg","imgsmall/m-lecture/els/5.jpg","imgsmall/m-lecture/els/6.jpg","imgsmall/m-lecture/els/7.jpg","imgsmall/m-lecture/els/8.jpg","imgsmall/m-lecture/els/9.jpg","imgsmall/m-lecture/els/10.jpg","imgsmall/m-lecture/els/11.jpg","imgsmall/m-lecture/els/12.jpg","imgsmall/m-lecture/els/13.jpg","imgsmall/m-lecture/els/14.jpg","imgsmall/m-lecture/els/15.jpg","imgsmall/m-lecture/els/16.jpg","imgsmall/m-lecture/els/17.jpg","imgsmall/m-lecture/els/18.jpg","imgsmall/m-lecture/els/19.jpg","imgsmall/m-lecture/els/20.jpg","imgsmall/m-lecture/els/21.jpg","imgsmall/m-lecture/els/22.jpg","imgsmall/m-lecture/els/23.jpg","imgsmall/m-lecture/els/24.jpg","imgsmall/m-lecture/els/25.jpg","imgsmall/m-lecture/els/26.jpg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"imgsmall/m-lecture/els/POSTER.jpg",
+        "detailimgclass":"detailimg1",
+        "styleclass":"style4"
+    },
+    {
+        "date":"122022.",
+        "category":"drawing",
+        "title":"Virago",
+        "colab":"",
+        "place":"",
+        "detail":"Title: Virago, 2022<br>Format: 430 x 600 mm<br>Series of /34<br><br>3 layered silkscreen on cotton Gmund paper 240gr.<br>Price: € 240 (VAT/BTW incl.)<br>For students: € 180",
+        "images": ["imgsmall/m-series/nectar.jpg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style7"
+    },
+    {
         "date":"092022.",
         "category":"video",
         "title":"<a href='https://vimeo.com/748282031' target='_blank'>Seq.02: A Bride of the Sea</a>",
@@ -24,12 +136,12 @@
         "longtext":"",
         "iframe":"",
         "detailimg":"imgsmall/m-expo/tilburg/10.jpg",
-        "detailimgclass":"detailimg3",
+        "detailimgclass":"detailimg2",
         "styleclass":"style3"
     },
     {
         "date":"082022.",
-        "category":"physical",
+        "category":"in situ",
         "title":"Amnesia",
         "colab":"Drawings for installation",
         "place":"",
@@ -43,7 +155,7 @@
     },
     {
         "date":"062022.",
-        "category":"exhibition",
+        "category":"in situ",
         "title":"I don’t want to do love",
         "colab":"Curated by Gustave Demoen",
         "place":"White Garage Gallery, Catania, Sicily",
@@ -71,7 +183,7 @@
     },
     {
         "date":"052022.",
-        "category":"lecture",
+        "category":"performance",
         "title":"Wildernis Talks: Emma van der Put with Shervin/e Sheikh Rezaei",
         "colab":"Double Minutes, organised by Siebert Mispelon and Katrien Vandemeersche",
         "place":"",
@@ -85,7 +197,7 @@
     },
     {
         "date":"052022.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Artist of the month May 2022: Shervin/e Sheikh Rezaei",
         "colab":"<a href='https://collectaaa.be/portfolio-view/nummer-516-mei-2022/' target='_blank'>COLLECT MAGAZINE</a>, <br>nr. 516/ MEI 2022<br>Writer: Elien Haentjens",
         "place":"",
@@ -113,7 +225,7 @@
     },
     {
         "date":"022022.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Inbetween East and West. An Architectural Ensemble.",
         "colab":"<a href='https://www.forum-online.be/nummers/winter-2022/inbetween-oost-en-west-een-architecturaal-ensemble' target='_blank'>FORUM+</a>, <br>February issue 2022 vol. 29, no.1<br>In dialogue with Ine Engels",
         "place":"",
@@ -141,7 +253,7 @@
     },
      {
         "date":"012022.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"no, no, no to nostalgia - gesprek met Shervin/e Sheikh Rezaei",
         "colab":"<a href='https://hart-magazine.be/expo/gesprek-met-shervin-e-sheikh-rezaei' target='_blank'>HART-Magazine</a>,<br>Writer: Kathleen Weyts",
         "place":"",
@@ -169,7 +281,7 @@
     },
     {
         "date":"092021.",
-        "category":"physical",
+        "category":"work",
         "title":"Crying at the workshop with Leo Gabin",
         "colab":"",
         "place":"LUCA School of Arts,<br>Gent",
@@ -211,8 +323,8 @@
     },
     {
         "date":"072021.",
-        "category":"exhibition",
-        "title":"ZOMERSALON: buy local",
+        "category":"drawing",
+        "title":"Drawing. Statistics, pt. 2: pg. 585",
         "colab":"",
         "place":"Kunsthal,<br>Gent",
         "detail":"<i>Statistics</i>, pt. 2: pg. 585<br>Mixed media collage<br><br>Format: 40 x 30 x 3,5 cm<br>Material: pencil, paint, marker, paper, adhesive tape on wood",
@@ -224,21 +336,8 @@
         "styleclass":"style3"
     },
     {
-        "date":"062021.",
-        "category":"publication",
-        "title":"<a href='https://subbacultcha.be/editorial/detail/the-essence-needs-no-ornament' target='_blank'>New Masters: Shervin Sheikh Rezaei …</a>",
-        "colab":"SUBBACULTCHA BE/ Z33",
-        "place":"",
-        "detail":"",
-        "images": ["","",""],
-        "longtext":"",
-        "iframe":"https://subbacultcha.be/editorial/detail/the-essence-needs-no-ornament",
-        "detailimg":"",
-        "detailimgclass":""
-    },
-    {
         "date":"052021.",
-        "category":"serie",
+        "category":"drawing",
         "title":"Statistics",
         "colab":"",
         "place":"",
@@ -252,7 +351,7 @@
     },
     {
         "date":"052021.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Homers",
         "colab":"Publisher: Surfaces Utiles,<br>Curator: Piero Bisello",
         "place":"",
@@ -266,8 +365,8 @@
     },
     {
         "date":"042021.",
-        "category":"physical",
-        "title":"In situ: it’s just a trap.",
+        "category":"in situ",
+        "title":"It’s just a trap.",
         "colab":"Artist in Residence with Astrid Collectief",
         "place":"",
         "detail":"",
@@ -280,8 +379,8 @@
     },
     {
         "date":"042021.",
-        "category":"physical",
-        "title":"In situ: I am tired of talking, I don’t really like that.",
+        "category":"in situ",
+        "title":"I am tired of talking, I don’t really like that.",
         "colab":"Artist in Residence with Astrid Collectief",
         "place":"",
         "detail":"",
@@ -320,37 +419,11 @@
         "detailimgclass":"",
         "styleclass":"style7"
     },
-    {
-        "date":"032021.",
-        "category":"publication",
-        "title":"Between East: Shervin Sheikh Rezaei",
-        "colab":"",
-        "place":"",
-        "detail":"",
-        "images": ["imgsmall/m-pub/betweast.jpg"],
-        "longtext":"Shervin Sheikh Rezaei is an Iranian Belgian architect and artist. Born to Iranian immigrants, Shervin was raised in Belgium. She studied Medien Architektur at the Bauhaus university in Weimar and graduated as an architect in 2018 in Experimental Architectural Design at the Faculty of Architecture K.U. Leuven in Ghent. She began her career as an architect / art assistant at Jan De Vylder Inge Vinck Architecten and worked for a year as a guest teacher Mixed Media for Interior Design at LUCA School of Arts in Brussels and Ghent. Shervin also started own art practice, where she can express her full self. In late 2020, she published her first book <i>ENSEMBLE: An Architecture of the Inbetween</i> - which originated from her first solo trip to her home country Iran and speaks to the two cultures in which she exists, the Middle Eastern (Iranian)  and the Western (Belgian) through a mix of architecture, drawing, 3D models, textiles, sculpture, graphics, literature and more. In her research, Shervin looked for a place where she could express her situation as a transcultural person in a <i>polyphonic</i> place, where cultures communicate with each other in designed places, at the same time giving an illusion of neutrality—a carte blanche. Free spaces where not so much politics is at play but only other human relationships. In this way she came to a variety of architectural elements and cultures that eventually started to create a third landscape: the ENSEMBLE. She strives for a special architecture / heterotopia that offers a place for everyone with two or more identities. A transparent place that everyone can fill in personally. It's paramount to Shervin to get to tell her story but also offers an open space in the book where other artists with two+ backgrounds are given the floor to reflect on their own work and background. She thinks it is important that women of color have a voice, be heard and not only be seen. Shervin points to the importance of telling and portraying personal narratives in order to break away from the standard images and in this way create a new image from different perspectives that can be as versatile as possible. Between East couldn't be more grateful and proud to share Shervin's work and story as we know it will resonate with so many within our community.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style2"
-    },
-    {
-        "date":"032021.",
-        "category":"publication",
-        "title":"Women From the East",
-        "colab":"",
-        "place":"",
-        "detail":"",
-        "images": ["","",""],
-        "longtext":"I am an Iranian woman born and raised in Belgium. I never lived in Iran myself, so I had less affinity for the country as a child. My parents moved to Belgium in the late 1980s to find a better future for their two daughters. Later the third daughter joined them and that was me. I was the youngest of the three. Being the youngest, I often resisted my family's beliefs and my parents' tradition. Of course, I was young and naive. I acted defiantly and censored both my one world to my friends and on the other hand I censored my social life to my family. This was a reaction out of insecurity, I didn't really belong anywhere and didn't want to shock anyone, but at the same time I made both worlds my home in my own way. In between these residual spaces of my two worlds I created a third landscape for myself.<br>Our parents brought us up quite feminist, we learned how to stand up for our rights, but at the same time the society didn’t want women to be too vocal or too bold. Hence our father contradicted himself by letting us know that we shouldn't stand out too much, shouldn't wear too excessive clothes, shouldn't share our opinion too publicly about political or religious matters. “A woman keeps a low profile and certainly in such a 'new' environment.” Of course I didn't agree, but I was often targeted because of that. We had to suppress our strong identities to fulfill the expectations of the society surrounding us. My father just wanted to protect his daughters from all the envious looks and reactions. This powerlessness still makes me angry today. Why do <i>we</i> always have to start adapting? Surely, we are all striving for freedom? One must learn to accept that today we live in a transcultural world, a topia where anything is possible, where different cultures blend together, where people from various religions live together, where alternate views are present. We cannot stay silent anymore, we have to (re)act. More and more I got the feeling that I had to resist the Western norms, I felt more connected with “the others”. I discovered the beauty of having several identities. And this is my advice to all those who are struggling with the same thing: embrace your background and expose it, one can only learn from it. It’s important open a dialogue with those who aren’t familiar with your background.<br><br>In the fall of 2020, I had the opportunity to publish my book 'ENSEMBLE: An Architecture of the Inbetween' with A.P.E. This research developed into a very personal reflection followed from my first solo trip to my home country of Iran. The research speaks to the two cultures in which I exist, the Middle East (Iran) and the West of Europe (Belgium). This research was expressed through a mix of architectural models, drawings, textiles, sculpture, graphics, literature and most important, human interactions. I made the attempt to translate my personal experiences into an architectural concept. I chose to design different spaces or materializations of different moods, embraced together into a cohesive structure. The project resulted in an integral architectural piece that emerges from a polyphony of cultures. Cultures that interact in the designed spaces while providing an illusion of neutrality. A place seemingly stripped of most political complexities. A relationship based on the human experience; cultural diversity communicating in a third landscape. However, this romantic idea also became a starting point for a dialogue on cultural appropriation and cultural identity, to which I invited a few female artists and thinkers, attaching great importance to opening this reflective space to a contemporary discussion that invites critical narratives. As a way to better understand cultural conditioning. It is difficult that we still have to prove that we, women of colour, or even women in general, also derive from a complex story and carry with us a whole wisdom.<br><br>It is hence necessary for me, as a young artist/architect, to make space for our voices to echo in others' minds. While we are already portrayed here and there, there is a huge deficit in our recitation. For example, I felt it was extremely important to provide a space in my book to several female artists coming from two or more nationalities/ identities who could express their narratives there. Change has to come from the core of our society. We, women of colour, are represented with too little. There is a crucial need for exhibiting a more diverse and honest image of our society. This is something we need to work on together and I don't mean just us, women of colour, but us, all of us together.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style6"
-    },
+    
+    
     {
         "date":"022021.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Aubrey Beardsley, Les Monseigneurs, Shervin Sheikh Rezaei en Praneet Soi",
         "colab":"HART-Magazine,<br>Writer: Els Roelandt",
         "place":"",
@@ -378,7 +451,7 @@
     },
     {
         "date":"012021.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Shervin Sheikh Rezaei: ENSEMBLE book",
         "colab":"OD Magazine: Article,<br>Writer: Jonathan Meersman",
         "place":"",
@@ -390,20 +463,7 @@
         "detailimgclass":"",
         "styleclass":"style1"
     },
-    {
-        "date":"012021.",
-        "category":"lecture",
-        "title":"EPILOGUE: Female artists speaking",
-        "colab":"Weronika Zalewska<br><a href='#mira' style='font-family:'Arial',sans-serif;'>Mira de Boose</a><br><a href='#deveny'>Deveny Faruque</a><br><a href='#nilou'>Niloufar Nematollahi</a><br><a href='#oriana'>Oriana Lemmens</a>",
-        "place":"ENSEMBLE: An Architecture of the Inbetween",
-        "detail":"",
-        "images": [""],
-        "longtext":"When I finally reached the end of my book: <i>Ensemble: An Architecture of the Inbetween</i>, I realized that most of my references pointed to white Western men. This really bothered me, especially in the present moment, and even more in the context of a work called an architecture of the inbetween, in which I try to form a unity out of two cultures, the West and the Middle East. I could not ignore this and leave it as it was.<br><br>I started to look for Iranian artists who were also a hybrid of two identities, those searching for their individuality in between two worlds. For example, I hit upon the work of Monir Shahroudy Farmanfarmaian, who also made journeys to her home country, Iran, to find inspiration for her work. She sought symbolism in geometric forms and elaborated on the materiality of Iranian culture.<br><br>I started to delve deeper into her work, but in the end I didn’t even have to look that far.<br><br>I started to talk with my sisters, with friends who’d had similar experiences, with my family, cousins... I started looking for stories, not answers. All these different stories bring us a little closer to the truth—even though there is no truth in any one story. Each of them has something different to say, something to offer, and together they bring a broader richness to the <i>inbetween</i> story.<br><br>Hence this epilogue: an open forum in which various female artists speak and give their reflection on ‘my’ story. Women who are linked to more than just one culture, who are connected between two or more worlds/identities. Transcultural women.<br><br>I asked them to embody their own feelings in their texts and to add whatever they would like to the book. All these stories bring us a little closer to an image that we can puzzle over for ourselves. A collage of experiences, as there is no ideal image.<br><br>I speak one truth, but together we speak several truths, and this ensures that I can finish the ensemble with pride.<br><br>“It’s an open-ended approach, one with no answers but instead an open conversation on the form with each participant…”<br>- Weronika Zalewska<br><br><span class='epilogue' id='mira'><br><br><br><br>Mira de Boose<br><br>Dearest Shervin,<br><br>January 2020. I am walking through our hometown in the deepest moment of winter.<br>When we first met each other three years ago, I had just started learning the Persian alphabet. On those cold and misty days, I had felt a tendency to embrace the sound and shapes of a new language, the language that surrounded you as you grew up. Determinedly, my voice repeated the Persian words for pomegranate, pistachio, quince, along with their colors: red, green, yellow. My hand followed the pattern like a dance. In that dance, I began to give meaning again like a child.<br>The first time I was amazed by the beauty of the sound of Persian and its poetic appeal was when I saw a film by Forough Farrokhzad, The House is Black, during my film studies. As I watched more Iranian films, I discovered that many films originate from poetry. Here my journey started. Intuitively, I engaged in a learning process that poses questions and enriches. There must have been something that I, born in Belgium and raised by Belgian parents, was missing in the Western culture. What I encountered in Iran was a special sensitivity for living, a carefulness for the beauty of everyday things. It amazed me that everyone I met was familiar with poetry—it is embedded in the Iranian society and thus part of its identity.<br>My fascination for the presence of poetry in everyday life and the freedom language can give to people was the starting point for my graduation film I am spring you are earth. In this film I travel through Iran for the first time and approach people and places I encounter through poetry. I let myself be guided by the eyes of the children and by my friend, the girl with the red scarf. I learn how to speak—I learn to be present and to notice. The poet Sohrab Sepehri wrote: “We are nothing but a gaze.” I find words living in stones, in dried fruit, at the bottom of a salt-lake, in the graves of poets. One of the graves I visited on my first day in Tehran was the resting place of Forough Farrokhzad. On her grave I read the following poem called ‘Gift’.<br><br>I speak out of the depth of night<br>out of the depth of darkness<br>and out of the depth of night I speak.<br><br>If you come to my house, friend<br>bring me a lamp and a window<br>I can look through<br>at the crowd in the happy alley.<br><br>I find this poem beautiful because its simple image speaks about the gaze with which Forough perceives the world. It makes me think of Sohrab’s quote and the close connection between poetry and cinema in Iranian culture. The style of modern Persian poetry, the she’r-e now, was represented by poets such as Forough, Sohrab Sepehri and Ahmad Shamlou, and strongly pervaded cinema culture. It influenced filmmakers like Abbas Kiarostami and Mohsen Makhmalbaf.<br><br>The window would become a returning image in Forough’s oeuvre. It symbolizes the transparent space between the inside and the outside world. A window is a bridge between worlds that can inhabit different languages, different ways of seeing, a bridge that joins them together. I think that is why, intuitively, I selected these poems for you.<br><br>By entering into a dialogue with your work, I asked myself what the identity of the inbetween meant to me. This remains an open question, still. I’ve begun to perceive my identity as an architectural space. I embody what I learn, what I read, I carry my encounters with people and places with me. I transform continuously, I don’t bind myself to the idea of my own nation or one, fixed identity. I’d rather carefully move both tangible and mystical elements from one world into another and see how they transform. “I am running water that moves on,” Forough writes in her poem ‘Life’. I live inbetween, but being inbetween does not necessarily make you lost. To me it means you live in entanglement with a variety of worlds. Possible, real and imaginary worlds. I believe this understanding of identity can create possibilities.<br><br>Many of my ideas on identity are inspired by Sufism. Sufism is the mystical internalization of Islam; its core revolves around love and honesty. In life, we move together in a circular dance. In the center of the Persian garden, we can see our reflection in the water. When we draw a line to design a space or to learn an alphabet, in this gesture we are one with the spiral of the water. The identity of the inbetween coincides with the many things we do and with our contradictions. I exist, I give meaning, I do not give meaning. I hold a mirror in my hands. I surprise myself. I dream. I dig, I repeat, I listen. I imagine. Dear Shervin, I recognize the openness of the human heart in the transparency you create, between the lines you draw. In the water temple, in the shape of a sun. In these places, you give us the possibility to find each other in tranquility.<br><br>Fragments of ‘Window’ by Forough Farrokhzad from Let us Believe in the Dawn of the Cold Season, translated by Sholeh Wolpé:<br><br>A window for seeing.<br>A window for hearing.<br>A window like a well<br>that plunges to the heart of the earth<br>and opens to the vast unceasing love in blue.<br>A window lavishing the tiny hands of loneliness<br>with the night’s perfume from gentle stars.<br>A window through which one could invite<br>the sun for a visit to abandoned geraniums.<br><br>One window is enough for me.<br>—<br>I understood that I must, must, must,<br>deliriously love.<br><br>One window is enough for me.<br><br>A window to a moment of comprehension, perception, silence.<br>—<br>Speak to me.<br>From the sanctuary of my window<br>I am intimate with the sun.<br><br>I exist most comfortably and at the same time am most challenged in the stream of poetry. It is a way to live, in and outside of words. Forough said: “I believe in being a poet in all moments of life. Being a poet means being human.” She was a woman who embraced every aspect of life and who surrendered herself completely to it, with honesty. At first, I was attracted by her power, her daring. She was the first poet in Iran who wrote openly about love and intimacy from a female perspective. Therefore she is still an icon for many women in present day Iran. I remember her grave was surrounded by women, kissing her stone and reciting her words.<br><br>Water always flows at the center of her poems. It has a healing effect on her, its sound guides her to the essence of the whirling. In her poem ‘I Will Greet the Sun Again’ various images and symbols that I feel we both value, merge. There is a feeling of hope, a strength and at the same time a beautiful fragility. She writes in a vivid, sensorial imagery. Like Forough, you impregnate your work with your gaze of love. It demonstrates how the unity of thinking, living and creating beyond the borders of frames is liberating like the wind.<br><br>Eager to continue sharing,<br>Always with love,<br>Mira<br><br>I Will Greet the Sun Again<br><br>I will greet the sun again,<br>greet the stream that once flowed in me,<br>the clouds that were my unfurling thoughts,<br>the aching growth of the grove’s poplars<br>who passed with me through seasons of draught.<br><br>I will greet the flock of crows<br>who gifted me the groves’ night perfume<br>and my mother who lived in the mirror<br>and was my old age’s reflection.<br>Once more I will greet the earth<br>who, in her lust to re-create me, swells<br>her flaming belly with green seeds.<br><br>I will come. I will come. I will.<br>My hair trailing deep-soil scents.<br>My eyes intimating the dark’s density.<br>I will come with a bouquet picked<br>from shrubs on the other side of the wall.<br>I will come, I will come. I will.<br>The doorway will glow with love<br>and I will once again greet those in love, greet<br>the girl still standing in the threshold’s blaze.<br><br>from Reborn, translated by Sholeh Wolpé<br><br><br><br></span><span class='epilogue' id='deveny'>Deveny Faruque<br><br>In the transparency of this research, in the transparency of your translation of individual experiences into a design of public spaces and in the transparency of your materials, I find a relevant type of sincerity, that of the subjective individual going public. Thinking of these public spaces, I am not only referring to your architectural designs, but I am also considering this book as a public space. This research creates an aperture in the overwhelming simultaneity of experiencing multiple perspectives. Particularly because of your personal synthesis of diverse cultural experiences, I regard this publication as the foundation for a space where the opposites in a collective body can meet and cofunction.<br><br>When all that is familiar, or all that we know, is geographically spread over a wider expanse than that of a single place, physical fragmentation demands that we construct new systems for a global sense of place. We are here, there and everywhere, and this simultaneously. It is a new form of placelessness. The established meaning of this word implies a disconnection between a space and its geographical place. This results in a lack of attachment towards the kinds of spaces that look like they could have been placed anywhere. However, for the inbetween person a different spirit emerges in the word. The feeling revolves around a deep connection with all kinds of places. The disconnecting ‘could-be-anywhere’ connotation of this concept transforms into an affirmation that every place can be held dear because it contains very similar yet vital spaces. With this modern placelessness in mind, I see many parallels between the transparent character of your models and placeless architecture. It is not urban nor rural but always malleable to any environment. Somehow, I believe that this quality makes your design a personification of every inbetween person that balances between belonging and not-belonging. <br><br>The skill of being malleable does not in any way make the inbetween person soft or invisible but rather fluid and mobile. This type of individual or body is solid yet has a peculiar outline—an outline that allows them to be cut out from their surroundings, to be extracted from their background. Their sharp contours allow them to fall out of any scenery and be pasted into any other, as if they belong there. Don’t mistake it for camouflaging. This ability functions almost as a chroma key, but for the inbetween person it is always emphasized or exposed, leaving a clear green trace around them. The downside is having no natural habitat at all!<br><br>For some unknown reason I adopted a methodology of limitation for a video work I made in 2017: all imagery had to be shot outside my hometown. As I had just moved from Belgium to Germany when I started working on this project, I filmed a lot in Leipzig. I could do so without breaking my only rule because I felt like a traveler in my new home, a city of travelers, home to everyone who desired to stay. The work was aired online in individual episodes. One-to-many broadcasting, but where was the one from? I wanted to speak about mobility, loneliness and habitats but never about mine. Since I could call no scenery my habitat I wanted my work also to have none. The chroma key is me. I regarded myself as a highly flexible human being, having been brought up by Bengali parents, born in a West European country. <br><br>In an indirect way this rule, almost dogma, achieved a sense of placelessness. Every scene that would hint at a location was juxtaposed with archive material from past travels to exotic countries. Overflowing with interior shots of people I stayed with, lived with and visited, the film rejected the settled non-nomadic lifestyle and, in this way, also prevented the viewer from forming any attachment to the work in terms of continuity or coherence. <br><br>If there was anything to get attached to it was the chroma key. The same characters—mostly me—and objects kept reappearing with the clear outline of a cheap and fast chroma key. Don’t mistake it for camouflaging. As an inbetween person I am not blending in with my environment. Transparency does not equal invisibility. <br><br>Eventually I even filmed parts of the work in Belgium when visiting friends and family, as if I was a traveler here too. Shortly after reaching this point, I ended the work at its 12th episode, ambivalent about whether I had broken my only rule or had simply become estranged from the concept of a home in adopting the voyeuristic role of the person with the handycam. As a person between two (and more) cultures, this position of the traveling, observing outsider has become my nature. Especially as an artist, I find the bird’s eye view to be a beneficial outcome of having no single habitat. Along with fluidity, mobility and transparency, it is a feature of the inbetween person that has grown into a key resource for our artistic practices.<br><br><br><br></span><span class='epilogue' id='nilou'>Niloufar Nematollahi<br><br>Fragments of The Muddled Spellbound Of One’s Tennessee Mountain Home<br><br>This text was written over the course of several weeks during which I traveled, for various reasons, and simultaneously looked for suitable examples illustrating the sociopolitical context in which this book was published. The provided examples of artists and anecdotes were not only selected based on the coherence of their interrelations, but also simply because I came across them during the time in which I was playing with the idea of constructing this text. A hidden database of stories and art pieces I’d been unconsciously collecting over the years revealed itself, stepping forward to take a shot at delineating the themes that inevitably pop up when publishing a book like this one. I’d been involved in the process of creating this book from its early stages as I’d edited the text in Farsi, but when the request for a personal contribution came, matters changed drastically. My role as an editor was placed aside in order to respond to the into a request for a personal reflection on a book which touches upon, and yet doesn’t speak explicitly about, numerous topics that are now inevitable within artistic and political discourse.<br><br>…<br><br>The danger of reconstructing elements of a specific country’s visual or sonic culture within another region, which often becomes apparent in the presentation of Eastern stories and images in the West, is that these exported elements get stripped down into simple unambiguous narratives that can be understood by the Western viewer. Quietly, the overall tone is shifted into something fetishizing or didactic and pedagogic, keen to either eroticize or educate and nothing in between. The understanding of an art piece depends on those symbols and gestures familiar to the viewers and the makers of the piece. It’s a matter of non-verbal communication. A database of symbols and signs formed of numerous aspects and influences, one of which is the cultural background that the makers and viewers grew up in. You can’t expect all viewers to have the same database, though that doesn’t excuse reducing the quality of the work, or simplifying it into clichéd terms, in order to make it relatable and understandable for a new audience, one that supposedly possesses a different database of symbols due to their different nationality. This ‘stripping down’ is a result of distance and a change of context and is widely accepted. It only becomes dangerous when the viewer or reader sees this exported narrative as the only possible one. If we assume that pieces of art mirror the world around them rather than provide an alternative to it, there is automatically a need to provide as many mirrors as possible in order to reflect this world of ours as accurately as possible. When much of the global focus, not only culturally but also politically, is on the Middle East, it’s important that people from various backgrounds speak out about their own personal narratives. Their own mirrors. It is only by gathering, publishing and telling the tales of as many different points of view as possible that we can move towards creating an account of this turbulent socio-political region that is as accurate as possible. <br><br>...<br><br>My college tells me about an exhibition of work by Mehraneh Atashi that she recently brought to her hometown. Atashi’s self-portraits, collected in the piece Tehran. capital in CAPITAL letters, are among her early works, but are refreshing even now. This photo series, made during the 2009 presidential election protest, sees the personal and political interlace. “The city is in your moil, the landscape is changing with the flow of people, the movement of demonstration. I am inserting my figure into these spaces to keep a record of my presence as a document of the self and the vent together at the same time.”<br><br>Just like Atashi’s photo series, an architecture of the inbetween is looking for the common ground where we are all underdogs, submitted to events and impressions larger than ourselves, never fully belonging to one of two sides yet capable of constructing our own third landscapes. The ancient Persians were obsessed with finding their own structures and orders, always keeping in mind the emotional impacts of space. Being influenced by the ancient Persian mindset and approach, Shervin takes elements from past traditions and juxtaposes them, looking for her own orders and structures. She is driven by the same motives as the ancient Persians, but with a contemporary approach. A fascination for the specific type of Iranian architecture that was the formal starting point for the visual research done in this book does not reflect a superficial desire to reproduce ornaments globally associated with Eastern aesthetics, but rather speaks to a profoundly structural drive for the relationship between form and concept that manifests itself so strongly in the core of ancient Persian architecture. Shervin did not only take and reproduce elements from a culture, but more importantly used a structural approach found in tradition to assemble her own narrative. That’s how internal experiences become spaces, constructing a personal narrative worth sharing.<br><br>...<br><br>Hadassah Emmerich is a Brussels-based painter continuing the legacy of female ‘pop’ artists such as Evelyne Axell (Belgian painter, 1935–1972; I would recommend looking her up because she is wonderful, underrated and free of the male gaze). She pursues a practice that combines bold visual language with an investigation into the undercurrents of visual culture. By focusing on the tension between the theme of the work and the action of painting itself, she targets visual representations of exoticism. In one of her lectures, she is remarkably unwilling to share pictures of herself at work, which I admire. She wants to talk about the main questions she asks herself when creating works, rather than rambling on about the periods of hard physical labor she went through to create the gigantic murals she is well-known for. Can the work be about exoticism, or is the work exotic? Meaning, can you research or criticize something by reproducing it and eventually becoming it? One of the first painterly alter-egos she created was called Batik Babe. (I put ‘batik’ into Google and saw arabesques and ornaments.) When she painted as Batik Babe, Axell used the mechanisms she noticed others using when visualizing one of the two cultures she belonged to as the child of a German mother and Indonesian father. She exaggerates, uses stereotypes and pours pop aesthetics over all her works. After painting for a time as Batik Babe, a kind of exhaustion began to slowly penetrate her head and body as she wondered whether she and her work were some kind of traveling circus. She talks about artists who are openly concerned with their origins and who have developed strategies for visualizing these origins as well as the problematic that has evolved around visual strategies in general. A politically correct/incorrect game about borders. When are you allowed to deal with a certain theme? Exoticism seems close to the promise of a greater cause at the same time as it is the idea of an unreal utopia rather than an actual goal. All this leads her to make peace with the fact that she will always be in a position of intermediacy. In many cases it seems as if we have accepted fetishizing attitudes without questioning where they find their origins and—more importantly—without a critical perspective towards the small things they still manifest in. There has been much research into the politics and aesthetics of fetishization and exoticism, ranging from Paul Gauguin’s fascination with Haitian culture (and more specifically Haitian underaged woman) to that of Shirin Neshat considering the movement of her own culture to a new context which inevitably leads to its fetishization. <br><br>…<br><br>I recall holding the graphic novel Persepolis in my hands for the first time. In an interview, Marjane Satrapi says that when she ended up at a studio where everyone was making comics, at first she told herself: this is work for nutcases cause you have to be like a monk and draw the same thing over and over again. She often said to her colleagues: “But in Iran, we…” When her co-workers told her she should make a comic out of all the stories she told about her childhood and teens in Tehran, she assumed they just wanted her to shut up. In Persepolis she decides to make peace with her inner monk and to draw all those stories she had been telling people, over and over, in the years after leaving Iran. Perhaps for her, making Persepolis was, just like the video piece for Theresa, a matter of ticking the box labelled ‘the narrative of one’s family and roots,’ though of course traces of what we see in Persepolis are also visible in her later work. But Persepolis is still a first. Ticking a box, closing and simultaneously opening a chapter in one’s artistic practice. A chapter that is sentimental at its core but highly influential in the development of those works yet to come. When talking with Shervin about this essay, we talked about the motives that drove her to publish this book in both English and Farsi. She told me about the language barrier that exists between her and her parents because she speaks what she herself refers to as ‘baby Farsi,’ which has held her back from sharing her dearest possession, namely her work, with her dearest ones—her parents. Of course it’s about space, of course it’s about cultures and of course it’s about many other things besides that, but at its core it’s a narrative about one’s most loved places and people, not only made to be shown to ‘the wider audience’ but also created for the ones who—by existing and simply being there—played their part. As for me, this text, written from a safe yet eerie distance, also felt like a box that had to be ticked off and a tale that had to be told in order to start the construction of a new one.<br><br>To find more profound elaborations about the people, artworks and theories mentioned in the fragments above, please head to the full essay.<br><br><br><br></span><span class='epilogue' id='oriana'>Oriana Lemmens<br><br>On how to draw a house<br><br>A story in between Belgium and Ivory Coast<br><br>“Draw the house you live in,” my mother said. She was a teacher in adult education and gave basic math to speakers of foreign languages in Brussels. She was asking her students to draw floor plans of their living spaces. For her, the assignment seemed easy but when she checked on her students she saw one person’s paper stayed blank. When she asked him why he hadn’t started drawing, he told her he could not do this because it was simply impossible. My mother gave a friendly laugh because she understood that for him it felt illogical to depict an actual space in an abstract drawing.<br><br>It took a while until he knew how to conquer her heart. After persistent flirting (mostly by giving cheesy compliments on her strikingly blue eyes) she finally gave in. He took her on a few dates and they fell in love. After some years, children followed. They were the combination of two colors, the combination of two personalities and the mix of two cultures.<br><br>In a way, the beginning of this story is indeed a romantic one. Shortly after moving to Belgium the downside of being a foreigner came to light and it turned out there were many obstacles for him to defeat. In the beginning these seemed not that hard to overcome with a big smile, a shrug or a cold shoulder. But walking against the wind is only possible with the energy to do so. There was simply no escape from disguised structural discrimination and cold-hearted racism. Eventually painful incidents and repeated rejections succeed in draining his seemingly inexhaustible source of enthusiasm and led to an alienation from the environment that once promised to become partly his own. His initially sunny attitude towards this land of mild winters and cool summers seemed to become a rather bitter one.<br><br>It was on this tipping point that he bought his first piece of land in Ivory Coast, his motherland, close to the main harbor of the former capital Abidjan. He started making plans to build his own house and began saving money. Nevertheless, during this period things went wrong. He wasn’t physically present to watch over the ground and construction hadn’t started yet. So, after a while it turned out his property had been taken over by an opportunistic neighbor who decided to build a shelter for his truck on the empty piece of land next to his home. As unfair as this may seem, not much could be done about this. In a country like Ivory Coast a piece of paper does not prove ownership, as it simply does not weigh up against the physical presence of a garage. <br><br>Despite the disappointment he was determined to give it a second try. However, this time he would take a different approach. Instead of a fallow piece of land he bought a complete house. If the land was occupied, it could not be taken. The plan was to first strip the whole building and then to adapt all the elements and reshape it into the house he had in mind. But what did he have in mind? He took inspiration by looking to his new environment and borrowing ideas from different styles and construction methods he saw in modern Western architecture, combining this with the half-open architecture that’s convenient in a West African climate.<br><br>Years passed, and again it became clear that building a house at such distance could never be easy. This seems obvious when you realize he only visited the construction site two times. All other instructions were given through video calls with Ivorian construction workers. There were rather vague directions, nothing was written down. He had specific ideas in mind of what the house should look like but some of the architectural techniques he required were not commonly used in West Africa. Often communication went wrong, causing misunderstandings that meant a lot of things had to be redone. It’s a rather devious process, one that takes a lot of time. Every time my siblings or I ask when his home will finally be finished he answers: “Maintenant c’est vraiment presque fini.”<br><br>He directs the project on his own. It’s something he has to do for our family to give us our own place to reside when visiting instead of staying with aunts, uncles, cousins or grandparents. Here we can pass time, feel at home and lay ties to our second culture. My mother believes he will eventually move back when he’s old because he despises Belgian retirement homes. “He will look for three younger women who will take care of him,” she giggles. We say he won’t, because we live here, and he would never leave us. <br><br>Despite all this, whether he would or would not move back is not the main issue. At the same time, it’s a question that shows the difference between reality and a utopia: this is not his dream house. The space that falls within the boundaries of his dream would exist in two places: on the one hand in Belgium, his direct environment, with our family and friends, and on the other in Ivory coast, the country that was once his home. Unfortunately, the two are physically separated and will therefore stay disconnected in the real world. And that’s precisely what this is all about: it’s the expression of the desire to correct the discrepancy between the two, to reconcile these separated places and to compensate for the sadness he has felt living here. It’s an ambiguous desire to claim individuality in an environment which he is being excluded from and which his children also live in. It undermines the reality of this everyday space. Therefore the house is the result of nostalgia rather than a place to come back to, and the building process together with the projection of European architecture onto his Ivorian house is a way to impregnate this nostalgia with a new reality. The creation of this house is in fact an inbetween, a solution, a necessity, a step towards the dream. In the creation of the house two dreams can exist in one place.</span>",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style6"
-    },
+    
     {
         "date":"122020.",
         "category":"book",
@@ -420,7 +480,7 @@
     },
     {   
         "date":"122020.",
-        "category":"physical",
+        "category":"work",
         "title":"Tapestry of the ENSEMBLE",
         "colab":"Finishing assistance: Thomas Renwart",
         "place":"",
@@ -434,7 +494,7 @@
     },
     {
         "date":"112020.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Collection-ed. 5",
         "colab":"The Archive Hotel",
         "place":"",
@@ -448,7 +508,7 @@
     },
     {
         "date":"102020.",
-        "category":"physical",
+        "category":"work",
         "title":"Plan of ENSEMBLE engraved in plexiglass ",
         "colab":"",
         "place":"",
@@ -462,7 +522,7 @@
     },
     {
         "date":"072020.",
-        "category":"serie",
+        "category":"drawing",
         "title":"Quarantine Drawings",
         "colab":"",
         "place":"",
@@ -476,7 +536,7 @@
     },
     {
         "date":"032020.",
-        "category":"physical",
+        "category":"work",
         "title":"FLAGS: VERVELING/BOREDOM",
         "colab":"JDVIV Architecten - 019",
         "place":"019,<br>Gent",
@@ -490,7 +550,7 @@
     },
     {
         "date":"022020.",
-        "category":"physical",
+        "category":"work",
         "title":"Enter Through The Void, Exit Through The Giftshop",
         "colab":"In detail with Celien Demets and Wietse De Cooman",
         "place":"Kunsthal,<br>Gent",
@@ -502,23 +562,10 @@
         "detailimgclass":"",
         "styleclass":"style4"
     },
-    {
-        "date":"022020.",
-        "category":"exhibition",
-        "title":"website launch 01. www.shervinsheikhrezaei.com",
-        "colab":"With Deveny Faruque",
-        "place":"world wide web",
-        "detail":"",
-        "images": ["imgsmall/m-expo/shervinoudewebsite.mov","imgsmall/m-expo/web1.jpg","imgsmall/m-expo/web2.jpg","imgsmall/m-expo/web3.jpg","imgsmall/m-expo/web4.jpg","imgsmall/m-expo/web5.jpg","imgsmall/m-expo/web6.jpg","imgsmall/m-expo/web7.jpg","imgsmall/m-expo/web8.jpg","imgsmall/m-expo/web9.jpg","imgsmall/m-expo/web10.jpg","imgsmall/m-expo/web11.jpg","imgsmall/m-expo/web12.jpg","imgsmall/m-expo/web13.jpg","imgsmall/m-expo/web14.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-    },
+    
     {   
         "date":"082019.",
-        "category":"serie",
+        "category":"drawing",
         "title":"Drawings of carpets",
         "colab":"",
         "place":"",
@@ -532,7 +579,7 @@
     },    
     {   
         "date":"072018.",
-        "category":"publication",
+        "category":"bibliography",
         "title":"Magazine, Porto Academy",
         "colab":"Studio Sam Chermayeff/ June 14",
         "place":"Faculdade de <br>Arquitectura da <br>Universidade do Porto,<br> Portugal",
@@ -544,24 +591,11 @@
         "detailimgclass":"detailimg2",
         "styleclass":"style3"
     },
-    {   
-        "date":"062018.",
-        "category":"exhibition",
-        "title":"Groupshow: Grand Tour",
-        "colab":"Studio Grand Tour",
-        "place":"De Wasserij van Vlaanderen, <br>Gent",
-        "detail":"Together with: Marie Malingreau, Manon Coppens, Nicolas De Paepe, Marine Boey, Sam Vander Elst, Shervin Sheikh Rezaei, Eleonore Devolder, Ina Verhaegen, Daphne Gort, Laurens Godecharle",
-        "images": ["imgsmall/m-expo/c1.jpg","imgsmall/m-expo/c2.jpg","imgsmall/m-expo/c3.jpg","imgsmall/m-expo/c4.jpg","imgsmall/m-expo/c5.jpg","imgsmall/m-expo/c6.jpg","imgsmall/m-expo/c7.jpg","imgsmall/m-expo/c8.jpg","imgsmall/m-expo/c9.jpg","imgsmall/m-expo/c10.jpg","imgsmall/m-expo/c11.jpg","imgsmall/m-expo/c13.jpg","imgsmall/m-expo/c14.jpg","imgsmall/m-expo/c15.jpg","imgsmall/m-expo/c16.jpg","imgsmall/m-expo/c17.jpg","imgsmall/m-expo/c18.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"imgsmall/m-expo/c1.jpg",
-        "detailimgclass":"detailimg1",
-        "styleclass":"style3"
-    },
+    
     
     {   
         "date":"062018.",
-        "category":"physical",
+        "category":"work",
         "title":"ENSEMBLE I: mirror heterotopia",
         "colab":"Studio Grand Tour",
         "place":"",
@@ -575,7 +609,7 @@
     },
     {   
         "date":"062018.",
-        "category":"physical",
+        "category":"work",
         "title":"ENSEMBLE I: plexiglass models",
         "colab":"Studio Grand Tour",
         "place":"",
@@ -589,7 +623,7 @@
     },
     {   
         "date":"052018.",
-        "category":"physical",
+        "category":"work",
         "title":"ENSEMBLE I: Textile plans",
         "colab":"",
         "place":"Isfahan,<br>Iran",
@@ -615,34 +649,7 @@
         "detailimgclass":"detailimg2",
         "styleclass":"style4"
     },
-    {   
-        "date":"012018.",
-        "category":"book",
-        "title":"Reverse Perspective: los",
-        "colab":"Studio Reverse Perspective",
-        "place":"",
-        "detail":"",
-        "images":  ["imgbig/physical/rplos/03.jpg","imgbig/physical/rplos/04.jpg","imgbig/physical/rplos/05.jpg","imgbig/physical/rplos/07.jpg","imgbig/physical/rplos/08.jpg","imgbig/physical/rplos/09.jpg","imgbig/physical/rplos/10.jpg","imgbig/physical/rplos/11.jpg"],
-        "longtext":"phase 01: textile, clay, sand, stone working behind the canvas<br>phase 02: wrapping the object<br>phase 03: wrapping the body<br>phase 04: loosening the textile",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
-    },
-    {   
-        "date":"012018.",
-        "category":"physical",
-        "title":"Reverse Perspective: trap",
-        "colab":"Led by Wim Goed and Johannes Berry",
-        "place":"",
-        "detail":"Format: 12 x 28,5 x 8 cm<br>Material: concrete",
-        "images":  ["imgbig/physical/trap/01.jpg","imgbig/physical/trap/02.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-    },    
+    
     {   
         "date":"112017.",
         "category":"book",
@@ -657,104 +664,7 @@
         "detailimgclass":"",
         "styleclass":"style4"
     },
-    {   
-        "date":"072017.",
-        "category":"physical",
-        "title":"BAUHAUS festival: Labyrinth Stage",
-        "colab":"Collaboration: Barbora Tothova",
-        "place":"Bauhaus uni- Weimar, <br>Germany",
-        "detail":"",
-        "images": ["imgsmall/m-expo/a1.jpg","imgsmall/m-expo/a2.jpg","imgsmall/m-expo/a3.jpg","imgsmall/m-expo/a4.jpg","imgsmall/m-expo/a5.jpg","imgsmall/m-expo/a6.jpg","imgsmall/m-expo/a7.jpg","imgsmall/m-expo/a8.jpg","imgsmall/m-expo/a9.jpg","imgsmall/m-expo/a10.jpg","imgsmall/m-expo/a11.jpg","imgsmall/m-expo/a12.jpg","imgsmall/m-expo/a13.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-    },
-    {   
-        "date":"012017.",
-        "category":"book",
-        "title":"STATION S14: Awareness Station",
-        "colab":"Fieldstation",
-        "place":"",
-        "detail":"Format: 84,1 x 59,4 cm<br>Material: Screenprint on paper",
-        "images":  ["imgsmall/m-books/awstation.jpg","imgbig/books/awareness/as1.jpg","imgbig/books/awareness/as2.jpg","imgbig/books/awareness/as3.jpg","imgbig/books/awareness/as4.jpg","imgbig/books/awareness/as5.jpg","imgbig/books/awareness/as6.jpg","imgbig/books/awareness/as7.jpg","imgbig/books/awareness/as8.jpg","imgbig/books/awareness/as9.jpg"],
-        "longtext":"As human beings we are beyond the control of technology. We gain more and more confidence in the virtual world, even more so than in our fellow man. Technology takes over. Presently, we even transfer the visible errors in the online systems to the reality we live in. This is the result of the blurring scene between the physical, real world and the virtual world. By combining the physical and the digital, we can create new ideas to get a broader view of the world.<br>Technology provides a more individual world where people don’t have to leave their houses anymore. There is less and less talk of a physical community, everything is done digitally or virtually. That’s why this station tries to turn the digital features into a reality whereby the virtual world is taken out of this private sphere and can be viewed more like something shared.<br>The function of the station is to make people aware of what is happening around them in the world. What can we see as correct and what is actually incorrect? Is there just one truth or are we unknowing and are there different truths? We all try to work together for a better society, a better co-operation and a more accurate truth. This is only possible when we search for different ideas from different perspectives. We should try to be as open as possible to other ways of thinking and also see alternative approaches. Therefore, this station is open to opinions and information from different angles. This ensures that it can be viewed as a station for free expression. In every community, there is a station. This guarantees that there are people from different groups that have the ability to share their information with the other. They insert new information into the system, but they can also respond to other peoples information. All the information is stored in an online archive/ database where nothing can be lost. In this way, there is always an input and an output of the passer-by, and a certain democracy is present.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
-    },
-    {   
-        "date":"012017.",
-        "category":"publication",
-        "title":"FIELD STATION: HACKING THE EXPANDED FIELD",
-        "colab":"Led by Michiel Helbig and Corneel Cannaerts",
-        "place":"",
-        "detail":"",
-        "images": ["","",""],
-        "longtext":"",
-        "iframe":"http://www.fieldstationstudio.org/STUDIO/HACKING_THE_EXPANDED_FIELD/",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style1"
-    },
-    {   
-        "date":"122016.",
-        "category":"book",
-        "title":"Only the emptiness remains",
-        "colab":"",
-        "place":"",
-        "detail":"Pencildrawings",
-        "images":  ["imgbig/books/empty/e1.jpg","imgbig/books/empty/e1.jpg","imgbig/books/empty/e2.jpg","imgbig/books/empty/e3.jpg","imgbig/books/empty/e4.jpg","imgbig/books/empty/e5.jpg","imgbig/books/empty/e6.jpg"],
-        "longtext":"leegte van 40 x 40 mm<br>klein gemis<br><br>detaillering bergen<br>los<br><br>leegte proberen vullen<br>moeilijk<br><br>leegte van 210 x 40 mm<br>groot gemis<br>is hij nu rustig<br>ja,toch<br><br>ben op",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
-    },
-    {   
-        "date":"112016.",
-        "category":"physical",
-        "title":"Wrapped",
-        "colab":"",
-        "place":"",
-        "detail":"",
-        "images":  ["imgbig/physical/balder/1.jpg","imgbig/physical/balder/2.jpg","imgbig/physical/balder/3.jpg","imgbig/physical/balder/4.jpg","imgbig/physical/balder/5.jpg","imgbig/physical/balder/6.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-    },
-    {   
-        "date":"062016.",
-        "category":"book",
-        "title":"Meet the context",
-        "colab":"Architectural concept",
-        "place":"",
-        "detail":"The grid as regulation pattern for living<br>Graphic design: Emma Raymaekers",
-        "images": ["imgbig/books/bac/bac20.jpg","imgbig/books/bac/bac21.jpg","imgbig/books/bac/bac22.jpg","imgbig/books/bac/bac23.jpg"],
-        "longtext":"In this assignment the grid of the previous assignment was extended. This time the design is situated in a fixed environment, placed in a context. The rules of the zeeslag-architecture are difficult to implement completely, but attempts have been made to let the grid decide as much as possible. The grid provides a better harmony here, so that everything will form a unity.<br><br>The design is based on an existing home on the corner of a street. The sloping blind wall of the existing home has remained. That wall became the common thread throughout the design.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
-    },
-    {   
-        "date":"062016.",
-        "category":"physical",
-        "title":"ZEESLAGARCHITECTUUR: PLAY",
-        "colab":"",
-        "place":"",
-        "detail":"Sliding puzzle<br>Format: 7 x 9 cm",
-        "images": ["drawing/play1.mp4","imgsmall/m-physical/play2.mp4", "drawing/spel1.jpg", "drawing/spel2.jpg", "drawing/spel3.jpg", "drawing/spel4.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-   },
+    
     {   
         "date":"062016.",
         "category":"book",
@@ -768,49 +678,8 @@
         "detailimg":"imgbig/books/bac/bac13.jpg",
         "detailimgclass":"detailimg1",
         "styleclass":"style4"
-    },
-    {   
-        "date":"122015.",
-        "category":"book",
-        "title":"Art. Architecture School",
-        "colab":"Architectural concept",
-        "place":"The docks of Ghent",
-        "detail":"Graphic design: Emma Raymaekers",
-        "images": ["imgbig/books/bac/bac5.jpg","imgbig/books/bac/bac6.jpg","imgbig/books/bac/bac7.jpg","imgbig/books/bac/bac8.jpg","imgbig/books/bac/bac9.jpg","imgbig/books/bac/bac10.jpg"],
-        "longtext":"Designing your own ideal school. Both the idea and the vision as well as the design around the school had to arise from their own words. From the start, the historic design of the Colosseum was chosen as a reference.<br><br>Since it was an architecture / art school, it seemed almost mandatory to clearly state this in the plans and the architectural language itself. Looking at the early 20th century suprematism, I have been guided by abstract compositions, inspired by artists such as El Lissitzky and Sergei Senkin. To arrive at the final architectural plans, the various compositions were completed with the plan of the amphitheater.<br><br>Eventually a composition of four different blocks was created which were connected by means of underground and above-ground corridors. In the middle of the plan there is another link that points to the Colosseum. The blocks have been designed in an enormously defined way, whereas the views and the spaces within the school are enormously free-thinking.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
-    },
-    {   
-        "date":"052015.",
-        "category":"book",
-        "title":"Design for an exhibition space",
-        "colab":"Bachelorwork",
-        "place":"",
-        "detail":"Graphic design: Emma Raymaekers",
-        "images":  ["imgbig/books/bac/bac30.jpg","imgbig/books/bac/bac31.jpg"],
-        "longtext":"",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style3"
-    },
-    {   
-        "date":"112014.",
-        "category":"book",
-        "title":"Geometry out of movement - Alles ist Architektur",
-        "colab":"",
-        "place":"",
-        "detail":"Graphic design: Emma Raymaekers",
-        "images": ["imgbig/books/bac/bac24.jpg","imgbig/books/bac/bac25.jpg","imgbig/books/bac/bac26.jpg","imgbig/books/bac/bac27.jpg","imgbig/books/bac/bac28.jpg","imgbig/books/bac/bac29.jpg"],
-        "longtext":"What does architecture mean and where does architecture start? Based on the text by Hans Hollein, an analysis was made of the body versus architecture. The search for lines that formed two-dimensional geometry in the human body, those lines became planes and those planes were given a very dynamic volume that could later move.",
-        "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
-        "styleclass":"style4"
     }
+    
     
     
 ]
