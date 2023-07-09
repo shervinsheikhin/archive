@@ -98,6 +98,20 @@
         "styleclass":"style4"
     },
     {
+        "date":"012023.",
+        "category":"book",
+        "title":"I HAVE BEEN LIVING ALL MY LIFE DREAMING",
+        "colab":"Text written by Shervin/e Sheikh Rezaei, Els Roelandt and Weronika Zalewska",
+        "place":"",
+        "detail":"<a href='https://www.shervinsheikhrezaei.com/shop.html'>SHOP</a>",
+        "images": ["imgsmall/m-books/els/1.jpeg","imgsmall/m-books/els/2.jpeg","imgsmall/m-books/els/3.jpeg","imgsmall/m-books/els/4.jpeg","imgsmall/m-books/els/5.jpeg","imgsmall/m-books/els/6.jpeg","imgsmall/m-books/els/7.jpeg","imgsmall/m-books/els/8.jpeg","imgsmall/m-books/els/9.jpeg","imgsmall/m-books/els/10.jpeg","imgsmall/m-books/els/11.jpeg","imgsmall/m-books/els/12.jpeg","imgsmall/m-books/els/13.jpeg","imgsmall/m-books/els/14.jpeg","imgsmall/m-books/els/15.jpeg","imgsmall/m-books/els/16.jpeg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style3"
+    },
+    {
         "date":"122022.",
         "category":"drawing",
         "title":"Virago",
@@ -223,6 +237,20 @@
         "detailimgclass":"detailimg2",
         "styleclass":"style4"
     },
+     {
+        "date":"022022.",
+        "category":"drawing",
+        "title":"Untitled",
+        "colab":"",
+        "place":"",
+        "detail":"Format: various<br>Material: pencil, marker, pictures of jellyfish, paint",
+        "images": ["imgsmall/m-series/untitled/1.jpeg","imgsmall/m-series/untitled/2.jpeg","imgsmall/m-series/untitled/4.jpeg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
+        "styleclass":"style3"
+    },
     {
         "date":"022022.",
         "category":"bibliography",
@@ -319,6 +347,20 @@
         "iframe":"",
         "detailimg":"imgsmall/m-expo/artmed.jpg",
         "detailimgclass":"detailimg1",
+        "styleclass":"style3"
+    },
+    {
+        "date":"082021.",
+        "category":"book",
+        "title":"Art Meditation Process",
+        "colab":"Text written by Inge Braeckman",
+        "place":"",
+        "detail":"<a href='https://www.shervinsheikhrezaei.com/shop.html'>SHOP</a>",
+        "images": ["imgsmall/m-books/amed/1.jpeg","imgsmall/m-books/amed/2.jpeg","imgsmall/m-books/amed/3.jpeg","imgsmall/m-books/amed/4.jpeg","imgsmall/m-books/amed/5.jpeg","imgsmall/m-books/amed/6.jpeg","imgsmall/m-books/amed/7.jpeg","imgsmall/m-books/amed/8.jpeg","imgsmall/m-books/amed/9.jpeg","imgsmall/m-books/amed/10.jpeg"],
+        "longtext":"",
+        "iframe":"",
+        "detailimg":"",
+        "detailimgclass":"",
         "styleclass":"style3"
     },
     {
