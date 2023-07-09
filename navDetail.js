@@ -2,16 +2,16 @@ const mainnavLink = document.querySelector("div.mainnav");
 const mainnavLinkA = mainnavLink.querySelector("a");
 
 function mainnavLinkChange() {
-    if (mainnavLinkA.innerHTML == "CATALOG") {
+    if (mainnavLinkA.innerHTML == "CATALOGUE") {
         mainnavLinkA.addEventListener("mouseover", function () {
             mainnavLinkA.innerHTML = "ARCHIVE"
         });
         mainnavLinkA.addEventListener("mouseleave", function () {
-            mainnavLinkA.innerHTML = "CATALOG"
+            mainnavLinkA.innerHTML = "CATALOGUE"
         });
     } else {
         mainnavLinkA.addEventListener("mouseover", function () {
-            mainnavLinkA.innerHTML = "CATALOG"
+            mainnavLinkA.innerHTML = "CATALOGUE"
         });
         mainnavLinkA.addEventListener("mouseleave", function () {
             mainnavLinkA.innerHTML = "ARCHIVE"
