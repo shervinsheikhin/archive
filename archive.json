@@ -71,7 +71,7 @@
     },
     {
         "date":"012023.",
-        "category":"in situ",
+        "category":"insitu",
         "title":"MURAL: I HAVE BEEN LIVING ALL MY LIFE DREAMING, BETWEEN ME AND THE WORLD THERE IS ALWAYS A SPACE OF UNREALITY I DON’T WANT",
         "colab":"",
         "place":"Els Roelandt’s house, house ten bos by Jan De Vylder, BE",
@@ -103,7 +103,7 @@
         "title":"I HAVE BEEN LIVING ALL MY LIFE DREAMING",
         "colab":"Text written by Shervin/e Sheikh Rezaei, Els Roelandt and Weronika Zalewska",
         "place":"",
-        "detail":"<a href='https://www.shervinsheikhrezaei.com/shop.html'>SHOP</a>",
+        "detail":"Graphic Design by Septian Priyatna<br><a href='https://www.shervinsheikhrezaei.com/shop.html'>SHOP</a>",
         "images": ["imgsmall/m-books/els/1.jpeg","imgsmall/m-books/els/2.jpeg","imgsmall/m-books/els/3.jpeg","imgsmall/m-books/els/4.jpeg","imgsmall/m-books/els/5.jpeg","imgsmall/m-books/els/6.jpeg","imgsmall/m-books/els/7.jpeg","imgsmall/m-books/els/8.jpeg","imgsmall/m-books/els/9.jpeg","imgsmall/m-books/els/10.jpeg","imgsmall/m-books/els/11.jpeg","imgsmall/m-books/els/12.jpeg","imgsmall/m-books/els/13.jpeg","imgsmall/m-books/els/14.jpeg","imgsmall/m-books/els/15.jpeg","imgsmall/m-books/els/16.jpeg"],
         "longtext":"",
         "iframe":"",
@@ -155,7 +155,7 @@
     },
     {
         "date":"082022.",
-        "category":"in situ",
+        "category":"insitu",
         "title":"Amnesia",
         "colab":"Drawings for installation",
         "place":"",
@@ -169,7 +169,7 @@
     },
     {
         "date":"062022.",
-        "category":"in situ",
+        "category":"insitu",
         "title":"I don’t want to do love",
         "colab":"Curated by Gustave Demoen",
         "place":"White Garage Gallery, Catania, Sicily",
@@ -407,7 +407,7 @@
     },
     {
         "date":"042021.",
-        "category":"in situ",
+        "category":"insitu",
         "title":"It’s just a trap.",
         "colab":"Artist in Residence with Astrid Collectief",
         "place":"",
@@ -421,7 +421,7 @@
     },
     {
         "date":"042021.",
-        "category":"in situ",
+        "category":"insitu",
         "title":"I am tired of talking, I don’t really like that.",
         "colab":"Artist in Residence with Astrid Collectief",
         "place":"",
