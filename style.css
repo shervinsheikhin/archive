@@ -118,7 +118,7 @@ img.detailimg3 {
 }
 
 header {
-    font-size: 3em;
+    font-size: 2em;
     position: fixed;
     left: 3%;
     top: 3%;
@@ -132,7 +132,7 @@ header.scrolled {
 }
 
 header a.nameEn {
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
 }
 header a.nameFarsi {
     transform: translate(75%, 100%);
@@ -146,7 +146,7 @@ header a.nameFarsi.scrolled {
 
 
 header div.bioEn {
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
     background-color: #FFFFFA;
     background: linear-gradient(90deg, rgba(255,255,245,1) 0%, rgba(255,255,255,1) 100%);
     display: none;
@@ -186,8 +186,8 @@ nav div.mainnav:hover {
 }
 
 nav div.subnav {
-    font-family: Above the Beyond Italic;
-    font-size: 3em;
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
     position: fixed;    
     right: 0px;
     bottom: 4%;
