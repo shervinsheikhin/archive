@@ -188,6 +188,7 @@ nav div.mainnav:hover {
 nav div.subnav {
     font-family: "Arial", sans-serif;
     font-size: 2em;
+    text-transform: uppercase;
     position: fixed;    
     right: 0px;
     bottom: 4%;
@@ -776,7 +777,7 @@ header div.bioEn.open, header div.bioFar.open {
     z-index: 1;
     }
     nav div.subnav {
-    font-size: 1.8em;
+    font-size: 1.2em;
     }
     
     nav div.subnav { 
@@ -785,7 +786,7 @@ header div.bioEn.open, header div.bioFar.open {
         display: flex;
         flex-direction: row;
         text-align: right;
-        padding: 0.8% 2.4% 0.8% 2.4%;
+        padding: 7.5% 7.5% 7.5% 7.5%;
         z-index: 5;
         background-color: white;
         border-left: solid 1px;
@@ -807,6 +808,7 @@ header div.bioEn.open, header div.bioFar.open {
     }
     nav div.subnav div.subnavLinks.open {
         display: inherit;
+        
     }
 
     nav div.category {
