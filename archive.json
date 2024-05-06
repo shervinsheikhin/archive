@@ -37,8 +37,8 @@
         "images": ["imgsmall/m-expo/uniuni_poster.JPG"],
         "longtext":"",
         "iframe":"",
-        "detailimg":"",
-        "detailimgclass":"",
+        "detailimg":"imgsmall/m-expo/uniuni_poster.JPG",
+        "detailimgclass":"detailimg3",
         "styleclass":"style7"
     },
     {
