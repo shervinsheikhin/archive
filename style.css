@@ -283,7 +283,7 @@ table td {
     padding: 0 0.5% 0.5% 0.5%;
 }
 table td.title a {
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
 }
 
 table td.colab a {
@@ -480,7 +480,7 @@ table.archiveTable .inactive td.colab, table.archiveTable .inactive td.place, ta
 div.longtext {
     max-height: 420px; /* max-width was nodig */
     overflow: scroll;
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
     line-height: 1.5;
     background-color: #ffffff;
     margin-top: 10%;
@@ -504,7 +504,7 @@ div.longtext p span{
 
 div.longtext p span.epilogue{
     font-size: 1em;
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
 }
 
 .gallery, .longtext, iframe{
@@ -555,7 +555,7 @@ div.longtext p span.epilogue{
 
 
 main div.contact {
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
     position: fixed;
     padding: 0 3% 0 3%;
     background-color: #ffffff;
@@ -610,7 +610,7 @@ div.CVtable table td {
 }
 
 div.CVtable table td a {
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
 }
 
 div.CVtable table td.dateCV {
@@ -1019,7 +1019,7 @@ header div.bioEn.open, header div.bioFar.open {
 div.longtext {
     max-height: 100vh; /* max-width was nodig */
     overflow: scroll;
-    font-family: Above the Beyond;
+    font-family: "Arial", sans-serif;
     background-color: #ffffff;
     margin-top: 2%;
     position: static;
