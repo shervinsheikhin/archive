@@ -34,12 +34,12 @@
         "colab":"OKV, Writer: Yves Joris, Photographer: Saskia Vanderstichele",
         "place":"",
         "detail":"",
-        "images": [""],
+        "images": ["imgsmall/m-pub/okv/OKV_1.jpg","imgsmall/m-pub/okv/OKV_2.jpg","imgsmall/m-pub/okv/OKV_3.jpg","imgsmall/m-pub/okv/OKV_4.jpg","imgsmall/m-pub/okv/OKV_5.jpg","imgsmall/m-pub/okv/OKV_6.jpg"],
         "longtext":"",
-        "iframe":"https://www.okv.be/artikel/shervine-sheikh-rezaei-gestructureerde-chaos",
+        "iframe":"",
         "detailimg":"",
         "detailimgclass":"",
-        "styleclass":"style1"
+        "styleclass":"style3"
     },
     {
         "date":"102024.",
